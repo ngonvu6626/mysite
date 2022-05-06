@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+.container {
+    font-size: 1rem;
+}
+
+
+// Thong bao top header
+.ticker {
+    background-color: rgba(128, 128, 128, 0.1);
+}
+.tickerRoot{
+    align-items: center;
+    .tickerRoot-noti{
+        font-weight: lighter;
+    }
+    .tickerRoot-nav{
+        margin-left: auto;
+        
+        &--item {
+            padding: 4px 0;
+            padding-left: 24px;
+            a{
+                text-decoration: none;
+                color: #000000;
+                &:hover {
+                    color: rgba(0, 0, 0, 0.8);
+                }
+                &:nth-child(2) {
+                    font-weight: bold;
+                }
+            }
+    }
+}
+}
+
+// Header va nav primary
+header {
+    height: 100%;
+    max-height: 74px;
+    position: relative;
+    border-bottom: 1px solid black;
+    .header-nav {
+        display: flex;
+        height: 74px;
+        &--item {
+            padding-right: 24px;
+            display: flex;
+            align-self: center;
+            a {
+                color: black;
+                font-size: 1.1rem;
+                font-weight: 500;
+                text-transform: uppercase;
+                text-decoration: none;
+                &:hover {
+                    opacity: 0.8;
+                }
+            }
+        }
+    }
+    .header-logo {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        padding-block: 24px;
+        padding: 0;
+        margin: 0;
+        img {
+            max-height: 74px;
+        }
+    }
+    .header-right {
+        display: flex;
+        height: 74px;
+        justify-content: flex-end;
+        align-items: center;
+        div {
+            padding-left: 40px;
+            font-size: 1.5rem;
+            a{
+                color: black;
+                &:hover {
+                    opacity: 0.8;
+                }
+            }
+        }
+        .header-search {
+            position: relative;
+            padding: 0;
+            input {
+                font-size: 0.9rem;
+                width: 190px;
+                height: 42px;
+                border: 1px solid darkolivegreen;
+                border-radius: 200px;
+                padding: 8px 36px 8px 8px;
+            
+            }
+            &--icon {
+                position: absolute;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                height: 100%;
+                left: 85%;
+                font-size: 18px;
+                opacity: 0.8;
+                text-decoration: none;
+                &:hover {
+                    opacity: 0.7;
+                }
+            }
+        }
+    }
+}

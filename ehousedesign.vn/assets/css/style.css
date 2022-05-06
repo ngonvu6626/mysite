@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  font-size: 1rem;
+}
+
+.ticker {
+  background-color: rgba(128, 128, 128, 0.1);
+}
+
+.tickerRoot {
+  align-items: center;
+}
+.tickerRoot .tickerRoot-noti {
+  font-weight: lighter;
+}
+.tickerRoot .tickerRoot-nav {
+  margin-left: auto;
+}
+.tickerRoot .tickerRoot-nav--item {
+  padding: 4px 0;
+  padding-left: 24px;
+}
+.tickerRoot .tickerRoot-nav--item a {
+  text-decoration: none;
+  color: #000000;
+}
+.tickerRoot .tickerRoot-nav--item a:hover {
+  color: rgba(0, 0, 0, 0.8);
+}
+.tickerRoot .tickerRoot-nav--item a:nth-child(2) {
+  font-weight: bold;
+}
+
+header {
+  height: 100%;
+  max-height: 74px;
+  position: relative;
+  border-bottom: 1px solid black;
+}
+header .header-nav {
+  display: flex;
+  height: 74px;
+}
+header .header-nav--item {
+  padding-right: 24px;
+  display: flex;
+  align-self: center;
+}
+header .header-nav--item a {
+  color: black;
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+header .header-nav--item a:hover {
+  opacity: 0.8;
+}
+header .header-logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  padding-block: 24px;
+  padding: 0;
+  margin: 0;
+}
+header .header-logo img {
+  max-height: 74px;
+}
+header .header-right {
+  display: flex;
+  height: 74px;
+  justify-content: flex-end;
+  align-items: center;
+}
+header .header-right div {
+  padding-left: 40px;
+  font-size: 1.5rem;
+}
+header .header-right div a {
+  color: black;
+}
+header .header-right div a:hover {
+  opacity: 0.8;
+}
+header .header-right .header-search {
+  position: relative;
+  padding: 0;
+}
+header .header-right .header-search input {
+  font-size: 0.9rem;
+  width: 190px;
+  height: 42px;
+  border: 1px solid darkolivegreen;
+  border-radius: 200px;
+  padding: 8px 36px 8px 8px;
+}
+header .header-right .header-search--icon {
+  position: absolute;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  left: 85%;
+  font-size: 18px;
+  opacity: 0.8;
+  text-decoration: none;
+}
+header .header-right .header-search--icon:hover {
+  opacity: 0.7;
+}
+
+/*# sourceMappingURL=style.css.map */
