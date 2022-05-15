@@ -258,7 +258,7 @@ function setPoint(e) {
 }
 
 // Slide Collection
-var TIMEOUT = 1114500;
+var TIMEOUT = 4500;
 
 var interval = setInterval(handleNext, TIMEOUT);
 
