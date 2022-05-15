@@ -8,11 +8,20 @@
     <link rel="stylesheet" href="../assets/css/mylib.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css?family=Rajdhani&display=swap" rel="stylesheet">
+
+    <!-- Script -->
+    <script type="text/javascript" src="./assets/js/jquery.js"></script>
+    <script type="text/javascript" src="./assets/js/lightslider.js"></script>   
+
 </head>
 <body>
+   
     <div class="grid container">
-        <!-- Notif TOP -->
-        <div class="ticker">
+
+        <!-- Header -->
+       <header>
+           <div class="ticker">
             <div class="grid wide row tickerRoot">
                 <div class="tickerRoot-noti">Lorem ipsum dolor sit amet consectetur.</div>
                 <div class="row tickerRoot-nav">
@@ -22,9 +31,7 @@
                 </div>
             </div>
         </div>
-
-        <!-- Header -->
-        <header class="grid wide">
+            <div class="grid wide nav-primary">
         <div class="row no-gutters">
             <div class="col l-7 header-nav">
                 <div class="header-nav--item"><a href="#">Nam</a></div>
@@ -33,7 +40,7 @@
                 <div class="header-nav--item"><a href="#">Gia Đình</a></div>
             </div>
             <div class="header-logo">
-                <a href="#"><img src="/ehousedesign.vn/assets/img/logo.png" alt="header-logo"></a>
+                <a href="#"><img src="./assets/img/logo.png" alt="header-logo"></a>
             </div>
             <div class="header-right col l-5">
                 <div class="header-search">
@@ -51,7 +58,329 @@
                 </div>
             </div>
         </div>
-        </header>
+        </div>
+       </header>
+
+        <section class="grid content">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide notification">
+                          <div id="lx-slider-global"> 
+                            <!-- SLIDE CONTROLS -->
+                            <div id="slider-controls">
+                                <div class="control-container">
+                                <div id="prev"></div>
+                                </div>
+                                <div class="control-container">
+                                <div id="next"></div>
+                                </div>
+                            </div>
+
+                            <!-- SLIDES -->
+                            <div class="slider-notif">
+                                <div class="slide-item">
+                                <img src="./assets/img/notif1.png">
+                                </div>
+                                <div class="slide-item">
+                                <img src="./assets/img/notif2.jpg">
+                                </div>
+                                <div class="slide-item">
+                                <img src="./assets/img/notif3.jpg">
+                                </div>
+                                <div class="slide-item">
+                                <img src="./assets/img/notif4.jpg">
+                                </div>
+                                <div class="slide-item">
+                                <img src="./assets/img/notif5.jpg">
+                                </div>
+
+                            </div>
+                            <!-- SLIDER POINTS -->
+                            <div id="slider-points">
+                                <div class="point active-point"></div>
+                                <div class="point"></div>
+                                <div class="point"></div>
+                                <div class="point"></div>
+                                <div class="point"></div>
+                            </div>
+                            </div>
+                    </div>
+                    <div class="swiper-slide collection">
+                        <!-- Slider Wrapper -->
+                            <div class="css-slider-wrapper">
+                            <input type="radio" name="slider" class="slide-radio1" checked id="slider_1">
+                            <input type="radio" name="slider" class="slide-radio2" id="slider_2">
+                            <input type="radio" name="slider" class="slide-radio3" id="slider_3">
+                            <input type="radio" name="slider" class="slide-radio4" id="slider_4">
+                            
+                            <!-- Slider Pagination -->
+                            <div class="slider-pagination">
+                                <label for="slider_1" class="page1"></label>
+                                <label for="slider_2" class="page2"></label>
+                                <label for="slider_3" class="page3"></label>
+                                <label for="slider_4" class="page4"></label>
+                            </div>
+                            
+                            <!-- Slider #1 -->
+                            <div class="slider slide-1">
+                                <img src="https://images.unsplash.com/photo-1505414059837-923cdbb755b3?auto=format&fit=crop&w=3455&q=80" alt="">
+                                <div class="slider-content">
+                                    <h4>New Product</h4>
+                                    <h2></h2>
+                                    <button type="button" class="buy-now-btn" name="button">$</button>
+                                </div>
+                                <div class="number-pagination">
+                                <span>1</span>
+                                </div>
+                            </div>
+                            
+                            <!-- Slider #2 -->
+                            <div class="slider slide-2">
+                                <img src="https://images.unsplash.com/photo-1513036191774-b2badb8fcb76?auto=format&fit=crop&w=1234&q=80" alt="">
+                                <div class="slider-content">
+                                <h4>New Product</h4>
+                                <h2></h2>
+                                <button type="button" class="buy-now-btn" name="button">$</button>
+                                </div>
+                                <div class="number-pagination">
+                                <span>2</span>
+                                </div>
+                            </div>
+                            
+                            <!-- Slider #3 -->
+                            <div class="slider slide-3">
+                                <img src="https://images.unsplash.com/photo-1515871401659-95f03af5fb36?auto=format&fit=crop&w=1234&q=80" alt="">
+                                <div class="slider-content">
+                                <h4>New Product</h4>
+                                <h2></h2>
+                                <button type="button" class="buy-now-btn" name="button">$</button>
+                                </div>
+                                <div class="number-pagination">
+                                <span>3</span>
+                                </div>
+                            </div>
+                            
+                            <!-- Slider #4 -->
+                            <div class="slider slide-4">
+                                <img src="https://images.unsplash.com/photo-1479849404453-3227f73e4bb0?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;s=4366d7f773cedaee51c405816b199593" alt="">
+                                <div class="slider-content">
+                                <h4>New Product</h4>
+                                <h2></h2>
+                                <button type="button" class="buy-now-btn" name="button">$</button>
+                                </div>
+                                <div class="number-pagination">
+                                <span>4</span>
+                                </div>
+                            </div>
+                            </div>
+                    </div>
+                    <div class="swiper-slide product">
+                        <div class="product-slide">
+                            <ul class="product-nav">
+                                <li><a href="#">Mới</a></li>
+                                <li><a href="#">Bán chạy</a></li>
+                                <li><a href="#">Giảm giá</a></li>
+                            </ul>
+                        </div>
+                        <div class="product-item">
+                        <ul id="autoWidth" class="cs-hidden">
+                            <li class="item-a">
+                                <div class="box">
+                                <div class="slide-img">
+                                    <img src="./assets/img/1lacoste.png" alt="" />
+                                    <div class="overlay">
+                                    <a href="#" class="buy-btn">MUA NGAY</a>
+                                    </div>
+                                </div>
+                                <div class="detail-box">
+                                    <div class="type">
+                                    <a href="#">Lacoste</a>
+                                    <span>Sweatshirt</span>
+                                    </div>
+                                    <a href="#" class="price">868K</a>
+                                </div>
+                                </div>
+                            </li>
+                            <li class="item-b">
+                                <div class="box">
+                                <div class="slide-img">
+                                    <img src="./assets/img/2mango.png" alt="" />
+                                    <div class="overlay">
+                                    <a href="#" class="buy-btn">MUA NGAY</a>
+                                    </div>
+                                </div>
+                                <div class="detail-box">
+                                    <div class="type">
+                                    <a href="#">Mango</a>
+                                    <span>Casual Shirt</span>
+                                    </div>
+                                    <a href="#" class="price">449K</a>
+                                </div>
+                                </div>
+                            </li>
+                            <li class="item-c">
+                                <div class="box">
+                                <div class="slide-img">
+                                    <img src="./assets/img/3nike.png" alt="" />
+                                    <div class="overlay">
+                                    <a href="#" class="buy-btn">MUA NGAY</a>
+                                    </div>
+                                </div>
+                                <div class="detail-box">
+                                    <div class="type">
+                                    <a href="#">Nike Tshirt</a>
+                                    <span>V-Neck T-shirt</span>
+                                    </div>
+                                    <a href="#" class="price">305K</a>
+                                </div>
+                                </div>
+                            </li>
+                            <li class="item-d">
+                                <div class="box">
+                                <div class="slide-img">
+                                    <img src="./assets/img/4allen soly.png" alt="" />
+                                    <div class="overlay">
+                                    <a href="#" class="buy-btn">MUA NGAY</a>
+                                    </div>
+                                </div>
+                                <div class="detail-box">
+                                    <div class="type">
+                                    <a href="#">Allen Solly Woman</a>
+                                    <span>Formal Shirt</span>
+                                    </div>
+                                    <a href="#" class="price">129K</a>
+                                </div>
+                                </div>
+                            </li>
+                            <li class="item-e">
+                                <div class="box">
+                                <div class="slide-img">
+                                    <img src="./assets/img/5puma.png" alt="" />
+                                    <div class="overlay">
+                                    <a href="#" class="buy-btn">MUA NGAY</a>
+                                    </div>
+                                </div>
+                                <div class="detail-box">
+                                    <div class="type">
+                                    <a href="#">Puma</a>
+                                    <span>V-Neck T-shirt</span>
+                                    </div>
+                                    <a href="#" class="price">329K</a>
+                                </div>
+                                </div>
+                            </li>
+                            <li class="item-f">
+                                <div class="box">
+                                <div class="slide-img">
+                                    <img src="./assets/img/6Ritu Kumar.png" alt="" />
+                                    <div class="overlay">
+                                    <a href="#" class="buy-btn">MUA NGAY</a>
+                                    </div>
+                                </div>
+                                <div class="detail-box">
+                                    <div class="type">
+                                    <a href="#">Ritu Kumar</a>
+                                    <span>Embroidered Tunic</span>
+                                    </div>
+                                    <a href="#" class="price">560K</a>
+                                </div>
+                                </div>
+                            </li>
+                            <li class="item-g">
+                                <div class="box">
+                                <div class="slide-img">
+                                    <img src="./assets/img/7under armour.png" alt="" />
+                                    <div class="overlay">
+                                    <a href="#" class="buy-btn">MUA NGAY</a>
+                                    </div>
+                                </div>
+                                <div class="detail-box">
+                                    <div class="type">
+                                    <a href="#">UNDER ARMOUR</a>
+                                    <span>Golf T-shirt</span>
+                                    </div>
+                                    <a href="#" class="price">449K</a>
+                                </div>
+                                </div>
+                            </li>
+                            <li class="item-h">
+                                <div class="box">
+                                <div class="slide-img">
+                                    <img src="./assets/img/8dorothy perkins.png" alt="" />
+                                    <div class="overlay">
+                                    <a href="#" class="buy-btn">MUA NGAY</a>
+                                    </div>
+                                </div>
+                                <div class="detail-box">
+                                    <div class="type">
+                                    <a href="#">DOROTHY PERKINS</a>
+                                    <span>Solid Cape Top</span>
+                                    </div>
+                                    <a href="#" class="price">399K</a>
+                                </div>
+                                </div>
+                            </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="swiper-slide footer">
+                        <div class="grid wide">
+                            <div class="row footer-list">
+                                <div class="col c-3 footer-list--item">
+                                    <h2>Về E House Design</h2>
+                                    <ul>
+                                        <li>
+                                            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto adipisci ex tempore nesciunt, vel unde odio eius inventore illum blanditiis necessitatibus dolor autem, corrupti aut, tenetur saepe mollitia incidunt accusantium.</span>
+                                        </li>
+                                        <li>
+                                            <a href="#"><span>Thông tin</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><span>danh sách cửa hàng</span></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col c-2 footer-list--item">
+                                    <h2>Trợ giúp</h2>
+                                    <ul>
+                                        <li>
+                                            <a href="#"><span>FAQ</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><span>Chính sách trả hàng</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><span>Chính sách bảo mật</span></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col c-2 footer-list--item">
+                                    <h2>Kênh mạng xã hội</h2>
+                                    <ul class="footer-list--social">
+                                        <li><a href="#"><i class="fa-brands fa-facebook-messenger"></i></a></li>
+                                        <li><a href="#"><i class="fa-brands fa-instagram-square"></i></a></li>
+                                        <li><a href="#"><i class="fa-brands fa-tiktok"></i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="col c-5 footer-list--item">
+                                    <h2>GOOGLE MAP</h2>
+                                    
+                                        <iframe src="https://www.google.com/maps/embed?pb=!1m24!1m12!1m3!1d7837.7871124393105!2d106.7034247243151!3d10.819457319169311!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m9!3e6!4m3!3m2!1d10.821194!2d106.7116703!4m3!3m2!1d10.8173516!2d106.7042828!5e0!3m2!1svi!2s!4v1652198853544!5m2!1svi!2s"  height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                </div>
+                            </div>
+                            <div class="row footer-coppyright">
+                                Bản quyền thuộc về Mua dzui cùng Sữa | Cung cấp bởi 6626
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+     
+
     </div>
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js"></script>
+    <script src="./assets/js/index.js"></script>
 </body>
 </html>
