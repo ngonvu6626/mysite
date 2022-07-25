@@ -1,0 +1,60 @@
+html {
+  overflow: auto;
+}
+.breadcrumb-shop {
+  background-color: rgba(245, 245, 245, 0.5);
+  padding-block: 12px;
+
+  .space {
+    padding-inline: 12px;
+  }
+  span {
+    font-weight: lighter;
+    word-spacing: 2px;
+  transition: 0.1s;
+
+    &:hover {
+      display: inline-block;
+      transform: scale(1.05);
+      cursor: pointer;
+    }
+    &:last-child {
+      font-weight: bold;
+    }
+  }
+}
+.business {
+  background-color: #fff;
+  h2 {
+  padding-block: 24px; 
+}
+  .filter {
+    display: flex;
+    height: 100%;
+    flex-direction: row-reverse;
+    align-items: center;
+    span {
+      display: flex;
+      align-items: center;
+      padding-inline: 12px;
+      font-size: 0.8em;
+      font-weight: bold;
+      line-height: 2;
+      cursor: pointer;
+      i, img {
+        padding-right: 6px;
+        transform: translateY(-20%);
+        &:first-child{
+          transform: unset;
+        }
+      }
+     img {
+        display: inline-block;
+      }
+      &:last-child {
+        font-weight: unset;
+        cursor: unset;
+      }
+    }
+  }
+}
