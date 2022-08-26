@@ -1,0 +1,263 @@
+#container {
+  height: 600px;
+  width: 1200px;
+}
+#container #view {
+  display: none;
+  height: 100%;
+  width: 100%;
+}
+#container #more {
+  height: 100%;
+  width: 100%;
+}
+
+header {
+  max-width: 100%;
+  height: 96px;
+  position: relative;
+  border-bottom: 3px solid var(--primary);
+}
+header .top {
+  height: 100%;
+  width: 100%;
+}
+header .top nav {
+  display: flex;
+  justify-content: space-between;
+}
+header .top-menu__primary {
+  display: flex;
+  gap: 16px;
+  padding-left: 48px;
+}
+header .top-menu__primary li {
+  line-height: 96px;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  color: var(--white);
+}
+header .top-menu__primary li .top-menu__item:hover {
+  transform: scale(1.1);
+  position: relative;
+}
+header .top-menu__primary li .top-menu__item:hover::before {
+  content: "";
+  position: absolute;
+  bottom: 30px;
+  width: 90%;
+  height: 2px;
+  background-color: var(--primary);
+  transform: translateX(5%);
+}
+header .top-menu__primary li p.active {
+  position: relative;
+}
+header .top-menu__primary li p.active:hover {
+  transform: none;
+}
+header .top-menu__primary li p.active::after {
+  content: "";
+  position: absolute;
+  bottom: 30px;
+  left: 0;
+  width: 90%;
+  height: 3px;
+  background-color: var(--primary);
+  transform: translateX(5%);
+}
+header .top .btn--close {
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  transform: translateY(-50%);
+}
+header .logo {
+  position: absolute;
+  top: 4px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+header .logo img {
+  display: inline-block;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  height: auto;
+  width: 200px;
+}
+header .logo .lineRight {
+  position: absolute;
+  top: 50%;
+  right: -10px;
+  transform: translateY(-50%);
+  width: 2.5px;
+  height: 58px;
+  background-color: var(--primary);
+  animation: lineHeight 0.8s linear;
+}
+@keyframes lineHeight {
+  from {
+    height: 0;
+  }
+  to {
+    height: 58px;
+  }
+}
+header .logo p {
+  position: absolute;
+  top: 50%;
+  left: 225px;
+  transform: translateY(-50%);
+  width: 249px;
+  font-size: 2.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--white);
+  text-align: center;
+  text-shadow: var(--textShadow1);
+  line-height: 32px;
+  letter-spacing: 2px;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 1.5s steps(100);
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+header .logo p:hover {
+  color: var(--primary);
+  text-shadow: var(--textShadow3);
+}
+
+section {
+  height: 100%;
+  width: 100%;
+}
+section .wrapper {
+  height: 100%;
+}
+section .wrapper .allItems,
+section .wrapper .cardVIP,
+section .wrapper .cardUtility,
+section .wrapper .cardTruck,
+section .wrapper .cardMoto {
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  row-gap: 15px;
+  column-gap: 15px;
+  height: calc(100% - 108px);
+  max-width: 100%;
+  margin: 0 12px;
+  padding: 4px 0;
+  border-radius: 0 0 10px 10px;
+}
+section .wrapper .allItems .card,
+section .wrapper .cardVIP .card,
+section .wrapper .cardUtility .card,
+section .wrapper .cardTruck .card,
+section .wrapper .cardMoto .card {
+  height: 250px;
+  width: 100%;
+  background: var(--gradient1);
+  position: relative;
+}
+section .wrapper .allItems .card h2,
+section .wrapper .cardVIP .card h2,
+section .wrapper .cardUtility .card h2,
+section .wrapper .cardTruck .card h2,
+section .wrapper .cardMoto .card h2 {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  width: 100%;
+  transform: translateX(-50%);
+  text-align: center;
+  font-size: 2.4rem;
+  color: var(--white);
+  text-shadow: var(--textShadow1);
+  letter-spacing: 2px;
+  opacity: 0.9;
+  transition: 0.4s;
+}
+section .wrapper .allItems .card img,
+section .wrapper .cardVIP .card img,
+section .wrapper .cardUtility .card img,
+section .wrapper .cardTruck .card img,
+section .wrapper .cardMoto .card img {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  width: 250px;
+  transform: translateX(-50%);
+  transition: 0.4s;
+}
+section .wrapper .allItems .card button,
+section .wrapper .cardVIP .card button,
+section .wrapper .cardUtility .card button,
+section .wrapper .cardTruck .card button,
+section .wrapper .cardMoto .card button {
+  display: none;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  width: 80px;
+  height: 40px;
+  font-size: 1.1rem;
+  z-index: 1;
+}
+section .wrapper .allItems .card button:hover,
+section .wrapper .cardVIP .card button:hover,
+section .wrapper .cardUtility .card button:hover,
+section .wrapper .cardTruck .card button:hover,
+section .wrapper .cardMoto .card button:hover {
+  background-color: var(--black);
+  color: var(--white);
+}
+section .wrapper .allItems .card:hover img,
+section .wrapper .cardVIP .card:hover img,
+section .wrapper .cardUtility .card:hover img,
+section .wrapper .cardTruck .card:hover img,
+section .wrapper .cardMoto .card:hover img {
+  left: 55%;
+  width: 320px;
+}
+section .wrapper .allItems .card:hover h2,
+section .wrapper .cardVIP .card:hover h2,
+section .wrapper .cardUtility .card:hover h2,
+section .wrapper .cardTruck .card:hover h2,
+section .wrapper .cardMoto .card:hover h2 {
+  padding-left: 12px;
+  text-align: left;
+  text-shadow: var(--textShadow2);
+  transform: translate(-180px, -190px);
+  opacity: 1;
+}
+section .wrapper .allItems .card:hover button,
+section .wrapper .cardVIP .card:hover button,
+section .wrapper .cardUtility .card:hover button,
+section .wrapper .cardTruck .card:hover button,
+section .wrapper .cardMoto .card:hover button {
+  display: block;
+  cursor: pointer;
+  transition: 0.5s;
+}
+section .wrapper .allItems .card:hover button:active,
+section .wrapper .cardVIP .card:hover button:active,
+section .wrapper .cardUtility .card:hover button:active,
+section .wrapper .cardTruck .card:hover button:active,
+section .wrapper .cardMoto .card:hover button:active {
+  transform: scale(0.8);
+  opacity: 0;
+}
+
+.js-paneItem {
+  display: none;
+}
+
+/*# sourceMappingURL=main.css.map */

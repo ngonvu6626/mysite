@@ -1,0 +1,1934 @@
+#top {
+  position: absolute;
+  width: 100%;
+}
+#top .top-search {
+  position: relative;
+  top: 64px;
+  left: 171px;
+  width: 625px;
+  opacity: 0.75;
+}
+#top .top-search span {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  font-size: 1.7rem;
+}
+#top .top-search input.box {
+  height: 48px;
+  width: 100%;
+  border-radius: 32px;
+  padding-left: 32px;
+  padding-right: 16px;
+  font-size: 1.4rem;
+  outline: none;
+  border: none;
+}
+#top .top-heading {
+  height: 120px;
+  width: 54px;
+  background-color: var(--primary);
+  position: absolute;
+  top: -18px;
+  right: 25%;
+}
+#top .top-heading span {
+  display: block;
+  position: absolute;
+  top: 35%;
+  left: -22px;
+  width: 100px;
+  transform: rotate(270deg);
+  color: var(--white);
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+}
+#top .top-heading span::before {
+  content: "";
+  position: absolute;
+  top: -22.5px;
+  left: -48.5px;
+  border-top: 26.5px solid var(--primary);
+  border-left: 26.5px solid transparent;
+}
+#top .top-heading span::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  right: 122.5px;
+  border-right: 26.5px solid var(--primary);
+  border-top: 26.5px solid transparent;
+}
+#top .top-heading::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -21px;
+  border-right: 21px solid transparent;
+  border-bottom: 18px solid #d83d2c;
+}
+#top .top-user {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 58px;
+  right: 20px;
+  height: 115px;
+  width: 260px;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  color: var(--white);
+  text-shadow: var(--textShadow2);
+}
+#top .top-user #userAvt {
+  height: 100px;
+  width: 100px;
+}
+#top .top-user div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  padding: 4px;
+}
+#top .top-user div #userName {
+  text-transform: uppercase;
+  line-height: 2;
+  font-size: 2rem;
+  letter-spacing: 1.5px;
+  font-weight: bold;
+}
+#top .top-user div #userName:hover {
+  color: var(--primary);
+}
+#top .top-user div p {
+  line-height: 1.75;
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+#top .top-user div p #userStatus-none,
+#top .top-user div p #userStatus-vip,
+#top .top-user div p #userCredit,
+#top .top-user div p #userMoney {
+  font-size: 1.4rem;
+  font-weight: lighter;
+  text-transform: none;
+  opacity: 0.9;
+}
+#top .top-user div p #userStatus-none:hover,
+#top .top-user div p #userStatus-vip:hover,
+#top .top-user div p #userCredit:hover,
+#top .top-user div p #userMoney:hover {
+  color: var(--primary);
+}
+#top .top-user div p ion-icon {
+  font-size: 2rem;
+  transform: translateY(20%);
+  padding-left: 4px;
+  color: var(--primary);
+  opacity: 1;
+}
+#top .top-user div p ion-icon:hover {
+  opacity: 0.9;
+}
+#top .top-user div p #userStatus-none {
+  color: #90ee90;
+}
+#top .top-user div p #userStatus-vip {
+  color: #ffd700;
+}
+#top .top-user div #userStatus {
+  display: none;
+  position: absolute;
+  top: 110%;
+  right: 26px;
+  width: 250px;
+  height: auto;
+  background-color: rgba(255, 99, 71, 0.95);
+  padding: 4px;
+  border-radius: 5px;
+  animation: moveInTop 0.2s linear;
+  z-index: 1;
+}
+#top .top-user div #userStatus:hover {
+  display: block;
+}
+#top .top-user div #userStatus h2 {
+  margin: 8px 20px;
+  padding: 8px;
+  text-align: center;
+  line-height: 1.5;
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+  color: rgba(255, 217, 0, 0.85);
+  border-bottom: 1px solid black;
+}
+#top .top-user div #userStatus p {
+  color: var(--black);
+  text-transform: none;
+  padding: 8px;
+  text-align: justify;
+  font-size: 1.4rem;
+  font-weight: normal;
+  opacity: 0.9;
+  text-shadow: none;
+  letter-spacing: 1.5px;
+}
+#top .top-user div .showUserstatus {
+  position: relative;
+}
+#top .top-user div .showUserstatus::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 140px;
+  height: 50px;
+  background-color: transparent;
+  z-index: 10;
+}
+#top .top-user div .showUserstatus:hover > #userStatus-none {
+  color: var(--primary);
+}
+#top .top-user div .showUserstatus:hover + #userStatus {
+  display: block;
+}
+
+.navLeft {
+  position: relative;
+  top: 10%;
+  left: -5%;
+  height: 100%;
+  width: 200px;
+  border-radius: 50px;
+  background-color: var(--black);
+}
+.navLeft__logo {
+  width: 100%;
+  height: auto;
+}
+.navLeft__logo--img {
+  width: 150px;
+  margin: 0 auto;
+  padding: 32px 0;
+}
+.navLeft__menu {
+  width: 100%;
+}
+.navLeft__list {
+  height: 100%;
+  width: 100%;
+  margin-top: 32px;
+}
+.navLeft__item {
+  position: relative;
+  width: 100%;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+  line-height: 3;
+  margin-bottom: 12px;
+  padding-left: 26px;
+}
+.navLeft__item:hover {
+  animation: hoverItem 0.5s linear;
+  transform: scale(1.2);
+  cursor: pointer;
+}
+.navLeft__item:hover span {
+  color: var(--white);
+}
+.navLeft__item .icon,
+.navLeft__item .text {
+  color: var(--white);
+  font-size: 1.4rem;
+  text-transform: uppercase;
+}
+.navLeft__item .icon::selection,
+.navLeft__item .text::selection {
+  background-color: transparent;
+}
+.navLeft__item .icon {
+  padding-right: 20px;
+}
+.navLeft__item--active {
+  background-color: var(--primary);
+  transform: scale(1.2);
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+  cursor: pointer;
+  animation: none !important;
+}
+.navLeft__item--active::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  border-right: 16.5px solid var(--primary);
+  border-bottom: 16.5px solid transparent;
+  animation: none !important;
+}
+.navLeft__item--active::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  right: 0;
+  border-left: 16.5px solid var(--primary);
+  border-bottom: 16.5px solid transparent;
+  animation: none !important;
+}
+
+#general,
+#vip,
+#help,
+#faq {
+  position: absolute;
+  top: 30%;
+  left: 13.5%;
+  right: 0;
+  bottom: 10px;
+  display: none;
+  flex-direction: row;
+  width: 86%;
+}
+#general .generalLeft,
+#vip .generalLeft,
+#help .generalLeft,
+#faq .generalLeft {
+  flex: 7;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.05);
+  margin: 0 8px;
+  border-radius: 20px;
+}
+#general .generalLeft__top,
+#vip .generalLeft__top,
+#help .generalLeft__top,
+#faq .generalLeft__top {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  column-gap: 10px;
+}
+#general .generalLeft__top #online,
+#general .generalLeft__top #job,
+#general .generalLeft__top #car,
+#general .generalLeft__top #level,
+#vip .generalLeft__top #online,
+#vip .generalLeft__top #job,
+#vip .generalLeft__top #car,
+#vip .generalLeft__top #level,
+#help .generalLeft__top #online,
+#help .generalLeft__top #job,
+#help .generalLeft__top #car,
+#help .generalLeft__top #level,
+#faq .generalLeft__top #online,
+#faq .generalLeft__top #job,
+#faq .generalLeft__top #car,
+#faq .generalLeft__top #level {
+  height: 100px;
+  width: 100%;
+  text-align: center;
+}
+#general .generalLeft__top #online:first-child,
+#general .generalLeft__top #job:first-child,
+#general .generalLeft__top #car:first-child,
+#general .generalLeft__top #level:first-child,
+#vip .generalLeft__top #online:first-child,
+#vip .generalLeft__top #job:first-child,
+#vip .generalLeft__top #car:first-child,
+#vip .generalLeft__top #level:first-child,
+#help .generalLeft__top #online:first-child,
+#help .generalLeft__top #job:first-child,
+#help .generalLeft__top #car:first-child,
+#help .generalLeft__top #level:first-child,
+#faq .generalLeft__top #online:first-child,
+#faq .generalLeft__top #job:first-child,
+#faq .generalLeft__top #car:first-child,
+#faq .generalLeft__top #level:first-child {
+  border-top-left-radius: 20px;
+}
+#general .generalLeft__top #online:last-child,
+#general .generalLeft__top #job:last-child,
+#general .generalLeft__top #car:last-child,
+#general .generalLeft__top #level:last-child,
+#vip .generalLeft__top #online:last-child,
+#vip .generalLeft__top #job:last-child,
+#vip .generalLeft__top #car:last-child,
+#vip .generalLeft__top #level:last-child,
+#help .generalLeft__top #online:last-child,
+#help .generalLeft__top #job:last-child,
+#help .generalLeft__top #car:last-child,
+#help .generalLeft__top #level:last-child,
+#faq .generalLeft__top #online:last-child,
+#faq .generalLeft__top #job:last-child,
+#faq .generalLeft__top #car:last-child,
+#faq .generalLeft__top #level:last-child {
+  border-top-right-radius: 20px;
+}
+#general .generalLeft__top #online:hover,
+#general .generalLeft__top #job:hover,
+#general .generalLeft__top #car:hover,
+#general .generalLeft__top #level:hover,
+#vip .generalLeft__top #online:hover,
+#vip .generalLeft__top #job:hover,
+#vip .generalLeft__top #car:hover,
+#vip .generalLeft__top #level:hover,
+#help .generalLeft__top #online:hover,
+#help .generalLeft__top #job:hover,
+#help .generalLeft__top #car:hover,
+#help .generalLeft__top #level:hover,
+#faq .generalLeft__top #online:hover,
+#faq .generalLeft__top #job:hover,
+#faq .generalLeft__top #car:hover,
+#faq .generalLeft__top #level:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  animation: hoverItem 0.2s linear;
+}
+#general .generalLeft__top #online h2,
+#general .generalLeft__top #job h2,
+#general .generalLeft__top #car h2,
+#general .generalLeft__top #level h2,
+#vip .generalLeft__top #online h2,
+#vip .generalLeft__top #job h2,
+#vip .generalLeft__top #car h2,
+#vip .generalLeft__top #level h2,
+#help .generalLeft__top #online h2,
+#help .generalLeft__top #job h2,
+#help .generalLeft__top #car h2,
+#help .generalLeft__top #level h2,
+#faq .generalLeft__top #online h2,
+#faq .generalLeft__top #job h2,
+#faq .generalLeft__top #car h2,
+#faq .generalLeft__top #level h2 {
+  text-transform: uppercase;
+  line-height: 3;
+  font-size: 1.6rem;
+  color: var(--white);
+  text-shadow: var(--textShadow1);
+}
+#general .generalLeft__top #online h2 ion-icon,
+#general .generalLeft__top #job h2 ion-icon,
+#general .generalLeft__top #car h2 ion-icon,
+#general .generalLeft__top #level h2 ion-icon,
+#vip .generalLeft__top #online h2 ion-icon,
+#vip .generalLeft__top #job h2 ion-icon,
+#vip .generalLeft__top #car h2 ion-icon,
+#vip .generalLeft__top #level h2 ion-icon,
+#help .generalLeft__top #online h2 ion-icon,
+#help .generalLeft__top #job h2 ion-icon,
+#help .generalLeft__top #car h2 ion-icon,
+#help .generalLeft__top #level h2 ion-icon,
+#faq .generalLeft__top #online h2 ion-icon,
+#faq .generalLeft__top #job h2 ion-icon,
+#faq .generalLeft__top #car h2 ion-icon,
+#faq .generalLeft__top #level h2 ion-icon {
+  font-size: 2.6rem;
+  padding-right: 4px;
+  transform: translateY(10%);
+}
+#general .generalLeft__top #online p,
+#general .generalLeft__top #job p,
+#general .generalLeft__top #car p,
+#general .generalLeft__top #level p,
+#vip .generalLeft__top #online p,
+#vip .generalLeft__top #job p,
+#vip .generalLeft__top #car p,
+#vip .generalLeft__top #level p,
+#help .generalLeft__top #online p,
+#help .generalLeft__top #job p,
+#help .generalLeft__top #car p,
+#help .generalLeft__top #level p,
+#faq .generalLeft__top #online p,
+#faq .generalLeft__top #job p,
+#faq .generalLeft__top #car p,
+#faq .generalLeft__top #level p {
+  text-transform: uppercase;
+  line-height: 1.5;
+  font-weight: bold;
+  font-size: 3rem;
+  color: var(--primary);
+}
+#general .generalLeft__top #online p:hover,
+#general .generalLeft__top #job p:hover,
+#general .generalLeft__top #car p:hover,
+#general .generalLeft__top #level p:hover,
+#vip .generalLeft__top #online p:hover,
+#vip .generalLeft__top #job p:hover,
+#vip .generalLeft__top #car p:hover,
+#vip .generalLeft__top #level p:hover,
+#help .generalLeft__top #online p:hover,
+#help .generalLeft__top #job p:hover,
+#help .generalLeft__top #car p:hover,
+#help .generalLeft__top #level p:hover,
+#faq .generalLeft__top #online p:hover,
+#faq .generalLeft__top #job p:hover,
+#faq .generalLeft__top #car p:hover,
+#faq .generalLeft__top #level p:hover {
+  color: var(--primary);
+  opacity: 0.8;
+}
+#general .generalLeft__body,
+#vip .generalLeft__body,
+#help .generalLeft__body,
+#faq .generalLeft__body {
+  max-width: 100%;
+  height: 100%;
+  margin: 32px;
+}
+#general .generalLeft__body h2,
+#vip .generalLeft__body h2,
+#help .generalLeft__body h2,
+#faq .generalLeft__body h2 {
+  text-transform: uppercase;
+  line-height: 2;
+  font-size: 2.4rem;
+  color: var(--white);
+  text-shadow: var(--textShadow1);
+  border-bottom: 1px solid var(--white);
+}
+#general .generalLeft__body ul,
+#vip .generalLeft__body ul,
+#help .generalLeft__body ul,
+#faq .generalLeft__body ul {
+  width: 100%;
+  height: 55%;
+  padding: 8px 0;
+}
+#general .generalLeft__body ul li:first-child p,
+#vip .generalLeft__body ul li:first-child p,
+#help .generalLeft__body ul li:first-child p,
+#faq .generalLeft__body ul li:first-child p {
+  position: relative;
+}
+#general .generalLeft__body ul li:first-child p::after,
+#vip .generalLeft__body ul li:first-child p::after,
+#help .generalLeft__body ul li:first-child p::after,
+#faq .generalLeft__body ul li:first-child p::after {
+  content: "[ NEW ]";
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  transform: translateY(-50%);
+  color: var(--primary);
+  font-weight: normal;
+  opacity: 1;
+}
+#general .generalLeft__body ul li p,
+#vip .generalLeft__body ul li p,
+#help .generalLeft__body ul li p,
+#faq .generalLeft__body ul li p {
+  padding: 8px;
+  padding-right: 64px;
+  line-height: 2;
+  font-size: 1.7rem;
+  font-weight: lighter;
+  color: var(--white);
+  opacity: 0.9;
+}
+#general .generalLeft__body ul li p:hover,
+#vip .generalLeft__body ul li p:hover,
+#help .generalLeft__body ul li p:hover,
+#faq .generalLeft__body ul li p:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  animation: hoverItem 0.2s linear;
+  color: var(--primary);
+  font-weight: normal;
+  border-radius: 2px;
+  opacity: 1;
+}
+#general .generalLeft__body ul li p ion-icon,
+#vip .generalLeft__body ul li p ion-icon,
+#help .generalLeft__body ul li p ion-icon,
+#faq .generalLeft__body ul li p ion-icon {
+  padding-right: 4px;
+}
+#general .generalRight,
+#vip .generalRight,
+#help .generalRight,
+#faq .generalRight {
+  position: relative;
+  flex: 3;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  padding: 8px 16px;
+}
+#general .generalRight .top-heading__title,
+#vip .generalRight .top-heading__title,
+#help .generalRight .top-heading__title,
+#faq .generalRight .top-heading__title {
+  line-height: 1.5;
+  font-size: 1.8rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: var(--white);
+  text-shadow: var(--textShadow1);
+  border-bottom: 1px solid var(--white);
+}
+#general .generalRight .top-heading__title span,
+#vip .generalRight .top-heading__title span,
+#help .generalRight .top-heading__title span,
+#faq .generalRight .top-heading__title span {
+  padding: 0 8px;
+  font-size: 3rem;
+}
+#general .generalRight__top,
+#vip .generalRight__top,
+#help .generalRight__top,
+#faq .generalRight__top {
+  position: absolute;
+  top: 17%;
+  left: 16px;
+  right: 16px;
+}
+#general .generalRight__top ul,
+#vip .generalRight__top ul,
+#help .generalRight__top ul,
+#faq .generalRight__top ul {
+  max-width: 100%;
+  height: 26px;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+}
+#general .generalRight__top ul li,
+#vip .generalRight__top ul li,
+#help .generalRight__top ul li,
+#faq .generalRight__top ul li {
+  height: 100%;
+  width: 100%;
+}
+#general .generalRight__top ul li .top-heading,
+#vip .generalRight__top ul li .top-heading,
+#help .generalRight__top ul li .top-heading,
+#faq .generalRight__top ul li .top-heading {
+  display: block;
+  height: 100%;
+  width: 100%;
+  line-height: 2;
+  margin-top: 2px;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: var(--white);
+  cursor: pointer;
+}
+#general .generalRight__top ul li .top-heading:hover,
+#vip .generalRight__top ul li .top-heading:hover,
+#help .generalRight__top ul li .top-heading:hover,
+#faq .generalRight__top ul li .top-heading:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  animation: hoverItem 0.2s linear;
+}
+#general .generalRight__top ul li .top-heading--active,
+#vip .generalRight__top ul li .top-heading--active,
+#help .generalRight__top ul li .top-heading--active,
+#faq .generalRight__top ul li .top-heading--active {
+  position: relative;
+}
+#general .generalRight__top ul li .top-heading--active:hover,
+#vip .generalRight__top ul li .top-heading--active:hover,
+#help .generalRight__top ul li .top-heading--active:hover,
+#faq .generalRight__top ul li .top-heading--active:hover {
+  background-color: transparent;
+  animation: none;
+}
+#general .generalRight__top ul li .top-heading--active::before,
+#vip .generalRight__top ul li .top-heading--active::before,
+#help .generalRight__top ul li .top-heading--active::before,
+#faq .generalRight__top ul li .top-heading--active::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 4px;
+  width: 60%;
+  background-color: var(--primary);
+  animation: activeItem 0.2s ease-in;
+  opacity: 0.9;
+}
+#general .generalRight__body,
+#vip .generalRight__body,
+#help .generalRight__body,
+#faq .generalRight__body {
+  position: absolute;
+  top: 21%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0 16px;
+}
+#general .generalRight__body #credit,
+#general .generalRight__body #money,
+#general .generalRight__body #level,
+#vip .generalRight__body #credit,
+#vip .generalRight__body #money,
+#vip .generalRight__body #level,
+#help .generalRight__body #credit,
+#help .generalRight__body #money,
+#help .generalRight__body #level,
+#faq .generalRight__body #credit,
+#faq .generalRight__body #money,
+#faq .generalRight__body #level {
+  display: none;
+  margin: 16px 0;
+  height: 100%;
+  width: 100%;
+}
+#general .generalRight__body #credit ul,
+#general .generalRight__body #money ul,
+#general .generalRight__body #level ul,
+#vip .generalRight__body #credit ul,
+#vip .generalRight__body #money ul,
+#vip .generalRight__body #level ul,
+#help .generalRight__body #credit ul,
+#help .generalRight__body #money ul,
+#help .generalRight__body #level ul,
+#faq .generalRight__body #credit ul,
+#faq .generalRight__body #money ul,
+#faq .generalRight__body #level ul {
+  height: 94%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#general .generalRight__body #credit ul #top-1,
+#general .generalRight__body #credit ul #top-2,
+#general .generalRight__body #credit ul #top-3,
+#general .generalRight__body #credit ul #top-4,
+#general .generalRight__body #credit ul #top-5,
+#general .generalRight__body #credit ul #top-6,
+#general .generalRight__body #credit ul #top-7,
+#general .generalRight__body #credit ul #top-8,
+#general .generalRight__body #credit ul #top-9,
+#general .generalRight__body #credit ul #top-10,
+#general .generalRight__body #money ul #top-1,
+#general .generalRight__body #money ul #top-2,
+#general .generalRight__body #money ul #top-3,
+#general .generalRight__body #money ul #top-4,
+#general .generalRight__body #money ul #top-5,
+#general .generalRight__body #money ul #top-6,
+#general .generalRight__body #money ul #top-7,
+#general .generalRight__body #money ul #top-8,
+#general .generalRight__body #money ul #top-9,
+#general .generalRight__body #money ul #top-10,
+#general .generalRight__body #level ul #top-1,
+#general .generalRight__body #level ul #top-2,
+#general .generalRight__body #level ul #top-3,
+#general .generalRight__body #level ul #top-4,
+#general .generalRight__body #level ul #top-5,
+#general .generalRight__body #level ul #top-6,
+#general .generalRight__body #level ul #top-7,
+#general .generalRight__body #level ul #top-8,
+#general .generalRight__body #level ul #top-9,
+#general .generalRight__body #level ul #top-10,
+#vip .generalRight__body #credit ul #top-1,
+#vip .generalRight__body #credit ul #top-2,
+#vip .generalRight__body #credit ul #top-3,
+#vip .generalRight__body #credit ul #top-4,
+#vip .generalRight__body #credit ul #top-5,
+#vip .generalRight__body #credit ul #top-6,
+#vip .generalRight__body #credit ul #top-7,
+#vip .generalRight__body #credit ul #top-8,
+#vip .generalRight__body #credit ul #top-9,
+#vip .generalRight__body #credit ul #top-10,
+#vip .generalRight__body #money ul #top-1,
+#vip .generalRight__body #money ul #top-2,
+#vip .generalRight__body #money ul #top-3,
+#vip .generalRight__body #money ul #top-4,
+#vip .generalRight__body #money ul #top-5,
+#vip .generalRight__body #money ul #top-6,
+#vip .generalRight__body #money ul #top-7,
+#vip .generalRight__body #money ul #top-8,
+#vip .generalRight__body #money ul #top-9,
+#vip .generalRight__body #money ul #top-10,
+#vip .generalRight__body #level ul #top-1,
+#vip .generalRight__body #level ul #top-2,
+#vip .generalRight__body #level ul #top-3,
+#vip .generalRight__body #level ul #top-4,
+#vip .generalRight__body #level ul #top-5,
+#vip .generalRight__body #level ul #top-6,
+#vip .generalRight__body #level ul #top-7,
+#vip .generalRight__body #level ul #top-8,
+#vip .generalRight__body #level ul #top-9,
+#vip .generalRight__body #level ul #top-10,
+#help .generalRight__body #credit ul #top-1,
+#help .generalRight__body #credit ul #top-2,
+#help .generalRight__body #credit ul #top-3,
+#help .generalRight__body #credit ul #top-4,
+#help .generalRight__body #credit ul #top-5,
+#help .generalRight__body #credit ul #top-6,
+#help .generalRight__body #credit ul #top-7,
+#help .generalRight__body #credit ul #top-8,
+#help .generalRight__body #credit ul #top-9,
+#help .generalRight__body #credit ul #top-10,
+#help .generalRight__body #money ul #top-1,
+#help .generalRight__body #money ul #top-2,
+#help .generalRight__body #money ul #top-3,
+#help .generalRight__body #money ul #top-4,
+#help .generalRight__body #money ul #top-5,
+#help .generalRight__body #money ul #top-6,
+#help .generalRight__body #money ul #top-7,
+#help .generalRight__body #money ul #top-8,
+#help .generalRight__body #money ul #top-9,
+#help .generalRight__body #money ul #top-10,
+#help .generalRight__body #level ul #top-1,
+#help .generalRight__body #level ul #top-2,
+#help .generalRight__body #level ul #top-3,
+#help .generalRight__body #level ul #top-4,
+#help .generalRight__body #level ul #top-5,
+#help .generalRight__body #level ul #top-6,
+#help .generalRight__body #level ul #top-7,
+#help .generalRight__body #level ul #top-8,
+#help .generalRight__body #level ul #top-9,
+#help .generalRight__body #level ul #top-10,
+#faq .generalRight__body #credit ul #top-1,
+#faq .generalRight__body #credit ul #top-2,
+#faq .generalRight__body #credit ul #top-3,
+#faq .generalRight__body #credit ul #top-4,
+#faq .generalRight__body #credit ul #top-5,
+#faq .generalRight__body #credit ul #top-6,
+#faq .generalRight__body #credit ul #top-7,
+#faq .generalRight__body #credit ul #top-8,
+#faq .generalRight__body #credit ul #top-9,
+#faq .generalRight__body #credit ul #top-10,
+#faq .generalRight__body #money ul #top-1,
+#faq .generalRight__body #money ul #top-2,
+#faq .generalRight__body #money ul #top-3,
+#faq .generalRight__body #money ul #top-4,
+#faq .generalRight__body #money ul #top-5,
+#faq .generalRight__body #money ul #top-6,
+#faq .generalRight__body #money ul #top-7,
+#faq .generalRight__body #money ul #top-8,
+#faq .generalRight__body #money ul #top-9,
+#faq .generalRight__body #money ul #top-10,
+#faq .generalRight__body #level ul #top-1,
+#faq .generalRight__body #level ul #top-2,
+#faq .generalRight__body #level ul #top-3,
+#faq .generalRight__body #level ul #top-4,
+#faq .generalRight__body #level ul #top-5,
+#faq .generalRight__body #level ul #top-6,
+#faq .generalRight__body #level ul #top-7,
+#faq .generalRight__body #level ul #top-8,
+#faq .generalRight__body #level ul #top-9,
+#faq .generalRight__body #level ul #top-10 {
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.7rem;
+  line-height: 1.6;
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: rgba(149, 157, 165, 0.3) 0px 4px 16px;
+  color: var(--white);
+  text-transform: uppercase;
+}
+#general .generalRight__body #credit ul #top-1:hover,
+#general .generalRight__body #credit ul #top-2:hover,
+#general .generalRight__body #credit ul #top-3:hover,
+#general .generalRight__body #credit ul #top-4:hover,
+#general .generalRight__body #credit ul #top-5:hover,
+#general .generalRight__body #credit ul #top-6:hover,
+#general .generalRight__body #credit ul #top-7:hover,
+#general .generalRight__body #credit ul #top-8:hover,
+#general .generalRight__body #credit ul #top-9:hover,
+#general .generalRight__body #credit ul #top-10:hover,
+#general .generalRight__body #money ul #top-1:hover,
+#general .generalRight__body #money ul #top-2:hover,
+#general .generalRight__body #money ul #top-3:hover,
+#general .generalRight__body #money ul #top-4:hover,
+#general .generalRight__body #money ul #top-5:hover,
+#general .generalRight__body #money ul #top-6:hover,
+#general .generalRight__body #money ul #top-7:hover,
+#general .generalRight__body #money ul #top-8:hover,
+#general .generalRight__body #money ul #top-9:hover,
+#general .generalRight__body #money ul #top-10:hover,
+#general .generalRight__body #level ul #top-1:hover,
+#general .generalRight__body #level ul #top-2:hover,
+#general .generalRight__body #level ul #top-3:hover,
+#general .generalRight__body #level ul #top-4:hover,
+#general .generalRight__body #level ul #top-5:hover,
+#general .generalRight__body #level ul #top-6:hover,
+#general .generalRight__body #level ul #top-7:hover,
+#general .generalRight__body #level ul #top-8:hover,
+#general .generalRight__body #level ul #top-9:hover,
+#general .generalRight__body #level ul #top-10:hover,
+#vip .generalRight__body #credit ul #top-1:hover,
+#vip .generalRight__body #credit ul #top-2:hover,
+#vip .generalRight__body #credit ul #top-3:hover,
+#vip .generalRight__body #credit ul #top-4:hover,
+#vip .generalRight__body #credit ul #top-5:hover,
+#vip .generalRight__body #credit ul #top-6:hover,
+#vip .generalRight__body #credit ul #top-7:hover,
+#vip .generalRight__body #credit ul #top-8:hover,
+#vip .generalRight__body #credit ul #top-9:hover,
+#vip .generalRight__body #credit ul #top-10:hover,
+#vip .generalRight__body #money ul #top-1:hover,
+#vip .generalRight__body #money ul #top-2:hover,
+#vip .generalRight__body #money ul #top-3:hover,
+#vip .generalRight__body #money ul #top-4:hover,
+#vip .generalRight__body #money ul #top-5:hover,
+#vip .generalRight__body #money ul #top-6:hover,
+#vip .generalRight__body #money ul #top-7:hover,
+#vip .generalRight__body #money ul #top-8:hover,
+#vip .generalRight__body #money ul #top-9:hover,
+#vip .generalRight__body #money ul #top-10:hover,
+#vip .generalRight__body #level ul #top-1:hover,
+#vip .generalRight__body #level ul #top-2:hover,
+#vip .generalRight__body #level ul #top-3:hover,
+#vip .generalRight__body #level ul #top-4:hover,
+#vip .generalRight__body #level ul #top-5:hover,
+#vip .generalRight__body #level ul #top-6:hover,
+#vip .generalRight__body #level ul #top-7:hover,
+#vip .generalRight__body #level ul #top-8:hover,
+#vip .generalRight__body #level ul #top-9:hover,
+#vip .generalRight__body #level ul #top-10:hover,
+#help .generalRight__body #credit ul #top-1:hover,
+#help .generalRight__body #credit ul #top-2:hover,
+#help .generalRight__body #credit ul #top-3:hover,
+#help .generalRight__body #credit ul #top-4:hover,
+#help .generalRight__body #credit ul #top-5:hover,
+#help .generalRight__body #credit ul #top-6:hover,
+#help .generalRight__body #credit ul #top-7:hover,
+#help .generalRight__body #credit ul #top-8:hover,
+#help .generalRight__body #credit ul #top-9:hover,
+#help .generalRight__body #credit ul #top-10:hover,
+#help .generalRight__body #money ul #top-1:hover,
+#help .generalRight__body #money ul #top-2:hover,
+#help .generalRight__body #money ul #top-3:hover,
+#help .generalRight__body #money ul #top-4:hover,
+#help .generalRight__body #money ul #top-5:hover,
+#help .generalRight__body #money ul #top-6:hover,
+#help .generalRight__body #money ul #top-7:hover,
+#help .generalRight__body #money ul #top-8:hover,
+#help .generalRight__body #money ul #top-9:hover,
+#help .generalRight__body #money ul #top-10:hover,
+#help .generalRight__body #level ul #top-1:hover,
+#help .generalRight__body #level ul #top-2:hover,
+#help .generalRight__body #level ul #top-3:hover,
+#help .generalRight__body #level ul #top-4:hover,
+#help .generalRight__body #level ul #top-5:hover,
+#help .generalRight__body #level ul #top-6:hover,
+#help .generalRight__body #level ul #top-7:hover,
+#help .generalRight__body #level ul #top-8:hover,
+#help .generalRight__body #level ul #top-9:hover,
+#help .generalRight__body #level ul #top-10:hover,
+#faq .generalRight__body #credit ul #top-1:hover,
+#faq .generalRight__body #credit ul #top-2:hover,
+#faq .generalRight__body #credit ul #top-3:hover,
+#faq .generalRight__body #credit ul #top-4:hover,
+#faq .generalRight__body #credit ul #top-5:hover,
+#faq .generalRight__body #credit ul #top-6:hover,
+#faq .generalRight__body #credit ul #top-7:hover,
+#faq .generalRight__body #credit ul #top-8:hover,
+#faq .generalRight__body #credit ul #top-9:hover,
+#faq .generalRight__body #credit ul #top-10:hover,
+#faq .generalRight__body #money ul #top-1:hover,
+#faq .generalRight__body #money ul #top-2:hover,
+#faq .generalRight__body #money ul #top-3:hover,
+#faq .generalRight__body #money ul #top-4:hover,
+#faq .generalRight__body #money ul #top-5:hover,
+#faq .generalRight__body #money ul #top-6:hover,
+#faq .generalRight__body #money ul #top-7:hover,
+#faq .generalRight__body #money ul #top-8:hover,
+#faq .generalRight__body #money ul #top-9:hover,
+#faq .generalRight__body #money ul #top-10:hover,
+#faq .generalRight__body #level ul #top-1:hover,
+#faq .generalRight__body #level ul #top-2:hover,
+#faq .generalRight__body #level ul #top-3:hover,
+#faq .generalRight__body #level ul #top-4:hover,
+#faq .generalRight__body #level ul #top-5:hover,
+#faq .generalRight__body #level ul #top-6:hover,
+#faq .generalRight__body #level ul #top-7:hover,
+#faq .generalRight__body #level ul #top-8:hover,
+#faq .generalRight__body #level ul #top-9:hover,
+#faq .generalRight__body #level ul #top-10:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  animation: hoverItem 0.2s linear;
+}
+#general .generalRight__body #credit ul #top-1:first-child,
+#general .generalRight__body #credit ul #top-2:first-child,
+#general .generalRight__body #credit ul #top-3:first-child,
+#general .generalRight__body #credit ul #top-4:first-child,
+#general .generalRight__body #credit ul #top-5:first-child,
+#general .generalRight__body #credit ul #top-6:first-child,
+#general .generalRight__body #credit ul #top-7:first-child,
+#general .generalRight__body #credit ul #top-8:first-child,
+#general .generalRight__body #credit ul #top-9:first-child,
+#general .generalRight__body #credit ul #top-10:first-child,
+#general .generalRight__body #money ul #top-1:first-child,
+#general .generalRight__body #money ul #top-2:first-child,
+#general .generalRight__body #money ul #top-3:first-child,
+#general .generalRight__body #money ul #top-4:first-child,
+#general .generalRight__body #money ul #top-5:first-child,
+#general .generalRight__body #money ul #top-6:first-child,
+#general .generalRight__body #money ul #top-7:first-child,
+#general .generalRight__body #money ul #top-8:first-child,
+#general .generalRight__body #money ul #top-9:first-child,
+#general .generalRight__body #money ul #top-10:first-child,
+#general .generalRight__body #level ul #top-1:first-child,
+#general .generalRight__body #level ul #top-2:first-child,
+#general .generalRight__body #level ul #top-3:first-child,
+#general .generalRight__body #level ul #top-4:first-child,
+#general .generalRight__body #level ul #top-5:first-child,
+#general .generalRight__body #level ul #top-6:first-child,
+#general .generalRight__body #level ul #top-7:first-child,
+#general .generalRight__body #level ul #top-8:first-child,
+#general .generalRight__body #level ul #top-9:first-child,
+#general .generalRight__body #level ul #top-10:first-child,
+#vip .generalRight__body #credit ul #top-1:first-child,
+#vip .generalRight__body #credit ul #top-2:first-child,
+#vip .generalRight__body #credit ul #top-3:first-child,
+#vip .generalRight__body #credit ul #top-4:first-child,
+#vip .generalRight__body #credit ul #top-5:first-child,
+#vip .generalRight__body #credit ul #top-6:first-child,
+#vip .generalRight__body #credit ul #top-7:first-child,
+#vip .generalRight__body #credit ul #top-8:first-child,
+#vip .generalRight__body #credit ul #top-9:first-child,
+#vip .generalRight__body #credit ul #top-10:first-child,
+#vip .generalRight__body #money ul #top-1:first-child,
+#vip .generalRight__body #money ul #top-2:first-child,
+#vip .generalRight__body #money ul #top-3:first-child,
+#vip .generalRight__body #money ul #top-4:first-child,
+#vip .generalRight__body #money ul #top-5:first-child,
+#vip .generalRight__body #money ul #top-6:first-child,
+#vip .generalRight__body #money ul #top-7:first-child,
+#vip .generalRight__body #money ul #top-8:first-child,
+#vip .generalRight__body #money ul #top-9:first-child,
+#vip .generalRight__body #money ul #top-10:first-child,
+#vip .generalRight__body #level ul #top-1:first-child,
+#vip .generalRight__body #level ul #top-2:first-child,
+#vip .generalRight__body #level ul #top-3:first-child,
+#vip .generalRight__body #level ul #top-4:first-child,
+#vip .generalRight__body #level ul #top-5:first-child,
+#vip .generalRight__body #level ul #top-6:first-child,
+#vip .generalRight__body #level ul #top-7:first-child,
+#vip .generalRight__body #level ul #top-8:first-child,
+#vip .generalRight__body #level ul #top-9:first-child,
+#vip .generalRight__body #level ul #top-10:first-child,
+#help .generalRight__body #credit ul #top-1:first-child,
+#help .generalRight__body #credit ul #top-2:first-child,
+#help .generalRight__body #credit ul #top-3:first-child,
+#help .generalRight__body #credit ul #top-4:first-child,
+#help .generalRight__body #credit ul #top-5:first-child,
+#help .generalRight__body #credit ul #top-6:first-child,
+#help .generalRight__body #credit ul #top-7:first-child,
+#help .generalRight__body #credit ul #top-8:first-child,
+#help .generalRight__body #credit ul #top-9:first-child,
+#help .generalRight__body #credit ul #top-10:first-child,
+#help .generalRight__body #money ul #top-1:first-child,
+#help .generalRight__body #money ul #top-2:first-child,
+#help .generalRight__body #money ul #top-3:first-child,
+#help .generalRight__body #money ul #top-4:first-child,
+#help .generalRight__body #money ul #top-5:first-child,
+#help .generalRight__body #money ul #top-6:first-child,
+#help .generalRight__body #money ul #top-7:first-child,
+#help .generalRight__body #money ul #top-8:first-child,
+#help .generalRight__body #money ul #top-9:first-child,
+#help .generalRight__body #money ul #top-10:first-child,
+#help .generalRight__body #level ul #top-1:first-child,
+#help .generalRight__body #level ul #top-2:first-child,
+#help .generalRight__body #level ul #top-3:first-child,
+#help .generalRight__body #level ul #top-4:first-child,
+#help .generalRight__body #level ul #top-5:first-child,
+#help .generalRight__body #level ul #top-6:first-child,
+#help .generalRight__body #level ul #top-7:first-child,
+#help .generalRight__body #level ul #top-8:first-child,
+#help .generalRight__body #level ul #top-9:first-child,
+#help .generalRight__body #level ul #top-10:first-child,
+#faq .generalRight__body #credit ul #top-1:first-child,
+#faq .generalRight__body #credit ul #top-2:first-child,
+#faq .generalRight__body #credit ul #top-3:first-child,
+#faq .generalRight__body #credit ul #top-4:first-child,
+#faq .generalRight__body #credit ul #top-5:first-child,
+#faq .generalRight__body #credit ul #top-6:first-child,
+#faq .generalRight__body #credit ul #top-7:first-child,
+#faq .generalRight__body #credit ul #top-8:first-child,
+#faq .generalRight__body #credit ul #top-9:first-child,
+#faq .generalRight__body #credit ul #top-10:first-child,
+#faq .generalRight__body #money ul #top-1:first-child,
+#faq .generalRight__body #money ul #top-2:first-child,
+#faq .generalRight__body #money ul #top-3:first-child,
+#faq .generalRight__body #money ul #top-4:first-child,
+#faq .generalRight__body #money ul #top-5:first-child,
+#faq .generalRight__body #money ul #top-6:first-child,
+#faq .generalRight__body #money ul #top-7:first-child,
+#faq .generalRight__body #money ul #top-8:first-child,
+#faq .generalRight__body #money ul #top-9:first-child,
+#faq .generalRight__body #money ul #top-10:first-child,
+#faq .generalRight__body #level ul #top-1:first-child,
+#faq .generalRight__body #level ul #top-2:first-child,
+#faq .generalRight__body #level ul #top-3:first-child,
+#faq .generalRight__body #level ul #top-4:first-child,
+#faq .generalRight__body #level ul #top-5:first-child,
+#faq .generalRight__body #level ul #top-6:first-child,
+#faq .generalRight__body #level ul #top-7:first-child,
+#faq .generalRight__body #level ul #top-8:first-child,
+#faq .generalRight__body #level ul #top-9:first-child,
+#faq .generalRight__body #level ul #top-10:first-child {
+  color: violet;
+  transform: scale(1.075);
+}
+#general .generalRight__body #credit ul #top-1:nth-child(2),
+#general .generalRight__body #credit ul #top-2:nth-child(2),
+#general .generalRight__body #credit ul #top-3:nth-child(2),
+#general .generalRight__body #credit ul #top-4:nth-child(2),
+#general .generalRight__body #credit ul #top-5:nth-child(2),
+#general .generalRight__body #credit ul #top-6:nth-child(2),
+#general .generalRight__body #credit ul #top-7:nth-child(2),
+#general .generalRight__body #credit ul #top-8:nth-child(2),
+#general .generalRight__body #credit ul #top-9:nth-child(2),
+#general .generalRight__body #credit ul #top-10:nth-child(2),
+#general .generalRight__body #money ul #top-1:nth-child(2),
+#general .generalRight__body #money ul #top-2:nth-child(2),
+#general .generalRight__body #money ul #top-3:nth-child(2),
+#general .generalRight__body #money ul #top-4:nth-child(2),
+#general .generalRight__body #money ul #top-5:nth-child(2),
+#general .generalRight__body #money ul #top-6:nth-child(2),
+#general .generalRight__body #money ul #top-7:nth-child(2),
+#general .generalRight__body #money ul #top-8:nth-child(2),
+#general .generalRight__body #money ul #top-9:nth-child(2),
+#general .generalRight__body #money ul #top-10:nth-child(2),
+#general .generalRight__body #level ul #top-1:nth-child(2),
+#general .generalRight__body #level ul #top-2:nth-child(2),
+#general .generalRight__body #level ul #top-3:nth-child(2),
+#general .generalRight__body #level ul #top-4:nth-child(2),
+#general .generalRight__body #level ul #top-5:nth-child(2),
+#general .generalRight__body #level ul #top-6:nth-child(2),
+#general .generalRight__body #level ul #top-7:nth-child(2),
+#general .generalRight__body #level ul #top-8:nth-child(2),
+#general .generalRight__body #level ul #top-9:nth-child(2),
+#general .generalRight__body #level ul #top-10:nth-child(2),
+#vip .generalRight__body #credit ul #top-1:nth-child(2),
+#vip .generalRight__body #credit ul #top-2:nth-child(2),
+#vip .generalRight__body #credit ul #top-3:nth-child(2),
+#vip .generalRight__body #credit ul #top-4:nth-child(2),
+#vip .generalRight__body #credit ul #top-5:nth-child(2),
+#vip .generalRight__body #credit ul #top-6:nth-child(2),
+#vip .generalRight__body #credit ul #top-7:nth-child(2),
+#vip .generalRight__body #credit ul #top-8:nth-child(2),
+#vip .generalRight__body #credit ul #top-9:nth-child(2),
+#vip .generalRight__body #credit ul #top-10:nth-child(2),
+#vip .generalRight__body #money ul #top-1:nth-child(2),
+#vip .generalRight__body #money ul #top-2:nth-child(2),
+#vip .generalRight__body #money ul #top-3:nth-child(2),
+#vip .generalRight__body #money ul #top-4:nth-child(2),
+#vip .generalRight__body #money ul #top-5:nth-child(2),
+#vip .generalRight__body #money ul #top-6:nth-child(2),
+#vip .generalRight__body #money ul #top-7:nth-child(2),
+#vip .generalRight__body #money ul #top-8:nth-child(2),
+#vip .generalRight__body #money ul #top-9:nth-child(2),
+#vip .generalRight__body #money ul #top-10:nth-child(2),
+#vip .generalRight__body #level ul #top-1:nth-child(2),
+#vip .generalRight__body #level ul #top-2:nth-child(2),
+#vip .generalRight__body #level ul #top-3:nth-child(2),
+#vip .generalRight__body #level ul #top-4:nth-child(2),
+#vip .generalRight__body #level ul #top-5:nth-child(2),
+#vip .generalRight__body #level ul #top-6:nth-child(2),
+#vip .generalRight__body #level ul #top-7:nth-child(2),
+#vip .generalRight__body #level ul #top-8:nth-child(2),
+#vip .generalRight__body #level ul #top-9:nth-child(2),
+#vip .generalRight__body #level ul #top-10:nth-child(2),
+#help .generalRight__body #credit ul #top-1:nth-child(2),
+#help .generalRight__body #credit ul #top-2:nth-child(2),
+#help .generalRight__body #credit ul #top-3:nth-child(2),
+#help .generalRight__body #credit ul #top-4:nth-child(2),
+#help .generalRight__body #credit ul #top-5:nth-child(2),
+#help .generalRight__body #credit ul #top-6:nth-child(2),
+#help .generalRight__body #credit ul #top-7:nth-child(2),
+#help .generalRight__body #credit ul #top-8:nth-child(2),
+#help .generalRight__body #credit ul #top-9:nth-child(2),
+#help .generalRight__body #credit ul #top-10:nth-child(2),
+#help .generalRight__body #money ul #top-1:nth-child(2),
+#help .generalRight__body #money ul #top-2:nth-child(2),
+#help .generalRight__body #money ul #top-3:nth-child(2),
+#help .generalRight__body #money ul #top-4:nth-child(2),
+#help .generalRight__body #money ul #top-5:nth-child(2),
+#help .generalRight__body #money ul #top-6:nth-child(2),
+#help .generalRight__body #money ul #top-7:nth-child(2),
+#help .generalRight__body #money ul #top-8:nth-child(2),
+#help .generalRight__body #money ul #top-9:nth-child(2),
+#help .generalRight__body #money ul #top-10:nth-child(2),
+#help .generalRight__body #level ul #top-1:nth-child(2),
+#help .generalRight__body #level ul #top-2:nth-child(2),
+#help .generalRight__body #level ul #top-3:nth-child(2),
+#help .generalRight__body #level ul #top-4:nth-child(2),
+#help .generalRight__body #level ul #top-5:nth-child(2),
+#help .generalRight__body #level ul #top-6:nth-child(2),
+#help .generalRight__body #level ul #top-7:nth-child(2),
+#help .generalRight__body #level ul #top-8:nth-child(2),
+#help .generalRight__body #level ul #top-9:nth-child(2),
+#help .generalRight__body #level ul #top-10:nth-child(2),
+#faq .generalRight__body #credit ul #top-1:nth-child(2),
+#faq .generalRight__body #credit ul #top-2:nth-child(2),
+#faq .generalRight__body #credit ul #top-3:nth-child(2),
+#faq .generalRight__body #credit ul #top-4:nth-child(2),
+#faq .generalRight__body #credit ul #top-5:nth-child(2),
+#faq .generalRight__body #credit ul #top-6:nth-child(2),
+#faq .generalRight__body #credit ul #top-7:nth-child(2),
+#faq .generalRight__body #credit ul #top-8:nth-child(2),
+#faq .generalRight__body #credit ul #top-9:nth-child(2),
+#faq .generalRight__body #credit ul #top-10:nth-child(2),
+#faq .generalRight__body #money ul #top-1:nth-child(2),
+#faq .generalRight__body #money ul #top-2:nth-child(2),
+#faq .generalRight__body #money ul #top-3:nth-child(2),
+#faq .generalRight__body #money ul #top-4:nth-child(2),
+#faq .generalRight__body #money ul #top-5:nth-child(2),
+#faq .generalRight__body #money ul #top-6:nth-child(2),
+#faq .generalRight__body #money ul #top-7:nth-child(2),
+#faq .generalRight__body #money ul #top-8:nth-child(2),
+#faq .generalRight__body #money ul #top-9:nth-child(2),
+#faq .generalRight__body #money ul #top-10:nth-child(2),
+#faq .generalRight__body #level ul #top-1:nth-child(2),
+#faq .generalRight__body #level ul #top-2:nth-child(2),
+#faq .generalRight__body #level ul #top-3:nth-child(2),
+#faq .generalRight__body #level ul #top-4:nth-child(2),
+#faq .generalRight__body #level ul #top-5:nth-child(2),
+#faq .generalRight__body #level ul #top-6:nth-child(2),
+#faq .generalRight__body #level ul #top-7:nth-child(2),
+#faq .generalRight__body #level ul #top-8:nth-child(2),
+#faq .generalRight__body #level ul #top-9:nth-child(2),
+#faq .generalRight__body #level ul #top-10:nth-child(2) {
+  color: greenyellow;
+  transform: scale(1.05);
+}
+#general .generalRight__body #credit ul #top-1:nth-child(3),
+#general .generalRight__body #credit ul #top-2:nth-child(3),
+#general .generalRight__body #credit ul #top-3:nth-child(3),
+#general .generalRight__body #credit ul #top-4:nth-child(3),
+#general .generalRight__body #credit ul #top-5:nth-child(3),
+#general .generalRight__body #credit ul #top-6:nth-child(3),
+#general .generalRight__body #credit ul #top-7:nth-child(3),
+#general .generalRight__body #credit ul #top-8:nth-child(3),
+#general .generalRight__body #credit ul #top-9:nth-child(3),
+#general .generalRight__body #credit ul #top-10:nth-child(3),
+#general .generalRight__body #money ul #top-1:nth-child(3),
+#general .generalRight__body #money ul #top-2:nth-child(3),
+#general .generalRight__body #money ul #top-3:nth-child(3),
+#general .generalRight__body #money ul #top-4:nth-child(3),
+#general .generalRight__body #money ul #top-5:nth-child(3),
+#general .generalRight__body #money ul #top-6:nth-child(3),
+#general .generalRight__body #money ul #top-7:nth-child(3),
+#general .generalRight__body #money ul #top-8:nth-child(3),
+#general .generalRight__body #money ul #top-9:nth-child(3),
+#general .generalRight__body #money ul #top-10:nth-child(3),
+#general .generalRight__body #level ul #top-1:nth-child(3),
+#general .generalRight__body #level ul #top-2:nth-child(3),
+#general .generalRight__body #level ul #top-3:nth-child(3),
+#general .generalRight__body #level ul #top-4:nth-child(3),
+#general .generalRight__body #level ul #top-5:nth-child(3),
+#general .generalRight__body #level ul #top-6:nth-child(3),
+#general .generalRight__body #level ul #top-7:nth-child(3),
+#general .generalRight__body #level ul #top-8:nth-child(3),
+#general .generalRight__body #level ul #top-9:nth-child(3),
+#general .generalRight__body #level ul #top-10:nth-child(3),
+#vip .generalRight__body #credit ul #top-1:nth-child(3),
+#vip .generalRight__body #credit ul #top-2:nth-child(3),
+#vip .generalRight__body #credit ul #top-3:nth-child(3),
+#vip .generalRight__body #credit ul #top-4:nth-child(3),
+#vip .generalRight__body #credit ul #top-5:nth-child(3),
+#vip .generalRight__body #credit ul #top-6:nth-child(3),
+#vip .generalRight__body #credit ul #top-7:nth-child(3),
+#vip .generalRight__body #credit ul #top-8:nth-child(3),
+#vip .generalRight__body #credit ul #top-9:nth-child(3),
+#vip .generalRight__body #credit ul #top-10:nth-child(3),
+#vip .generalRight__body #money ul #top-1:nth-child(3),
+#vip .generalRight__body #money ul #top-2:nth-child(3),
+#vip .generalRight__body #money ul #top-3:nth-child(3),
+#vip .generalRight__body #money ul #top-4:nth-child(3),
+#vip .generalRight__body #money ul #top-5:nth-child(3),
+#vip .generalRight__body #money ul #top-6:nth-child(3),
+#vip .generalRight__body #money ul #top-7:nth-child(3),
+#vip .generalRight__body #money ul #top-8:nth-child(3),
+#vip .generalRight__body #money ul #top-9:nth-child(3),
+#vip .generalRight__body #money ul #top-10:nth-child(3),
+#vip .generalRight__body #level ul #top-1:nth-child(3),
+#vip .generalRight__body #level ul #top-2:nth-child(3),
+#vip .generalRight__body #level ul #top-3:nth-child(3),
+#vip .generalRight__body #level ul #top-4:nth-child(3),
+#vip .generalRight__body #level ul #top-5:nth-child(3),
+#vip .generalRight__body #level ul #top-6:nth-child(3),
+#vip .generalRight__body #level ul #top-7:nth-child(3),
+#vip .generalRight__body #level ul #top-8:nth-child(3),
+#vip .generalRight__body #level ul #top-9:nth-child(3),
+#vip .generalRight__body #level ul #top-10:nth-child(3),
+#help .generalRight__body #credit ul #top-1:nth-child(3),
+#help .generalRight__body #credit ul #top-2:nth-child(3),
+#help .generalRight__body #credit ul #top-3:nth-child(3),
+#help .generalRight__body #credit ul #top-4:nth-child(3),
+#help .generalRight__body #credit ul #top-5:nth-child(3),
+#help .generalRight__body #credit ul #top-6:nth-child(3),
+#help .generalRight__body #credit ul #top-7:nth-child(3),
+#help .generalRight__body #credit ul #top-8:nth-child(3),
+#help .generalRight__body #credit ul #top-9:nth-child(3),
+#help .generalRight__body #credit ul #top-10:nth-child(3),
+#help .generalRight__body #money ul #top-1:nth-child(3),
+#help .generalRight__body #money ul #top-2:nth-child(3),
+#help .generalRight__body #money ul #top-3:nth-child(3),
+#help .generalRight__body #money ul #top-4:nth-child(3),
+#help .generalRight__body #money ul #top-5:nth-child(3),
+#help .generalRight__body #money ul #top-6:nth-child(3),
+#help .generalRight__body #money ul #top-7:nth-child(3),
+#help .generalRight__body #money ul #top-8:nth-child(3),
+#help .generalRight__body #money ul #top-9:nth-child(3),
+#help .generalRight__body #money ul #top-10:nth-child(3),
+#help .generalRight__body #level ul #top-1:nth-child(3),
+#help .generalRight__body #level ul #top-2:nth-child(3),
+#help .generalRight__body #level ul #top-3:nth-child(3),
+#help .generalRight__body #level ul #top-4:nth-child(3),
+#help .generalRight__body #level ul #top-5:nth-child(3),
+#help .generalRight__body #level ul #top-6:nth-child(3),
+#help .generalRight__body #level ul #top-7:nth-child(3),
+#help .generalRight__body #level ul #top-8:nth-child(3),
+#help .generalRight__body #level ul #top-9:nth-child(3),
+#help .generalRight__body #level ul #top-10:nth-child(3),
+#faq .generalRight__body #credit ul #top-1:nth-child(3),
+#faq .generalRight__body #credit ul #top-2:nth-child(3),
+#faq .generalRight__body #credit ul #top-3:nth-child(3),
+#faq .generalRight__body #credit ul #top-4:nth-child(3),
+#faq .generalRight__body #credit ul #top-5:nth-child(3),
+#faq .generalRight__body #credit ul #top-6:nth-child(3),
+#faq .generalRight__body #credit ul #top-7:nth-child(3),
+#faq .generalRight__body #credit ul #top-8:nth-child(3),
+#faq .generalRight__body #credit ul #top-9:nth-child(3),
+#faq .generalRight__body #credit ul #top-10:nth-child(3),
+#faq .generalRight__body #money ul #top-1:nth-child(3),
+#faq .generalRight__body #money ul #top-2:nth-child(3),
+#faq .generalRight__body #money ul #top-3:nth-child(3),
+#faq .generalRight__body #money ul #top-4:nth-child(3),
+#faq .generalRight__body #money ul #top-5:nth-child(3),
+#faq .generalRight__body #money ul #top-6:nth-child(3),
+#faq .generalRight__body #money ul #top-7:nth-child(3),
+#faq .generalRight__body #money ul #top-8:nth-child(3),
+#faq .generalRight__body #money ul #top-9:nth-child(3),
+#faq .generalRight__body #money ul #top-10:nth-child(3),
+#faq .generalRight__body #level ul #top-1:nth-child(3),
+#faq .generalRight__body #level ul #top-2:nth-child(3),
+#faq .generalRight__body #level ul #top-3:nth-child(3),
+#faq .generalRight__body #level ul #top-4:nth-child(3),
+#faq .generalRight__body #level ul #top-5:nth-child(3),
+#faq .generalRight__body #level ul #top-6:nth-child(3),
+#faq .generalRight__body #level ul #top-7:nth-child(3),
+#faq .generalRight__body #level ul #top-8:nth-child(3),
+#faq .generalRight__body #level ul #top-9:nth-child(3),
+#faq .generalRight__body #level ul #top-10:nth-child(3) {
+  color: goldenrod;
+  transform: scale(1.05);
+}
+#general .generalRight__body #credit ul #top-1 span:last-child,
+#general .generalRight__body #credit ul #top-2 span:last-child,
+#general .generalRight__body #credit ul #top-3 span:last-child,
+#general .generalRight__body #credit ul #top-4 span:last-child,
+#general .generalRight__body #credit ul #top-5 span:last-child,
+#general .generalRight__body #credit ul #top-6 span:last-child,
+#general .generalRight__body #credit ul #top-7 span:last-child,
+#general .generalRight__body #credit ul #top-8 span:last-child,
+#general .generalRight__body #credit ul #top-9 span:last-child,
+#general .generalRight__body #credit ul #top-10 span:last-child,
+#general .generalRight__body #money ul #top-1 span:last-child,
+#general .generalRight__body #money ul #top-2 span:last-child,
+#general .generalRight__body #money ul #top-3 span:last-child,
+#general .generalRight__body #money ul #top-4 span:last-child,
+#general .generalRight__body #money ul #top-5 span:last-child,
+#general .generalRight__body #money ul #top-6 span:last-child,
+#general .generalRight__body #money ul #top-7 span:last-child,
+#general .generalRight__body #money ul #top-8 span:last-child,
+#general .generalRight__body #money ul #top-9 span:last-child,
+#general .generalRight__body #money ul #top-10 span:last-child,
+#general .generalRight__body #level ul #top-1 span:last-child,
+#general .generalRight__body #level ul #top-2 span:last-child,
+#general .generalRight__body #level ul #top-3 span:last-child,
+#general .generalRight__body #level ul #top-4 span:last-child,
+#general .generalRight__body #level ul #top-5 span:last-child,
+#general .generalRight__body #level ul #top-6 span:last-child,
+#general .generalRight__body #level ul #top-7 span:last-child,
+#general .generalRight__body #level ul #top-8 span:last-child,
+#general .generalRight__body #level ul #top-9 span:last-child,
+#general .generalRight__body #level ul #top-10 span:last-child,
+#vip .generalRight__body #credit ul #top-1 span:last-child,
+#vip .generalRight__body #credit ul #top-2 span:last-child,
+#vip .generalRight__body #credit ul #top-3 span:last-child,
+#vip .generalRight__body #credit ul #top-4 span:last-child,
+#vip .generalRight__body #credit ul #top-5 span:last-child,
+#vip .generalRight__body #credit ul #top-6 span:last-child,
+#vip .generalRight__body #credit ul #top-7 span:last-child,
+#vip .generalRight__body #credit ul #top-8 span:last-child,
+#vip .generalRight__body #credit ul #top-9 span:last-child,
+#vip .generalRight__body #credit ul #top-10 span:last-child,
+#vip .generalRight__body #money ul #top-1 span:last-child,
+#vip .generalRight__body #money ul #top-2 span:last-child,
+#vip .generalRight__body #money ul #top-3 span:last-child,
+#vip .generalRight__body #money ul #top-4 span:last-child,
+#vip .generalRight__body #money ul #top-5 span:last-child,
+#vip .generalRight__body #money ul #top-6 span:last-child,
+#vip .generalRight__body #money ul #top-7 span:last-child,
+#vip .generalRight__body #money ul #top-8 span:last-child,
+#vip .generalRight__body #money ul #top-9 span:last-child,
+#vip .generalRight__body #money ul #top-10 span:last-child,
+#vip .generalRight__body #level ul #top-1 span:last-child,
+#vip .generalRight__body #level ul #top-2 span:last-child,
+#vip .generalRight__body #level ul #top-3 span:last-child,
+#vip .generalRight__body #level ul #top-4 span:last-child,
+#vip .generalRight__body #level ul #top-5 span:last-child,
+#vip .generalRight__body #level ul #top-6 span:last-child,
+#vip .generalRight__body #level ul #top-7 span:last-child,
+#vip .generalRight__body #level ul #top-8 span:last-child,
+#vip .generalRight__body #level ul #top-9 span:last-child,
+#vip .generalRight__body #level ul #top-10 span:last-child,
+#help .generalRight__body #credit ul #top-1 span:last-child,
+#help .generalRight__body #credit ul #top-2 span:last-child,
+#help .generalRight__body #credit ul #top-3 span:last-child,
+#help .generalRight__body #credit ul #top-4 span:last-child,
+#help .generalRight__body #credit ul #top-5 span:last-child,
+#help .generalRight__body #credit ul #top-6 span:last-child,
+#help .generalRight__body #credit ul #top-7 span:last-child,
+#help .generalRight__body #credit ul #top-8 span:last-child,
+#help .generalRight__body #credit ul #top-9 span:last-child,
+#help .generalRight__body #credit ul #top-10 span:last-child,
+#help .generalRight__body #money ul #top-1 span:last-child,
+#help .generalRight__body #money ul #top-2 span:last-child,
+#help .generalRight__body #money ul #top-3 span:last-child,
+#help .generalRight__body #money ul #top-4 span:last-child,
+#help .generalRight__body #money ul #top-5 span:last-child,
+#help .generalRight__body #money ul #top-6 span:last-child,
+#help .generalRight__body #money ul #top-7 span:last-child,
+#help .generalRight__body #money ul #top-8 span:last-child,
+#help .generalRight__body #money ul #top-9 span:last-child,
+#help .generalRight__body #money ul #top-10 span:last-child,
+#help .generalRight__body #level ul #top-1 span:last-child,
+#help .generalRight__body #level ul #top-2 span:last-child,
+#help .generalRight__body #level ul #top-3 span:last-child,
+#help .generalRight__body #level ul #top-4 span:last-child,
+#help .generalRight__body #level ul #top-5 span:last-child,
+#help .generalRight__body #level ul #top-6 span:last-child,
+#help .generalRight__body #level ul #top-7 span:last-child,
+#help .generalRight__body #level ul #top-8 span:last-child,
+#help .generalRight__body #level ul #top-9 span:last-child,
+#help .generalRight__body #level ul #top-10 span:last-child,
+#faq .generalRight__body #credit ul #top-1 span:last-child,
+#faq .generalRight__body #credit ul #top-2 span:last-child,
+#faq .generalRight__body #credit ul #top-3 span:last-child,
+#faq .generalRight__body #credit ul #top-4 span:last-child,
+#faq .generalRight__body #credit ul #top-5 span:last-child,
+#faq .generalRight__body #credit ul #top-6 span:last-child,
+#faq .generalRight__body #credit ul #top-7 span:last-child,
+#faq .generalRight__body #credit ul #top-8 span:last-child,
+#faq .generalRight__body #credit ul #top-9 span:last-child,
+#faq .generalRight__body #credit ul #top-10 span:last-child,
+#faq .generalRight__body #money ul #top-1 span:last-child,
+#faq .generalRight__body #money ul #top-2 span:last-child,
+#faq .generalRight__body #money ul #top-3 span:last-child,
+#faq .generalRight__body #money ul #top-4 span:last-child,
+#faq .generalRight__body #money ul #top-5 span:last-child,
+#faq .generalRight__body #money ul #top-6 span:last-child,
+#faq .generalRight__body #money ul #top-7 span:last-child,
+#faq .generalRight__body #money ul #top-8 span:last-child,
+#faq .generalRight__body #money ul #top-9 span:last-child,
+#faq .generalRight__body #money ul #top-10 span:last-child,
+#faq .generalRight__body #level ul #top-1 span:last-child,
+#faq .generalRight__body #level ul #top-2 span:last-child,
+#faq .generalRight__body #level ul #top-3 span:last-child,
+#faq .generalRight__body #level ul #top-4 span:last-child,
+#faq .generalRight__body #level ul #top-5 span:last-child,
+#faq .generalRight__body #level ul #top-6 span:last-child,
+#faq .generalRight__body #level ul #top-7 span:last-child,
+#faq .generalRight__body #level ul #top-8 span:last-child,
+#faq .generalRight__body #level ul #top-9 span:last-child,
+#faq .generalRight__body #level ul #top-10 span:last-child {
+  text-transform: capitalize;
+}
+
+#vip .vipLeft {
+  flex: 6;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.05);
+  margin: 0 8px;
+  border-radius: 20px;
+  padding: 8px 12px 8px 12px;
+  overflow: hidden;
+}
+#vip .vipLeft__top {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  max-width: 100%;
+  border-bottom: 1px solid var(--white);
+}
+#vip .vipLeft__top .top-heading {
+  margin-right: 8px;
+  line-height: 3;
+  text-align: center;
+  font-size: 1.6rem;
+  background-color: rgba(255, 255, 255, 0.05);
+  color: var(--white);
+  text-shadow: var(--textShadow1);
+  cursor: pointer;
+}
+#vip .vipLeft__top .top-heading:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: scale(1.1);
+}
+#vip .vipLeft__top .top-heading--active.top-heading {
+  background-color: rgba(255, 255, 255, 0.3);
+  cursor: default;
+  transform: none;
+}
+#vip .vipLeft__body {
+  height: 90%;
+  width: 100%;
+  color: var(--white);
+}
+#vip .vipLeft__body #vipCredit,
+#vip .vipLeft__body #vipPerk {
+  display: none;
+  height: 100%;
+  width: 100%;
+}
+#vip .vipLeft__body #vipCredit i,
+#vip .vipLeft__body #vipPerk i {
+  display: block;
+  text-align: center;
+  line-height: 1.6;
+  font-size: 1.6rem;
+  margin: 8px 0;
+}
+#vip .vipLeft__body #vipCredit .content-item,
+#vip .vipLeft__body #vipPerk .content-item {
+  line-height: 2;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 8px;
+  margin-bottom: 8px;
+}
+#vip .vipLeft__body #vipCredit .content-item h2,
+#vip .vipLeft__body #vipPerk .content-item h2 {
+  font-size: 1.9rem;
+  color: var(--primary);
+}
+#vip .vipLeft__body #vipCredit .content-item p,
+#vip .vipLeft__body #vipPerk .content-item p {
+  padding: 4px;
+  font-size: 1.4rem;
+}
+#vip .vipLeft__body #vipCredit .content-item span,
+#vip .vipLeft__body #vipPerk .content-item span {
+  font-weight: bold;
+  font-size: 1.6rem;
+}
+#vip .vipRight {
+  flex: 4;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.05);
+  margin: 0 8px;
+  padding: 8px 16px;
+  border-radius: 20px;
+}
+#vip .vipRight__top .top-heading__title {
+  line-height: 1.5;
+  font-size: 1.8rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: var(--white);
+  text-shadow: var(--textShadow1);
+  border-bottom: 1px solid var(--white);
+}
+#vip .vipRight__top .wrapperTop {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+#vip .vipRight__top .wrapperTop .top-heading__menu {
+  display: block;
+  text-align: center;
+  width: 100%;
+  line-height: 2;
+  margin-top: 2px;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: var(--white);
+  cursor: pointer;
+}
+#vip .vipRight__top .wrapperTop .top-heading__menu:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  animation: hoverItem 0.2s linear;
+}
+#vip .vipRight__top .wrapperTop .top-heading__menu--active {
+  position: relative;
+  cursor: default;
+}
+#vip .vipRight__top .wrapperTop .top-heading__menu--active:hover {
+  background-color: transparent;
+  animation: none;
+}
+#vip .vipRight__top .wrapperTop .top-heading__menu--active::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 4px;
+  width: 60%;
+  background-color: var(--primary);
+  animation: activeItem 0.2s ease-in;
+  opacity: 0.9;
+}
+#vip .vipRight__body {
+  height: 85%;
+  width: 100%;
+  padding: 16px 0;
+  display: none;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  column-gap: 15px;
+  row-gap: 15px;
+}
+#vip .vipRight__body .content-shop {
+  height: 250px;
+  background-color: rgba(255, 255, 255, 0.05);
+  color: var(--white);
+  padding: 0 8px;
+  position: relative;
+}
+#vip .vipRight__body .content-shop:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+#vip .vipRight__body .content-shop img {
+  margin: 8px auto;
+  height: 75px;
+}
+#vip .vipRight__body .content-shop__name {
+  width: auto;
+  margin: 10px 0;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1.5;
+  background-color: var(--primary);
+}
+#vip .vipRight__body .content-shop__decs {
+  padding: 2px;
+  font-size: 1.6rem;
+  font-weight: lighter;
+  line-height: 1.3;
+}
+#vip .vipRight__body .content-shop__price {
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+#vip .vipRight__body .content-shop__price span {
+  font-weight: lighter;
+  font-size: 1.5rem;
+  color: var(--lightGreen);
+  text-shadow: var(--textShadow1);
+}
+#vip .vipRight__body .content-shop__buy {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  height: 24px;
+  width: 56px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 3px;
+  color: var(--black);
+  opacity: 0.95;
+  cursor: pointer;
+}
+#vip .vipRight__body .content-shop__buy:hover {
+  color: var(--white);
+  background-color: var(--primary);
+  opacity: 0.95;
+  border: none;
+  transform: translateY(-1px);
+}
+#vip .vipRight__body .content-shop__buy:active {
+  transform: translateY(1px);
+}
+
+#help .wrapper {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.05);
+  margin: 0 8px;
+  border-radius: 20px;
+  padding: 8px 12px 8px 12px;
+  overflow: hidden;
+}
+#help .wrapper__top {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  max-width: 100%;
+  border-bottom: 1px solid var(--white);
+}
+#help .wrapper__top .top-heading {
+  margin-right: 8px;
+  line-height: 3;
+  text-align: center;
+  font-size: 1.6rem;
+  background-color: rgba(255, 255, 255, 0.05);
+  color: var(--white);
+  text-shadow: var(--textShadow1);
+  cursor: pointer;
+}
+#help .wrapper__top .top-heading:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: scale(1.1);
+}
+#help .wrapper__top .top-heading--active.top-heading {
+  background-color: rgba(255, 255, 255, 0.3);
+  cursor: default;
+  transform: none;
+}
+#help .wrapper__body {
+  position: relative;
+  height: 90%;
+  width: 100%;
+  color: var(--white);
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+#help .wrapper__body-heading {
+  position: sticky;
+  top: 0;
+  left: 0;
+  display: flex;
+  height: auto;
+  width: 100%;
+  text-shadow: var(--textShadow1);
+  background-color: rgba(128, 128, 128, 0.9);
+}
+#help .wrapper__body-heading h3 {
+  flex: 2;
+  text-align: center;
+  font-size: 1.8rem;
+  line-height: 2;
+  letter-spacing: 2px;
+  border-right: 1.5px solid var(--black);
+}
+#help .wrapper__body-heading span {
+  flex: 8;
+  font-size: 1.8rem;
+  line-height: 2;
+  font-weight: bold;
+  letter-spacing: 2px;
+  padding-left: 16px;
+}
+#help .wrapper__body #wrapperGeneral,
+#help .wrapper__body #wrapperChat,
+#help .wrapper__body #wrapperVehicle,
+#help .wrapper__body #wrapperFaction,
+#help .wrapper__body #wrapperHome,
+#help .wrapper__body #wrapperWeapon {
+  display: none;
+  width: 100%;
+}
+#help .wrapper__body #wrapperGeneral .content-item,
+#help .wrapper__body #wrapperChat .content-item,
+#help .wrapper__body #wrapperVehicle .content-item,
+#help .wrapper__body #wrapperFaction .content-item,
+#help .wrapper__body #wrapperHome .content-item,
+#help .wrapper__body #wrapperWeapon .content-item {
+  line-height: 2;
+  background-color: rgba(255, 255, 255, 0.15);
+}
+#help .wrapper__body #wrapperGeneral .content-item__item,
+#help .wrapper__body #wrapperChat .content-item__item,
+#help .wrapper__body #wrapperVehicle .content-item__item,
+#help .wrapper__body #wrapperFaction .content-item__item,
+#help .wrapper__body #wrapperHome .content-item__item,
+#help .wrapper__body #wrapperWeapon .content-item__item {
+  display: flex;
+  align-items: center;
+}
+#help .wrapper__body #wrapperGeneral .content-item__item h2,
+#help .wrapper__body #wrapperChat .content-item__item h2,
+#help .wrapper__body #wrapperVehicle .content-item__item h2,
+#help .wrapper__body #wrapperFaction .content-item__item h2,
+#help .wrapper__body #wrapperHome .content-item__item h2,
+#help .wrapper__body #wrapperWeapon .content-item__item h2 {
+  flex: 2;
+  height: 64px;
+  line-height: 3.5;
+  text-align: center;
+  font-size: 1.6rem;
+  letter-spacing: 2px;
+  border: 1.5px solid var(--black);
+  border-left: none;
+  text-transform: lowercase;
+}
+#help .wrapper__body #wrapperGeneral .content-item__item h2:hover,
+#help .wrapper__body #wrapperChat .content-item__item h2:hover,
+#help .wrapper__body #wrapperVehicle .content-item__item h2:hover,
+#help .wrapper__body #wrapperFaction .content-item__item h2:hover,
+#help .wrapper__body #wrapperHome .content-item__item h2:hover,
+#help .wrapper__body #wrapperWeapon .content-item__item h2:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+#help .wrapper__body #wrapperGeneral .content-item__item span,
+#help .wrapper__body #wrapperChat .content-item__item span,
+#help .wrapper__body #wrapperVehicle .content-item__item span,
+#help .wrapper__body #wrapperFaction .content-item__item span,
+#help .wrapper__body #wrapperHome .content-item__item span,
+#help .wrapper__body #wrapperWeapon .content-item__item span {
+  flex: 8;
+  height: 64px;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  letter-spacing: 1.5px;
+  padding-left: 16px;
+  border: 1.5px solid var(--black);
+  border-left: none;
+  border-right: none;
+}
+
+#faq img {
+  position: absolute;
+  left: 50%;
+  bottom: 5%;
+  transform: translateX(-50%);
+  height: 80%;
+}
+
+#help_close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 12px;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 999999;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+}
+.modal .modal-content {
+  position: relative;
+  min-height: 250px;
+  width: 100%;
+  max-width: 512px;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  color: var(--white);
+  overflow: hidden;
+  animation: showModal 0.1s linear;
+}
+
+@keyframes showModal {
+  from {
+    transform: scale(0.8);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.modal-content h2 {
+  padding: 12px 16px;
+  text-transform: uppercase;
+  font-size: 3rem;
+  border-bottom: 1px solid var(--primary);
+  line-height: 56px;
+  letter-spacing: 1.5px;
+  color: var(--primary);
+  position: relative;
+  text-shadow: var(--textShadow1);
+}
+.modal-content h2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 82px;
+  width: 512px;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 20px 20px 0 0;
+  z-index: -1;
+}
+.modal-content .modal-desc {
+  margin: 0 auto;
+}
+.modal-content .modal-desc ion-icon {
+  display: block;
+  margin: 0 auto;
+  padding: 24px;
+  font-size: 10rem;
+  color: var(--lightGreen);
+}
+.modal-content .modal-desc p {
+  margin-bottom: 128px;
+  padding: 4px;
+  font-size: 2rem;
+}
+.modal-content .modal-btn {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  width: 100%;
+  height: 64px;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.modal-content .modal-btn--close, .modal-content .modal-btn--buy {
+  height: 100%;
+  width: 100%;
+  background-color: inherit;
+  border: none;
+  color: var(--white);
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+.modal-content .modal-btn--close p, .modal-content .modal-btn--buy p {
+  letter-spacing: 1.25px;
+}
+.modal-content .modal-btn--close:hover > p, .modal-content .modal-btn--buy:hover > p {
+  transform: translateY(-1.5px);
+  font-size: 1.45rem;
+}
+.modal-content .modal-btn--close:active p, .modal-content .modal-btn--buy:active p {
+  transform: translateY(0px);
+}
+.modal-content .modal-btn--close {
+  border-bottom-left-radius: 20px;
+}
+.modal-content .modal-btn--close:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.modal-content .modal-btn--buy {
+  border-bottom-right-radius: 20px;
+}
+.modal-content .modal-btn--buy:hover {
+  background-color: var(--primary);
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,151 @@
+html {
+  background: url(../images/bg-primary.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#main {
+  height: 100vh;
+  width: 100%;
+  color: white;
+}
+#main .flex {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+#main .flex .grid-top {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(49%, 1fr));
+  grid-gap: 16px;
+  padding: 12px;
+  flex: 5;
+}
+#main .flex .grid-top .project {
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.2);
+  max-height: 320px;
+  height: 100%;
+}
+#main .flex .grid-top .project h2 {
+  padding: 8px;
+  font-size: 2.6rem;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  height: 48px;
+  text-shadow: var(--textShadow1);
+  color: var(--white);
+}
+#main .flex .grid-top .project h2 span {
+  font-size: 0.75em;
+  text-transform: capitalize;
+  text-shadow: none;
+  font-weight: 400;
+}
+#main .flex .grid-top .project .item-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(20%, 1fr));
+  width: 100%;
+  max-height: 100%;
+  grid-gap: 16px;
+  justify-items: center;
+  padding: 4px;
+}
+#main .flex .grid-top .project .item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  padding: 4px;
+  opacity: 0.9;
+  transition: 0.3s;
+  transform: scale(1.05);
+}
+#main .flex .grid-top .project .item:hover {
+  border-radius: 2px;
+  transform: scale(1.15);
+  opacity: 1;
+  cursor: pointer;
+}
+#main .flex .grid-top .project .item:hover:active {
+  transform: scale(1.1);
+}
+#main .flex .grid-top .project .item img {
+  height: 90px;
+}
+#main .flex .grid-top .project .item h3 {
+  font-family: "Big Shoulders Stencil Text";
+  font-size: 1.5rem;
+  color: var(--white);
+  text-shadow: var(--textShadow1);
+  text-transform: capitalize;
+  padding-top: 8px;
+}
+#main .flex .grid-bottom {
+  flex: 1;
+  position: relative;
+}
+#main .flex .grid-bottom .dock {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  width: 75%;
+  border-left: 24px solid transparent;
+  border-right: 24px solid transparent;
+  border-bottom: 48px solid var(--gray);
+}
+#main .flex .grid-bottom .dock .contact {
+  position: absolute;
+  top: -42px;
+  left: 0;
+  right: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10%, 1fr));
+  justify-items: center;
+}
+@media only screen and (max-width: 1024px) {
+  #main .flex .grid-bottom .dock .contact {
+    /* For tablets: */
+  }
+  #main .flex .grid-bottom .dock .contact :nth-child(6),
+#main .flex .grid-bottom .dock .contact :nth-child(7),
+#main .flex .grid-bottom .dock .contact :nth-child(8) {
+    display: none;
+  }
+}
+@media only screen and (max-width: 768px) {
+  #main .flex .grid-bottom .dock .contact {
+    /* For mobile phones: */
+  }
+  #main .flex .grid-bottom .dock .contact :nth-child(4),
+#main .flex .grid-bottom .dock .contact :nth-child(5),
+#main .flex .grid-bottom .dock .contact :nth-child(6),
+#main .flex .grid-bottom .dock .contact :nth-child(7),
+#main .flex .grid-bottom .dock .contact :nth-child(8) {
+    display: none;
+  }
+}
+#main .flex .grid-bottom .dock .contact i {
+  font-size: 8em;
+  transition: 0.3s;
+  color: var(--white);
+}
+#main .flex .grid-bottom .dock .contact i:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+#main .flex .grid-bottom .dock .contact i:first-child :hover {
+  color: var(--lightGreen);
+}
+#main .flex .grid-bottom .dock .contact i:nth-of-type(2) :hover {
+  color: var(--blue);
+}
+#main .flex .grid-bottom .dock .contact i:nth-of-type(3) :hover {
+  color: var(--red);
+}
+
+/*# sourceMappingURL=main.css.map */

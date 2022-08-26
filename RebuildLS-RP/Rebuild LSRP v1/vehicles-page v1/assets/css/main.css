@@ -1,0 +1,544 @@
+@charset "UTF-8";
+body {
+  background-image: url("../../../assets/images/bg-demo.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+:root {
+  --textColor: #dadee1;
+  --primaryColor: #fb5544;
+  --subColor: #252525;
+  --textShadow: 2px 2px 4px #fb5544;
+}
+
+#container {
+  display: flex;
+  cursor: default;
+  overflow: hidden;
+}
+#container .leftContent {
+  display: flex;
+  flex-direction: column;
+  flex: 3;
+  height: 100%;
+  width: 100%;
+}
+#container .leftContent .top {
+  height: 96px;
+}
+#container .rightContent, #container .rightContent--full {
+  flex: 0.5;
+  border-left: 5px solid var(--primaryColor);
+  color: var(--textColor);
+  animation: moveInLeft linear 0.1s;
+}
+#container .rightContent--full {
+  flex: 1;
+  animation: moveInRight linear 0.2s;
+}
+@media (min-width: 200px) {
+  #container .rightContent--full .rightContent__header {
+    width: 100%;
+    height: 96px;
+    background-color: #000;
+  }
+  #container .rightContent--full .rightContent__header h3 {
+    line-height: 64px;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.3rem;
+    text-shadow: var(--textShadow);
+  }
+  #container .rightContent--full .group__menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    cursor: pointer;
+  }
+  #container .rightContent--full .group__item {
+    width: 25%;
+    line-height: 3;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  #container .rightContent--full .group__item:hover {
+    background-color: rgba(204, 204, 204, 0.25);
+  }
+  #container .rightContent--full .group__item--active {
+    position: relative;
+  }
+  #container .rightContent--full .group__item--active::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 50px;
+    transform: translateX(-50%);
+    border-top: 3px solid var(--primaryColor);
+    animation: activeItem ease-in-out 0.3s;
+  }
+  #container .rightContent--full .rightContent__body {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(calc(50% - 8px), 1fr));
+    justify-items: center;
+    grid-gap: 8px;
+    margin: 8px;
+    width: 100%;
+    height: calc(100% - 176px);
+  }
+  #container .rightContent--full .rightContent__body .vehicleCard {
+    position: relative;
+    height: 125px;
+    width: 125px;
+    border: 1px dotted rgba(204, 204, 204, 0.75);
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+  }
+  #container .rightContent--full .rightContent__body .vehicleCard:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+  #container .rightContent--full .rightContent__body .vehicleCard:hover:active {
+    transform: scale(1);
+    opacity: 0.75;
+  }
+  #container .rightContent--full .rightContent__body .vehicleCard .vehicleCard--img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+  }
+  #container .rightContent--full .rightContent__body .vehicleCard .vehicleCard--name {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding-bottom: 4px;
+    text-align: center;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    font-weight: bold;
+    border-top: 1px solid darkred;
+    background-color: rgba(139, 0, 0, 0.5);
+    color: var(--textColor);
+    text-shadow: -3px 3px 16px #dadee1;
+  }
+  #container .rightContent--full .rightContent__body .vehicleCard.activeCard {
+    background-color: #fb5644;
+    position: relative;
+  }
+  #container .rightContent--full .rightContent__body .vehicleCard.activeCard:hover .vehicleCard--more {
+    display: none;
+  }
+  #container .rightContent--full .rightContent__footer {
+    height: 64px;
+    line-height: 64px;
+  }
+  #container .rightContent--full .rightContent__footer--btn::before {
+    content: "thu gọn";
+  }
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.75) 20%, transparent), linear-gradient(90deg, rgba(0, 0, 0, 0.25), transparent 20%);
+}
+.top__logo {
+  height: 96px;
+}
+.top__logo--img {
+  height: 100%;
+  width: 100%;
+}
+.top__heading span {
+  height: 100%;
+  line-height: 64px;
+  font-size: 2rem;
+  letter-spacing: 0.5rem;
+  text-transform: uppercase;
+  color: var(--textColor);
+  text-shadow: 2px 2px 4px #dadee1;
+}
+.top__btn {
+  height: 100%;
+  line-height: 64px;
+}
+.top__btn--close {
+  margin-right: 24px;
+  height: 40px;
+  width: 72px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  background-color: var(--textColor);
+  color: var(--subColor);
+}
+.top__btn--close:hover {
+  background-color: var(--primaryColor);
+  color: var(--textColor);
+}
+.top__btn--close:active {
+  transform: translateY(2px);
+}
+
+.content {
+  padding: 0 16px;
+  color: var(--textColor);
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.25), transparent 20%);
+  height: 432px;
+}
+.content__bg {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+.content__bg img {
+  height: 100%;
+  margin: 0 auto;
+}
+.content__bg .content__carColor {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+.content__bg .content__model {
+  position: absolute;
+  top: 48px;
+  right: 48px;
+  font-size: 3.6rem;
+  letter-spacing: 5px;
+  text-shadow: var(--textShadow);
+}
+.content__bg .content__model::before {
+  content: "";
+  position: absolute;
+  top: -24px;
+  right: 0;
+  width: 50%;
+  height: 70px;
+  border-bottom: 3px solid var(--primaryColor);
+  animation: activeItem ease-in-out 0.5s;
+}
+.content__bg .content__model::after {
+  content: "";
+  position: absolute;
+  top: -24px;
+  right: 0;
+  width: 100%;
+  height: 70px;
+  border-top: 3px solid var(--primaryColor);
+  animation: activeItem ease-in-out 0.5s;
+}
+.content__bg .content__btn {
+  position: absolute;
+  bottom: 16px;
+  right: 0;
+}
+.content__bg .content__btn--buy {
+  width: 96px;
+  height: 48px;
+  border: none;
+  border-radius: 1px;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: bold;
+  background-color: var(--primaryColor);
+  color: var(--textColor);
+  cursor: pointer;
+}
+.content__bg .content__btn--buy:hover {
+  background-color: var(--textColor);
+  color: var(--subColor);
+}
+.content__bg .content__btn--buy:active {
+  transform: translateY(2px);
+}
+
+.color-list {
+  padding: 4px 2px;
+  border-radius: 20px;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(251, 86, 68, 0.2);
+}
+.color-1, .color-11, .color-10, .color-9, .color-8, .color-7, .color-6, .color-5, .color-4, .color-3, .color-2 {
+  position: relative;
+  margin: 10px;
+  border: 1.5px solid #db2828;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+}
+.color-1::before, .color-11::before, .color-10::before, .color-9::before, .color-8::before, .color-7::before, .color-6::before, .color-5::before, .color-4::before, .color-3::before, .color-2::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 12px;
+  width: 12px;
+  background-color: #db2828;
+  border-radius: 50%;
+  opacity: 0.75;
+}
+.color-1:hover, .color-11:hover, .color-10:hover, .color-9:hover, .color-8:hover, .color-7:hover, .color-6:hover, .color-5:hover, .color-4:hover, .color-3:hover, .color-2:hover {
+  cursor: pointer;
+}
+.color-1:hover::before, .color-11:hover::before, .color-10:hover::before, .color-9:hover::before, .color-8:hover::before, .color-7:hover::before, .color-6:hover::before, .color-5:hover::before, .color-4:hover::before, .color-3:hover::before, .color-2:hover::before {
+  height: 16px;
+  width: 16px;
+  opacity: 1;
+}
+.color-1:hover::after, .color-11:hover::after, .color-10:hover::after, .color-9:hover::after, .color-8:hover::after, .color-7:hover::after, .color-6:hover::after, .color-5:hover::after, .color-4:hover::after, .color-3:hover::after, .color-2:hover::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 32px;
+  width: 32px;
+  background-color: #db2828;
+  border-radius: 50%;
+  opacity: 0.5;
+}
+.color-1:hover:active, .color-11:hover:active, .color-10:hover:active, .color-9:hover:active, .color-8:hover:active, .color-7:hover:active, .color-6:hover:active, .color-5:hover:active, .color-4:hover:active, .color-3:hover:active, .color-2:hover:active {
+  transform: scale(1.1);
+}
+.color-2 {
+  border: 1.5px solid #f2711c;
+}
+.color-2::before {
+  background-color: #f2711c;
+}
+.color-2:hover::after {
+  background-color: #f2711c;
+}
+.color-3 {
+  border: 1.5px solid #fbbd08;
+}
+.color-3::before {
+  background-color: #fbbd08;
+}
+.color-3:hover::after {
+  background-color: #fbbd08;
+}
+.color-4 {
+  border: 1.5px solid #21ba45;
+}
+.color-4::before {
+  background-color: #21ba45;
+}
+.color-4:hover::after {
+  background-color: #21ba45;
+}
+.color-5 {
+  border: 1.5px solid #00b5ad;
+}
+.color-5::before {
+  background-color: #00b5ad;
+}
+.color-5:hover::after {
+  background-color: #00b5ad;
+}
+.color-6 {
+  border: 1.5px solid #2185d0;
+}
+.color-6::before {
+  background-color: #2185d0;
+}
+.color-6:hover::after {
+  background-color: #2185d0;
+}
+.color-7 {
+  border: 1.5px solid #6435c9;
+}
+.color-7::before {
+  background-color: #6435c9;
+}
+.color-7:hover::after {
+  background-color: #6435c9;
+}
+.color-8 {
+  border: 1.5px solid #e0e1e2;
+}
+.color-8::before {
+  background-color: #e0e1e2;
+}
+.color-8:hover::after {
+  background-color: #e0e1e2;
+}
+.color-9 {
+  border: 1.5px solid #a5673f;
+}
+.color-9::before {
+  background-color: #a5673f;
+}
+.color-9:hover::after {
+  background-color: #a5673f;
+}
+.color-10 {
+  border: 1.5px solid #767676;
+}
+.color-10::before {
+  background-color: #767676;
+}
+.color-10:hover::after {
+  background-color: #767676;
+}
+.color-11 {
+  border: 1.5px solid #1b1c1d;
+}
+.color-11::before {
+  background-color: #1b1c1d;
+}
+.color-11:hover::after {
+  background-color: #1b1c1d;
+}
+
+.activeColor::after {
+  content: "◄";
+  position: absolute;
+  top: 50%;
+  left: 190%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--textColor);
+  opacity: 1;
+}
+
+.bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(37, 37, 37, 0.75);
+  color: var(--textColor);
+  height: max-content;
+}
+.bottom__carInventory, .bottom__carPrice, .bottom__carSpeed, .bottom__carCapacity {
+  padding: 0 16px;
+  font-size: 1.8rem;
+  text-align: right;
+  line-height: 1.8;
+}
+.bottom__carInventory h3, .bottom__carPrice h3, .bottom__carSpeed h3, .bottom__carCapacity h3 {
+  text-transform: uppercase;
+}
+.bottom__carInventory span, .bottom__carPrice span, .bottom__carSpeed span, .bottom__carCapacity span {
+  color: var(--primaryColor);
+  font-weight: 500;
+}
+.rightContent__header {
+  width: 100%;
+  height: 96px;
+  background-color: #000;
+}
+.rightContent__header h3 {
+  line-height: 96px;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1rem;
+  text-shadow: var(--textShadow);
+  position: relative;
+}
+.rightContent__header .group__menu {
+  display: none;
+}
+
+.rightContent__body {
+  width: 100%;
+  max-height: calc(100% - 160px);
+}
+.rightContent__body .vehicleCard {
+  background-color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  position: relative;
+}
+.rightContent__body .vehicleCard:hover .vehicleCard--more {
+  display: block;
+}
+.rightContent__body .vehicleCard--img {
+  position: relative;
+}
+.rightContent__body .vehicleCard--img:hover {
+  transform: scale(1.05);
+}
+.rightContent__body .vehicleCard--more {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 64px;
+  height: 32px;
+  border-radius: 20px;
+  text-align: center;
+  line-height: 2.2;
+  font-weight: bold;
+  font-size: 1.45em;
+  background-color: var(--textColor);
+  color: var(--subColor);
+  opacity: 0.75;
+}
+.rightContent__body .vehicleCard--more:active {
+  opacity: 0;
+}
+.rightContent__body .vehicleCard--name {
+  display: block;
+  line-height: 2;
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: -3px 3px 16px #dadee1;
+}
+.rightContent__body .vehicleCard.activeCard {
+  background-color: #fb5644;
+  position: relative;
+}
+.rightContent__body .vehicleCard.activeCard:hover .vehicleCard--more {
+  display: none;
+}
+
+.rightContent__footer {
+  text-align: center;
+  background-color: rgba(37, 37, 37, 0.75);
+  padding: 4px;
+  height: 64px;
+  line-height: 64px;
+}
+.rightContent__footer--btn {
+  width: 90%;
+  height: 42px;
+  border: none;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  font-weight: bold;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.rightContent__footer--btn::before {
+  content: "tất cả";
+}
+.rightContent__footer--btn:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
+.rightContent__footer--btn:hover:active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/*# sourceMappingURL=main.css.map */

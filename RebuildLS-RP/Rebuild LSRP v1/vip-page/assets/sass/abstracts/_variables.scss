@@ -1,0 +1,22 @@
+@mixin borderStyle {
+  border: 1.5px solid rgba(70, 4, 4, 0.25);
+  border-radius: 3px;
+}
+
+@mixin shadowStyle {
+  box-shadow: rgb(0 0 0 / 25%) 8px 16px 8px;
+}
+
+@mixin bgStyle2 {
+  background: rgb(196, 154, 144);
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(165, 0, 38),
+    rgb(211, 50, 43),
+    rgba(241, 108, 67, 0.25) 25%,
+    rgba(254, 219, 144, 0.55),
+    rgba(220, 241, 236, 0.35),
+    rgba(74, 116, 180, 0.15),
+    rgba(211, 50, 43, 0.25)
+  );
+}

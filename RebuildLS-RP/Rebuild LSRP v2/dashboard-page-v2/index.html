@@ -1,0 +1,1054 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../lib/css/base.css" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+  </head>
+  <body>
+    <!-- Ion Icon -->
+    <div id="container">
+      <header>
+        <div class="heading">
+          <div class="heading-left"></div>
+          <div class="heading-logo">
+            <img src="../lib/images/ls-rp.png" alt="logo" />
+          </div>
+
+          <!-- Menu Primary -->
+          <ul>
+            <li class="js-menuPrimary">
+              <ion-icon name="person-outline"></ion-icon>
+              <span>thông tin</span>
+            </li>
+
+            <li class="js-menuPrimary active">
+              <ion-icon name="car-sport-outline"></ion-icon>
+              <span>phương tiện</span>
+            </li>
+            <li class="js-menuPrimary">
+              <ion-icon name="home-outline"></ion-icon>
+              <span>nhà đất</span>
+            </li>
+            <li class="js-menuPrimary">
+              <ion-icon name="bar-chart-outline"></ion-icon>
+              <span>đấu giá</span>
+            </li>
+            <li class="js-menuPrimary">
+              <ion-icon name="rocket-outline"></ion-icon>
+              <span>V.I.P</span>
+            </li>
+            <li class="js-menuPrimary">
+              <ion-icon name="help-circle-outline"></ion-icon>
+              <span>hướng dẫn</span>
+            </li>
+            <li class="js-menuPrimary">
+              <ion-icon name="flag-outline"></ion-icon>
+              <span>F.A.Q</span>
+            </li>
+          </ul>
+
+          <div class="heading-right">
+            <ion-icon name="close-outline"></ion-icon>
+          </div>
+        </div>
+      </header>
+
+      <!-- Thông Tin -->
+      <section id="block-dashboard" class="js-content dashboard">
+        <h2 class="title">Tổng quan</h2>
+        <!-- heading -->
+        <div class="wrapper">
+          <div class="grid-full">
+            <div id="generalMoney" class="general-money">
+              <h3><ion-icon name="cash-outline"></ion-icon>tài chính</h3>
+              <p id="presentMoney">
+                Tổng: <span id="primary"> 150.000 $</span><br />
+                Tiền mặt: <span id="sub-primary"> 50.000 $</span><br />
+                Ngân hàng:
+                <span id="bank"> 100.000 $</span>
+              </p>
+            </div>
+            <div id="generalOnline" class="general-online">
+              <h3><ion-icon name="time"></ion-icon>thời gian</h3>
+              <p id="presentMonety">48 day</p>
+            </div>
+            <div id="generalJob" class="general-job">
+              <h3><ion-icon name="briefcase"></ion-icon>công việc</h3>
+              <p id="presentJob">câu cá</p>
+            </div>
+            <div id="generalVehicle" class="general-vehicle">
+              <h3><ion-icon name="car-sport"></ion-icon>phương tiện</h3>
+              <p id="presentVehiclE">8</p>
+            </div>
+            <div id="generalLevel" class="general-level">
+              <h3><ion-icon name="accessibility"></ion-icon>cấp độ</h3>
+              <p id="presentLevel">+2</p>
+            </div>
+          </div>
+        </div>
+        <!-- end heading -->
+
+        <div class="wrapper openFlex">
+          <div class="flex-70">
+            <h2 class="title">Title 1</h2>
+            <div class="lorem">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores
+              nulla ab accusantium obcaecati ex perspiciatis blanditiis,
+              distinctio amet adipisci facere? Eum dolores veniam in temporibus
+              fuga eos autem. Earum, error.
+            </div>
+          </div>
+          <div class="flex-30">
+            <h2 class="title">Title 2</h2>
+          </div>
+        </div>
+      </section>
+
+      <!-- Phương Tiện -->
+      <section id="block-vehicle" class="js-content vehicle openFlex scroll">
+        <!-- Top phương tiện được mua nhiều nhất -->
+        <div class="best-sale">
+          <h2 class="title">Top 8 best selling</h2>
+
+          <div class="slider-frame">
+            <div class="slider-images">
+              <div id="topCar" class="img-container">
+                <div class="imgBx">
+                  <!-- Ảnh phương tiện -->
+                  <img id="imgCar" src="./assets/images/1.png" alt="1" />
+                  <!-- Tag phương tiện -->
+                  <div class="top-left">
+                    <ion-icon name="car-sport-outline"></ion-icon>
+                    <div id="type-trunk">bán tải</div>
+                  </div>
+                  <!-- Rank phương tiện đã bán -->
+                  <div class="bottom-left">
+                    <div id="topSale_1">#1</div>
+                  </div>
+                  <!-- Lượt mua -->
+                  <div class="bottom-right">
+                    <div id="viewCar">8</div>
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                </div>
+                <div class="content">
+                  <!-- Tên phương tiện -->
+                  <div id="nameCar" class="name">Car 1</div>
+                  <!-- Chọn màu sắc phương tiện -->
+                  <div id="colorCar" class="color">
+                    <p>màu sắc:</p>
+                    <ul id="menuColor">
+                      <li class="js-Color active" id="itemColor1"></li>
+                      <li class="js-Color" id="itemColor2"></li>
+                      <li class="js-Color" id="itemColor3"></li>
+                      <li class="js-Color" id="itemColor4"></li>
+                      <li class="js-Color" id="itemColor5"></li>
+                      <li class="js-Color" id="itemColor6"></li>
+                      <li class="js-Color" id="itemColor7"></li>
+                      <li class="js-Color" id="itemColor8"></li>
+                      <li class="js-Color" id="itemColor9"></li>
+                      <li class="js-Color" id="itemColor10"></li>
+                      <li class="js-Color" id="itemColor11"></li>
+                    </ul>
+                  </div>
+                  <!-- Gía phương tiện -->
+                  <div class="price">
+                    thành tiền: <span id="priceCar">$8 000</span>
+                  </div>
+                  <!-- Nút mua phương tiện -->
+                  <div class="js-buyCar btn-buy">mua</div>
+                </div>
+              </div>
+              <div id="topCar" class="img-container">
+                <div class="imgBx">
+                  <img id="imgCar" src="./assets/images/2.png" alt="1" />
+                  <div class="top-left">
+                    <ion-icon name="car-sport-outline"></ion-icon>
+                    <div id="type-moto">moto</div>
+                  </div>
+                  <div class="bottom-left">
+                    <div id="topSale_2">#2</div>
+                  </div>
+                  <div class="bottom-right">
+                    <div id="viewCar">8</div>
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                </div>
+                <div class="content">
+                  <div id="nameCar" class="name">Car 2</div>
+                  <div id="colorCar" class="color">
+                    <p>màu sắc:</p>
+                    <ul id="menuColor">
+                      <li
+                        class="js-Color"
+                        id="itemColor1"
+                        class="js-active"
+                      ></li>
+                      <li class="js-Color" id="itemColor2"></li>
+                      <li class="js-Color" id="itemColor3"></li>
+                      <li class="js-Color" id="itemColor4"></li>
+                      <li class="js-Color" id="itemColor5"></li>
+                      <li class="js-Color" id="itemColor6"></li>
+                      <li class="js-Color" id="itemColor7"></li>
+                      <li class="js-Color" id="itemColor8"></li>
+                      <li class="js-Color" id="itemColor9"></li>
+                      <li class="js-Color" id="itemColor10"></li>
+                      <li class="js-Color" id="itemColor11"></li>
+                    </ul>
+                  </div>
+                  <div class="price">
+                    thành tiền: <span id="priceCar">$8 000</span>
+                  </div>
+                  <div class="js-buyCar btn-buy">mua</div>
+                </div>
+              </div>
+              <div id="topCar" class="img-container">
+                <div class="imgBx">
+                  <img id="imgCar" src="./assets/images/3.png" alt="1" />
+                  <div class="top-left">
+                    <ion-icon name="car-sport-outline"></ion-icon>
+                    <div id="type-sport">thể thao</div>
+                  </div>
+                  <div class="bottom-left">
+                    <div id="topSale_3">#3</div>
+                  </div>
+                  <div class="bottom-right">
+                    <div id="viewCar">8</div>
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                </div>
+                <div class="content">
+                  <div id="nameCar" class="name">Car 3</div>
+                  <div id="colorCar" class="color">
+                    <p>màu sắc:</p>
+                    <ul id="menuColor">
+                      <li class="js-Color" id="itemColor1"></li>
+                      <li class="js-Color" id="itemColor2"></li>
+                      <li class="js-Color" id="itemColor3"></li>
+                      <li class="js-Color" id="itemColor4"></li>
+                      <li class="js-Color" id="itemColor5"></li>
+                      <li class="js-Color" id="itemColor6"></li>
+                      <li class="js-Color" id="itemColor7"></li>
+                      <li class="js-Color" id="itemColor8"></li>
+                      <li class="js-Color" id="itemColor9"></li>
+                      <li class="js-Color" id="itemColor10"></li>
+                      <li class="js-Color" id="itemColor11"></li>
+                    </ul>
+                  </div>
+                  <div class="price">
+                    thành tiền: <span id="priceCar">$8 000</span>
+                  </div>
+                  <div class="js-buyCar btn-buy">mua</div>
+                </div>
+              </div>
+              <div id="topCar" class="img-container">
+                <div class="imgBx">
+                  <img id="imgCar" src="./assets/images/4.png" alt="1" />
+                  <div class="top-left">
+                    <ion-icon name="car-sport-outline"></ion-icon>
+                    <div id="type-utility">đa dụng</div>
+                  </div>
+                  <div class="bottom-left">
+                    <div id="topSale_4">#4</div>
+                  </div>
+                  <div class="bottom-right">
+                    <div id="viewCar">8</div>
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                </div>
+                <div class="content">
+                  <div id="nameCar" class="name">Car 4</div>
+                  <div id="colorCar" class="color">
+                    <p>màu sắc:</p>
+                    <ul id="menuColor">
+                      <li class="js-Color" id="itemColor1"></li>
+                      <li class="js-Color" id="itemColor2"></li>
+                      <li class="js-Color" id="itemColor3"></li>
+                      <li class="js-Color" id="itemColor4"></li>
+                      <li class="js-Color" id="itemColor5"></li>
+                      <li class="js-Color" id="itemColor6"></li>
+                      <li class="js-Color" id="itemColor7"></li>
+                      <li class="js-Color" id="itemColor8"></li>
+                      <li class="js-Color" id="itemColor9"></li>
+                      <li class="js-Color" id="itemColor10"></li>
+                      <li class="js-Color" id="itemColor11"></li>
+                    </ul>
+                  </div>
+                  <div class="price">
+                    thành tiền: <span id="priceCar">$8 000</span>
+                  </div>
+                  <div class="js-buyCar btn-buy">mua</div>
+                </div>
+              </div>
+              <div id="topCar" class="img-container">
+                <div class="imgBx">
+                  <img id="imgCar" src="./assets/images/5.png" alt="1" />
+                  <div class="top-left">
+                    <ion-icon name="car-sport-outline"></ion-icon>
+                    <div id="type-vip">V.I.P</div>
+                  </div>
+                  <div class="bottom-left">
+                    <div id="topSale_5">#5</div>
+                  </div>
+                  <div class="bottom-right">
+                    <div id="viewCar">8</div>
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                </div>
+                <div class="content">
+                  <div id="nameCar" class="name">Car 5</div>
+                  <div id="colorCar" class="color">
+                    <p>màu sắc:</p>
+                    <ul id="menuColor">
+                      <li class="js-Color" id="itemColor1"></li>
+                      <li class="js-Color" id="itemColor2"></li>
+                      <li class="js-Color" id="itemColor3"></li>
+                      <li class="js-Color" id="itemColor4"></li>
+                      <li class="js-Color" id="itemColor5"></li>
+                      <li class="js-Color" id="itemColor6"></li>
+                      <li class="js-Color" id="itemColor7"></li>
+                      <li class="js-Color" id="itemColor8"></li>
+                      <li class="js-Color" id="itemColor9"></li>
+                      <li class="js-Color" id="itemColor10"></li>
+                      <li class="js-Color" id="itemColor11"></li>
+                    </ul>
+                  </div>
+                  <div class="price">
+                    thành tiền: <span id="priceCar">$8 000</span>
+                  </div>
+                  <div class="js-buyCar btn-buy">mua</div>
+                </div>
+              </div>
+              <div id="topCar" class="img-container">
+                <div class="imgBx">
+                  <img id="imgCar" src="./assets/images/6.png" alt="1" />
+                  <div class="top-left">
+                    <ion-icon name="car-sport-outline"></ion-icon>
+                    <div id="type-vip">V.I.P</div>
+                  </div>
+                  <div class="bottom-left">
+                    <div id="topSale_6">#6</div>
+                  </div>
+                  <div class="bottom-right">
+                    <div id="viewCar">8</div>
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                </div>
+                <div class="content">
+                  <div id="nameCar" class="name">Car 6</div>
+                  <div id="colorCar" class="color">
+                    <p>màu sắc:</p>
+                    <ul id="menuColor">
+                      <li class="js-Color" id="itemColor1"></li>
+                      <li class="js-Color" id="itemColor2"></li>
+                      <li class="js-Color" id="itemColor3"></li>
+                      <li class="js-Color" id="itemColor4"></li>
+                      <li class="js-Color" id="itemColor5"></li>
+                      <li class="js-Color" id="itemColor6"></li>
+                      <li class="js-Color" id="itemColor7"></li>
+                      <li class="js-Color" id="itemColor8"></li>
+                      <li class="js-Color" id="itemColor9"></li>
+                      <li class="js-Color" id="itemColor10"></li>
+                      <li class="js-Color" id="itemColor11"></li>
+                    </ul>
+                  </div>
+                  <div class="price">
+                    thành tiền: <span id="priceCar">$8 000</span>
+                  </div>
+                  <div class="js-buyCar btn-buy">mua</div>
+                </div>
+              </div>
+              <div id="topCar" class="img-container">
+                <div class="imgBx">
+                  <img id="imgCar" src="./assets/images/7.png" alt="1" />
+                  <div class="top-left">
+                    <ion-icon name="car-sport-outline"></ion-icon>
+                    <div id="type-vip">V.I.P</div>
+                  </div>
+                  <div class="bottom-left">
+                    <div id="topSale_7">#7</div>
+                  </div>
+                  <div class="bottom-right">
+                    <div id="viewCar">8</div>
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                </div>
+                <div class="content">
+                  <div id="nameCar" class="name">Car 7</div>
+                  <div id="colorCar" class="color">
+                    <p>màu sắc:</p>
+                    <ul id="menuColor">
+                      <li class="js-Color" id="itemColor1"></li>
+                      <li class="js-Color" id="itemColor2"></li>
+                      <li class="js-Color" id="itemColor3"></li>
+                      <li class="js-Color" id="itemColor4"></li>
+                      <li class="js-Color" id="itemColor5"></li>
+                      <li class="js-Color" id="itemColor6"></li>
+                      <li class="js-Color" id="itemColor7"></li>
+                      <li class="js-Color" id="itemColor8"></li>
+                      <li class="js-Color" id="itemColor9"></li>
+                      <li class="js-Color" id="itemColor10"></li>
+                      <li class="js-Color" id="itemColor11"></li>
+                    </ul>
+                  </div>
+                  <div class="price">
+                    thành tiền: <span id="priceCar">$8 000</span>
+                  </div>
+                  <div class="js-buyCar btn-buy">mua</div>
+                </div>
+              </div>
+              <div id="topCar" class="img-container">
+                <div class="imgBx">
+                  <img id="imgCar" src="./assets/images/8.png" alt="1" />
+                  <div class="top-left">
+                    <ion-icon name="car-sport-outline"></ion-icon>
+                    <div id="type-vip">V.I.P</div>
+                  </div>
+                  <div class="bottom-left">
+                    <div id="topSale_8">#8</div>
+                  </div>
+                  <div class="bottom-right">
+                    <div id="viewCar">8</div>
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                </div>
+                <div class="content">
+                  <div id="nameCar" class="name">Car 8</div>
+                  <div id="colorCar" class="color">
+                    <p>màu sắc:</p>
+                    <ul id="menuColor">
+                      <li class="js-Color" id="itemColor1"></li>
+                      <li class="js-Color" id="itemColor2"></li>
+                      <li class="js-Color" id="itemColor3"></li>
+                      <li class="js-Color" id="itemColor4"></li>
+                      <li class="js-Color" id="itemColor5"></li>
+                      <li class="js-Color" id="itemColor6"></li>
+                      <li class="js-Color" id="itemColor7"></li>
+                      <li class="js-Color" id="itemColor8"></li>
+                      <li class="js-Color" id="itemColor9"></li>
+                      <li class="js-Color" id="itemColor10"></li>
+                      <li class="js-Color" id="itemColor11"></li>
+                    </ul>
+                  </div>
+                  <div class="price">
+                    thành tiền: <span id="priceCar">$8 000</span>
+                  </div>
+                  <div class="js-buyCar btn-buy">mua</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Danh sách phương tiện trong shop -->
+        <div class="list-car">
+          <h2 class="title">List Car</h2>
+          <div class="wrapper">
+            <div id="listCar" class="img-container">
+              <div class="imgBx">
+                <!-- Ảnh phương tiện -->
+                <img id="imgCar" src="./assets/images/1.png" alt="1" />
+                <!-- Tag phương tiện -->
+                <div class="top-left">
+                  <ion-icon name="car-sport-outline"></ion-icon>
+                  <div id="type-trunk">bán tải</div>
+                </div>
+              </div>
+              <div class="content">
+                <!-- Tên phương tiện -->
+                <div id="nameCar" class="name">Car 1</div>
+                <!-- Chọn màu cho phương tiện -->
+                <div id="colorCar" class="color">
+                  <p>màu sắc:</p>
+                  <ul id="menuColor">
+                    <li class="js-Color" id="itemColor1"></li>
+                    <li class="js-Color" id="itemColor2"></li>
+                    <li class="js-Color" id="itemColor3"></li>
+                    <li class="js-Color" id="itemColor4"></li>
+                    <li class="js-Color" id="itemColor5"></li>
+                    <li class="js-Color" id="itemColor6"></li>
+                    <li class="js-Color" id="itemColor7"></li>
+                    <li class="js-Color" id="itemColor8"></li>
+                    <li class="js-Color" id="itemColor9"></li>
+                    <li class="js-Color" id="itemColor10"></li>
+                    <li class="js-Color" id="itemColor11"></li>
+                  </ul>
+                </div>
+                <!-- Gía phương tiện -->
+                <div class="price">
+                  thành tiền: <span id="priceCar">$8 000</span>
+                </div>
+                <!-- Nút mua -->
+                <div class="js-buyCar btn-buy">mua</div>
+              </div>
+            </div>
+            <div id="listCar" class="img-container">
+              <div class="imgBx">
+                <!-- Ảnh phương tiện -->
+                <img id="imgCar" src="./assets/images/1.png" alt="1" />
+                <!-- Tag phương tiện -->
+                <div class="top-left">
+                  <ion-icon name="car-sport-outline"></ion-icon>
+                  <div id="type-trunk">bán tải</div>
+                </div>
+              </div>
+              <div class="content">
+                <!-- Tên phương tiện -->
+                <div id="nameCar" class="name">Car 2</div>
+                <!-- Chọn màu cho phương tiện -->
+                <div id="colorCar" class="color">
+                  <p>màu sắc:</p>
+                  <ul id="menuColor">
+                    <li class="js-Color" id="itemColor1"></li>
+                    <li class="js-Color" id="itemColor2"></li>
+                    <li class="js-Color" id="itemColor3"></li>
+                    <li class="js-Color" id="itemColor4"></li>
+                    <li class="js-Color" id="itemColor5"></li>
+                    <li class="js-Color" id="itemColor6"></li>
+                    <li class="js-Color" id="itemColor7"></li>
+                    <li class="js-Color" id="itemColor8"></li>
+                    <li class="js-Color" id="itemColor9"></li>
+                    <li class="js-Color" id="itemColor10"></li>
+                    <li class="js-Color" id="itemColor11"></li>
+                  </ul>
+                </div>
+                <!-- Gía phương tiện -->
+                <div class="price">
+                  thành tiền: <span id="priceCar">$8 000</span>
+                </div>
+                <!-- Nút mua -->
+                <div class="js-buyCar btn-buy">mua</div>
+              </div>
+            </div>
+            <div id="listCar" class="img-container">
+              <div class="imgBx">
+                <!-- Ảnh phương tiện -->
+                <img id="imgCar" src="./assets/images/1.png" alt="1" />
+                <!-- Tag phương tiện -->
+                <div class="top-left">
+                  <ion-icon name="car-sport-outline"></ion-icon>
+                  <div id="type-trunk">bán tải</div>
+                </div>
+              </div>
+              <div class="content">
+                <!-- Tên phương tiện -->
+                <div id="nameCar" class="name">Car 3</div>
+                <!-- Chọn màu cho phương tiện -->
+                <div id="colorCar" class="color">
+                  <p>màu sắc:</p>
+                  <ul id="menuColor">
+                    <li class="js-Color" id="itemColor1"></li>
+                    <li class="js-Color" id="itemColor2"></li>
+                    <li class="js-Color" id="itemColor3"></li>
+                    <li class="js-Color" id="itemColor4"></li>
+                    <li class="js-Color" id="itemColor5"></li>
+                    <li class="js-Color" id="itemColor6"></li>
+                    <li class="js-Color" id="itemColor7"></li>
+                    <li class="js-Color" id="itemColor8"></li>
+                    <li class="js-Color" id="itemColor9"></li>
+                    <li class="js-Color" id="itemColor10"></li>
+                    <li class="js-Color" id="itemColor11"></li>
+                  </ul>
+                </div>
+                <!-- Gía phương tiện -->
+                <div class="price">
+                  thành tiền: <span id="priceCar">$8 000</span>
+                </div>
+                <!-- Nút mua -->
+                <div class="js-buyCar btn-buy">mua</div>
+              </div>
+            </div>
+            <div id="listCar" class="img-container">
+              <div class="imgBx">
+                <!-- Ảnh phương tiện -->
+                <img id="imgCar" src="./assets/images/1.png" alt="1" />
+                <!-- Tag phương tiện -->
+                <div class="top-left">
+                  <ion-icon name="car-sport-outline"></ion-icon>
+                  <div id="type-trunk">bán tải</div>
+                </div>
+              </div>
+              <div class="content">
+                <!-- Tên phương tiện -->
+                <div id="nameCar" class="name">Car 4</div>
+                <!-- Chọn màu cho phương tiện -->
+                <div id="colorCar" class="color">
+                  <p>màu sắc:</p>
+                  <ul id="menuColor">
+                    <li class="js-Color" id="itemColor1"></li>
+                    <li class="js-Color" id="itemColor2"></li>
+                    <li class="js-Color" id="itemColor3"></li>
+                    <li class="js-Color" id="itemColor4"></li>
+                    <li class="js-Color" id="itemColor5"></li>
+                    <li class="js-Color" id="itemColor6"></li>
+                    <li class="js-Color" id="itemColor7"></li>
+                    <li class="js-Color" id="itemColor8"></li>
+                    <li class="js-Color" id="itemColor9"></li>
+                    <li class="js-Color" id="itemColor10"></li>
+                    <li class="js-Color" id="itemColor11"></li>
+                  </ul>
+                </div>
+                <!-- Gía phương tiện -->
+                <div class="price">
+                  thành tiền: <span id="priceCar">$8 000</span>
+                </div>
+                <!-- Nút mua -->
+                <div class="js-buyCar btn-buy">mua</div>
+              </div>
+            </div>
+            <div id="listCar" class="img-container">
+              <div class="imgBx">
+                <!-- Ảnh phương tiện -->
+                <img id="imgCar" src="./assets/images/1.png" alt="1" />
+                <!-- Tag phương tiện -->
+                <div class="top-left">
+                  <ion-icon name="car-sport-outline"></ion-icon>
+                  <div id="type-trunk">bán tải</div>
+                </div>
+              </div>
+              <div class="content">
+                <!-- Tên phương tiện -->
+                <div id="nameCar" class="name">Car 5</div>
+                <!-- Chọn màu cho phương tiện -->
+                <div id="colorCar" class="color">
+                  <p>màu sắc:</p>
+                  <ul id="menuColor">
+                    <li class="js-Color" id="itemColor1"></li>
+                    <li class="js-Color" id="itemColor2"></li>
+                    <li class="js-Color" id="itemColor3"></li>
+                    <li class="js-Color" id="itemColor4"></li>
+                    <li class="js-Color" id="itemColor5"></li>
+                    <li class="js-Color" id="itemColor6"></li>
+                    <li class="js-Color" id="itemColor7"></li>
+                    <li class="js-Color" id="itemColor8"></li>
+                    <li class="js-Color" id="itemColor9"></li>
+                    <li class="js-Color" id="itemColor10"></li>
+                    <li class="js-Color" id="itemColor11"></li>
+                  </ul>
+                </div>
+                <!-- Gía phương tiện -->
+                <div class="price">
+                  thành tiền: <span id="priceCar">$8 000</span>
+                </div>
+                <!-- Nút mua -->
+                <div class="js-buyCar btn-buy">mua</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Done -->
+
+      <!-- Nhà Đất -->
+      <section id="block-house" class="js-content house">
+        <div class="error404"></div>
+      </section>
+
+      <!-- Đấu Giá -->
+      <section id="block-auction" class="js-content auction">
+        <div class="error404"></div>
+      </section>
+
+      <!-- V.I.P -->
+      <section id="block-vip" class="js-content vip">
+        <div class="error404"></div>
+      </section>
+
+      <!-- Hướng Dẫn -->
+      <section id="block-help" class="js-content help">
+        <div class="wrapper">
+          <ul class="col30">
+            <li class="js-menu-help active">
+              <span>[ hướng dẫn ]</span> chung
+            </li>
+            <li class="js-menu-help"><span>[ hướng dẫn ]</span> chat</li>
+            <li class="js-menu-help"><span>[ hướng dẫn ]</span> phương tiện</li>
+            <li class="js-menu-help"><span>[ hướng dẫn ]</span> faction</li>
+            <li class="js-menu-help"><span>[ hướng dẫn ]</span> nhà cửa</li>
+            <li class="js-menu-help"><span>[ hướng dẫn ]</span> vũ khí</li>
+          </ul>
+          <div class="col70">
+            <div class="header">
+              <h3>keyword</h3>
+              <h4>mô tả</h4>
+            </div>
+            <div class="js-content-help content-general openBlock scroll">
+              <div class="desc">
+                <div class="keyword">h</div>
+                <div class="content">Giơ tay lên</div>
+              </div>
+              <div class="desc">
+                <div class="keyword">i</div>
+                <div class="content">Mở kho của bạn</div>
+              </div>
+              <div class="desc">
+                <div class="keyword">o</div>
+                <div class="content">Mở giao diện của bạn</div>
+              </div>
+              <div class="desc">
+                <div class="keyword">m</div>
+                <div class="content">
+                  Được sử dụng khi ở gần người chơi hoặc xe để tương tác với
+                  người chơi
+                </div>
+              </div>
+              <div class="desc">
+                <div class="keyword">u</div>
+                <div class="content">Danh sách tất cả các animation có sẵn</div>
+              </div>
+              <div class="desc">
+                <div class="keyword">Điện Thoại</div>
+                <div class="content">
+                  Được sử dụng để yêu cầu một số dịch vụ, chẳng hạn như đơn vị
+                  cảnh sát (911), đơn vị y tế (912), taxi (914), thợ sửa xe
+                  (913), nhà báo (915)
+                </div>
+              </div>
+              <div class="desc">
+                <div class="keyword">f2</div>
+                <div class="content">Chuyển đổi giữa Enter hoặc con trỏ</div>
+              </div>
+              <div class="desc">
+                <div class="keyword">f3</div>
+                <div class="content">Mở bản trợ giúp</div>
+              </div>
+              <div class="desc">
+                <div class="keyword">f4</div>
+                <div class="content">Mở cửa hàng OOC</div>
+              </div>
+              <div class="desc">
+                <div class="keyword">f5</div>
+                <div class="content">Mở bảng điều khiển kho xe của bạn</div>
+              </div>
+              <div class="desc">
+                <div class="keyword">f10</div>
+                <div class="content">Bật tắt giao diện trên màn hình</div>
+              </div>
+              <div class="desc">
+                <div class="keyword">/thongtin</div>
+                <div class="content">Xem số liệu thống kê của bạn</div>
+              </div>
+              <div class="desc">
+                <div class="keyword">/sellitem</div>
+                <div class="content">
+                  Đưa một vật phẩm từ túi của bạn cho người chơi khác
+                </div>
+              </div>
+              <div class="desc">
+                <div class="keyword">/id</div>
+                <div class="content">Xem ID người chơi theo tên</div>
+              </div>
+              <div class="desc">
+                <div class="keyword">/mask</div>
+                <div class="content">Được sử dụng để lắp mặt nạ</div>
+              </div>
+              <div class="desc">
+                <div class="keyword">/anim</div>
+                <div class="content">Các animation hiện tại</div>
+              </div>
+            </div>
+            <div class="js-content-help content-chat scroll">
+              <div class="desc">
+                <div class="keyword">/me</div>
+                <div class="content">
+                  Được sử dụng để diễn tả hành động đang làm
+                </div>
+              </div>
+              <div class="desc">
+                <div class="keyword">/do</div>
+                <div class="content">
+                  Dùng để bổ trợ cho /me, miêu tả vật thể, trạng thái, màu
+                  sắc,.. tương tác với người chơi khác trước khi nhân vật đó
+                  diễn tả một hành động nào đó
+                </div>
+              </div>
+              <div class="desc">
+                <div class="keyword">/t</div>
+                <div class="content">
+                  Chat thường, thể hiện cho lời nói của bản thân
+                </div>
+              </div>
+              <div class="desc">
+                <div class="keyword">/h</div>
+                <div class="content">
+                  Được sử dụng để gửi tin nhắn bên ngoài game (OOC)
+                </div>
+              </div>
+              <div class="desc">
+                <div class="keyword">/o</div>
+                <div class="content">
+                  Được sử dụng để nói chuyện trên kênh OOC
+                </div>
+              </div>
+              <div class="desc">
+                <div class="keyword">/mp + [id] + [message]</div>
+                <div class="content">
+                  Được sử dụng để nói chuyện riêng giữa hai người
+                </div>
+              </div>
+              <div class="desc">
+                <div class="keyword">/n</div>
+                <div class="content">
+                  Được sử dụng để yêu cầu trợ giúp trên kênh newbie
+                </div>
+              </div>
+              <div class="desc">
+                <div class="keyword">/sos</div>
+                <div class="content">
+                  Được sử dụng để yêu cầu trợ giúp từ ADMIN
+                </div>
+              </div>
+            </div>
+            <div class="js-content-help content-vehicle scroll">
+              <div class="desc">
+                <div class="keyword">y</div>
+                <div class="content">
+                  Được sử dụng bên trong xe tải để khởi động / đừng động cơ
+                </div>
+              </div>
+              <div class="desc">
+                <div class="keyword">l</div>
+                <div class="content">
+                  Được sử dụng bên trong xe tải để chuyển giữa chế độ hành trình
+                </div>
+              </div>
+              <div class="desc">
+                <div class="keyword">k</div>
+                <div class="content">
+                  Được sử dụng để khóa / mở khóa xe của bạn
+                </div>
+              </div>
+              <div class="desc">
+                <div class="keyword">m</div>
+                <div class="content">
+                  Sử dụng khi đứng gần và trỏ chuột vào phương tiện
+                </div>
+              </div>
+              <div class="desc">
+                <div class="keyword">f5</div>
+                <div class="content">
+                  Được sử dụng để quản lý phương tiện của bạn và xác định vị trí
+                  của chúng
+                </div>
+              </div>
+              <div class="desc">
+                <div class="keyword">/dauxe</div>
+                <div class="content">
+                  Được sử dụng để đỗ và lưu trữ vị trí xe của bạn, nơi nó sẽ
+                  được xuất hiện
+                </div>
+              </div>
+              <div class="desc">
+                <div class="keyword">/banxe</div>
+                <div class="content">
+                  Được sử dụng để bán xe của bạn cho người khác
+                </div>
+              </div>
+              <div class="desc">
+                <div class="keyword">*</div>
+                <div class="content">
+                  Nếu chiếc xe của bạn được đưa vào bảo hiểm, bạn cần phải đến
+                  đó và trả tiền để lấy nó
+                </div>
+              </div>
+              <div class="desc">
+                <div class="keyword">*</div>
+                <div class="content">
+                  Bạn có thể trả tiền phạt xe của bạn tại Sở Cảnh Sát
+                </div>
+              </div>
+              <div class="desc">
+                <div class="keyword">*</div>
+                <div class="content">
+                  Nếu bạn rời khỏi máy chủ và chiếc xe của bạn sẽ biến mất, khi
+                  bạn vào lại máy chủ và lấy phương tiện ra thì xe của bạn sẽ
+                  được đặt tại vị trí mà bạn đã đậu phương tiện
+                </div>
+              </div>
+            </div>
+            <div class="js-content-help content-faction scroll">
+              <div class="desc">
+                <div class="keyword">/invite</div>
+                <div class="content">
+                  Được sử dụng bởi người lãnh đạo để mời ai đó vào phe
+                </div>
+              </div>
+              <div class="desc">
+                <div class="keyword">/f</div>
+                <div class="content">
+                  Được sử dụng để nói chuyện trong trò chuyện phe phái (OOC)
+                </div>
+              </div>
+              <div class="desc">
+                <div class="keyword">/r</div>
+                <div class="content">
+                  Được sử dụng để nói trên đài phát thanh phe phái (IC)
+                </div>
+              </div>
+              <div class="desc">
+                <div class="keyword">/cuop</div>
+                <div class="content">
+                  Được sử dụng để cướp một người chơi chịu đầu hàng
+                </div>
+              </div>
+              <div class="desc">
+                <div class="keyword">/robbank</div>
+                <div class="content">
+                  Được sử dụng để cướp ngân hàng với băng nhóm của bạn
+                </div>
+              </div>
+              <div class="desc">
+                <div class="keyword">/turfinfo</div>
+                <div class="content">
+                  Được sử dụng để xem thông tin lãnh thổ hiện tại
+                </div>
+              </div>
+              <div class="desc">
+                <div class="keyword">/nbu</div>
+                <div class="content">Được sử dụng để gửi vị trí backup</div>
+              </div>
+              <div class="desc">
+                <div class="keyword">/?</div>
+                <div class="content">
+                  Được sử dụng để xem các thành viên trực tuyến của phe bạn
+                </div>
+              </div>
+              <div class="desc">
+                <div class="keyword">/?</div>
+                <div class="content">
+                  Được sử dụng để mua kho cho băng đảng của bạn
+                </div>
+              </div>
+              <div class="desc">
+                <div class="keyword">*</div>
+                <div class="content">
+                  Khi cướp ngân hàng bạn cần x1 khoan, x4 C4. Chúng có thể được
+                  mua tại Chợ Đen
+                </div>
+              </div>
+              <div class="desc">
+                <div class="keyword">*</div>
+                <div class="content">
+                  Bạn có thể truy cập máy tính xách tay từ kho bằng cách nhấn Y
+                  để mua vũ khí cho băng nhóm của bạn
+                </div>
+              </div>
+              <div class="desc">
+                <div class="keyword">*</div>
+                <div class="content">
+                  Để bắt đầu một cuộc chiến lãnh thổ bạn cần ở lại trên cùng của
+                  lãnh thổ với 2 thành viên trong băng nhóm của bạn
+                </div>
+              </div>
+              <div class="desc">
+                <div class="keyword">*</div>
+                <div class="content">
+                  Khi bạn chinh phục lãnh thổ, bạn nhận được tiền từ nó cứ sau
+                  15 phút
+                </div>
+              </div>
+            </div>
+            <div class="js-content-help content-house scroll">
+              <div class="desc">
+                <div class="keyword">o</div>
+                <div class="content">
+                  Được sử dụng trong nhà của bạn để mở MENU quản lí nhà
+                </div>
+              </div>
+              <div class="desc">
+                <div class="keyword">k</div>
+                <div class="content">Sử dụng để khóa / mở khóa nhà của bạn</div>
+              </div>
+              <div class="desc">
+                <div class="keyword">/muanha</div>
+                <div class="content">Sử dụng để mua một ngôi nhà</div>
+              </div>
+              <div class="desc">
+                <div class="keyword">/bannha</div>
+                <div class="content">Sử dụng để bán một ngôi nhà</div>
+              </div>
+              <div class="desc">
+                <div class="keyword">/bamchuong</div>
+                <div class="content">Được sử dụng để bấm chuông nhà</div>
+              </div>
+              <div class="desc">
+                <div class="keyword">/duachiakhoa</div>
+                <div class="content">
+                  Được sử dụng để đưa cho ai đó chìa khóa nhà của bạn
+                </div>
+              </div>
+            </div>
+            <div class="js-content-help content-weapon scroll">
+              <div class="desc">
+                <div class="keyword">Cận Chiến</div>
+                <div class="content">
+                  Bao gồm các vũ khí cận chiến, khi bạn đã sở hữu một món vũ khí
+                  cận chiến bạn không thể sở hữu món thứ hai ( vẫn có thể sở hữu
+                  được nhưng món thứ nhất của bạn sẽ mất )
+                </div>
+              </div>
+              <div class="desc">
+                <div class="keyword">Vũ Khí Chính</div>
+                <div class="content">
+                  Bao gồm các loại vũ khí như súng, shotgun, súng trường và bạn
+                  cũng chỉ sở hữu được một món vũ khí chính
+                </div>
+              </div>
+              <div class="desc">
+                <div class="keyword">Vũ Khí Phụ</div>
+                <div class="content">Bao gồm tất cả các loại súng lục</div>
+              </div>
+              <div class="desc">
+                <div class="keyword">*</div>
+                <div class="content">
+                  Vì đề vào tính rolePlay nên mỗi người chơi chỉ sở hữu được ba
+                  loại vũ khí trong người
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Done -->
+
+      <!-- faq -->
+      <section id="block-faq" class="js-content faq">
+        <div class="error404"></div>
+      </section>
+    </div>
+
+    <div id="modal-buy" class="modal">
+      <div class="modal-content">
+        <div class="top">
+          <h2>xác nhận</h2>
+          <ion-icon name="checkmark-circle-outline"></ion-icon>
+          <p>Bạn cần xác nhận để sở hữu sản phẩn này !</p>
+        </div>
+
+        <div class="bottom">
+          <div id="js-cancel" class="btn-cancel">từ chối</div>
+          <div id="js-ok" class="btn-ok">đồng ý</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Base JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../lib/scripts/main.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <!-- Main JS -->
+    <script src="./assets/scripts/index.js"></script>
+  </body>
+</html>

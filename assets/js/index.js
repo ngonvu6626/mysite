@@ -1,3 +1,5 @@
+// Card myprofile
+
 const card = document.querySelector(".card");
 const THRESHOLD = 15;
 
@@ -18,3 +20,25 @@ function resetStyles(e) {
 
 card.addEventListener("mousemove", handleHover);
 card.addEventListener("mouseleave", resetStyles);
+
+
+// TAB UI CONTENT
+
+const $ = document.querySelector.bind(document)
+const $$ = document.querySelectorAll.bind(document)
+
+  const tabs = $$('.tab-item')
+  const contents = $$('.tab-content')
+  
+tabs.forEach((tab, index) => {
+
+  const content = contents[index]
+
+  tab.onclick = function () {
+    $('.tab-item.active').classList.remove('active');
+      $(".tab-content.active").classList.remove("active");
+
+    this.classList.add('active');
+      content.classList.add("active");
+    }
+  })

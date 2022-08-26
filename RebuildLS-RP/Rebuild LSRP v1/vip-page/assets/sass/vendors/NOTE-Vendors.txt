@@ -1,0 +1,1 @@
+Nơi bạn chứa tất cả các file không phụ thuộc nếu ứng dụng của bạn sử dụng thư viện bên ngoài (third party). Chúng có thể là FontAwesome, Bootstrap và các nội dung tương tự v.v..

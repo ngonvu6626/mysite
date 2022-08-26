@@ -1,0 +1,1 @@
+Nếu trong ứng dụng của bạn có nhiều themes khác nhau (dark mode, admin v.v..), hãy đặt chúng trong thư mục này.

@@ -1,0 +1,1 @@
+Được sử dụng để bố trí các phần khác nhau của trang, có nghĩa là header, footer, navigation, section, grid do chính bạn định nghĩa v.v..

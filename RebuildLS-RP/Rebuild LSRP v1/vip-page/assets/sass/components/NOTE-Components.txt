@@ -1,0 +1,1 @@
+Cái tên khá là tường minh rồi. Thư mục này chứa tất cả các thành phần (components) CSS của bạn được sử dụng để tạo nên các trang như buttons, forms, swipers, popups, v.v..

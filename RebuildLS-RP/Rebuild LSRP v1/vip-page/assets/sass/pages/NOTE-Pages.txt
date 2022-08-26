@@ -1,0 +1,1 @@
+Ứng dụng của bạn sẽ có rất nhiều page, mỗi page lại có những style khác nhau, và đây chính là nơi bạn sẽ put CSS page của mình vào.

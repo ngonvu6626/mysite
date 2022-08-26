@@ -1,0 +1,152 @@
+html {
+  background: url(../images/bg-primary.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#main {
+  height: 100vh;
+  width: 100%;
+  color: white;
+  .flex {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    .grid-top {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(49%, 1fr));
+      grid-gap: 16px;
+      padding: 12px;
+      flex: 5;
+      .project {
+        border-radius: 10px;
+        background-color: rgba(0, 0, 0, 0.2);
+        max-height: 320px;
+        height: 100%;
+        h2 {
+          padding: 8px;
+          font-size: 2.6rem;
+          text-align: center;
+          text-transform: uppercase;
+          letter-spacing: 1.5px;
+          height: 48px;
+          text-shadow: var(--textShadow1);
+          color: var(--white);
+          span {
+            font-size: 0.75em;
+            text-transform: capitalize;
+            text-shadow: none;
+            font-weight: 400;
+          }
+        }
+        .item-list {
+          display: grid;
+          grid-template-columns: repeat(auto-fill, minmax(20%, 1fr));
+          width: 100%;
+          max-height: 100%;
+          grid-gap: 16px;
+          justify-items: center;
+          padding: 4px;
+        }
+        .item {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          width: 150px;
+          padding: 4px;
+          opacity: 0.9;
+          transition: 0.3s;
+          transform: scale(1.05);
+
+          &:hover {
+            border-radius: 2px;
+            transform: scale(1.15);
+            opacity: 1;
+            cursor: pointer;
+            &:active {
+              transform: scale(1.1);
+            }
+          }
+          img {
+            height: 90px;
+          }
+          h3 {
+            font-family: "Big Shoulders Stencil Text";
+            font-size: 1.5rem;
+            color: var(--white);
+            text-shadow: var(--textShadow1);
+            text-transform: capitalize;
+            padding-top: 8px;
+          }
+        }
+      }
+    }
+    .grid-bottom {
+      flex: 1;
+      position: relative;
+      // background-color: lightcoral;
+      .dock {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 0;
+        width: 75%;
+        border-left: 24px solid transparent;
+        border-right: 24px solid transparent;
+        border-bottom: 48px solid var(--gray);
+
+        .contact {
+          position: absolute;
+          top: -42px;
+          left: 0;
+          right: 0;
+          // display: flex;
+          // justify-content: space-around;
+          // align-items: center;
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(10%, 1fr));
+          justify-items: center;
+          @media only screen and (max-width: 1024px) {
+            /* For tablets: */
+            :nth-child(6),
+            :nth-child(7),
+            :nth-child(8) {
+              display: none;
+            }
+          }
+          @media only screen and (max-width: 768px) {
+            /* For mobile phones: */
+            :nth-child(4),
+            :nth-child(5),
+            :nth-child(6),
+            :nth-child(7),
+            :nth-child(8) {
+              display: none;
+            }
+          }
+
+          i {
+            font-size: 8em;
+            transition: 0.3s;
+            color: var(--white);
+            &:hover {
+              transform: scale(1.2);
+              cursor: pointer;
+            }
+            &:first-child :hover {
+              color: var(--lightGreen);
+            }
+            &:nth-of-type(2) :hover {
+              color: var(--blue);
+            }
+            &:nth-of-type(3) :hover {
+              color: var(--red);
+            }
+          }
+        }
+      }
+    }
+  }
+}

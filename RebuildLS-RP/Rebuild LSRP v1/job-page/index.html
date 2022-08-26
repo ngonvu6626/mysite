@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Job Page</title>
+
+    <!-- ResetCSS + Base CSS + Main CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../assets/css/base.css" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+
+    <!--Icon -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+  <body>
+    <div id="container">
+      <div id="box">
+        <!-- Start Contents -->
+        <section class="content">
+          <div class="heading bb">
+            <div class="heading-inner">City Hall - Tìm Việc Làm</div>
+            <ion-icon
+              class="heading-inner__icon"
+              name="server-outline"
+            ></ion-icon>
+          </div>
+
+          <div class="body scroll">
+            <div class="body-grid">
+              <div class="body-grid__card">
+                <img src="./assets/images/cau-ca.png" alt="cau-ca" />
+                <div class="body-grid__bg">
+                  <button class="body-grid__info--selected" onclick="GetJob(1)">
+                    Tìm Việc<ion-icon
+                      class="info--icon"
+                      name="chevron-forward-outline"
+                    ></ion-icon>
+                  </button>
+                  <h2 class="body-grid__title">Câu cá</h2>
+
+                  <h3 class="body-grid__info--location">
+                    Vị Trí: nhiều vị trí
+                  </h3>
+                  <p class="body-grid__info--desc">
+                    Câu cá để bán cho chợ hoặc nhà hàng.
+                  </p>
+                </div>
+                <div class="body-grid__info--level">Cấp làm việc: 1</div>
+              </div>
+              <div class="body-grid__card">
+                <img src="./assets/images/pizza.png" alt="cau-ca" />
+                <div class="body-grid__bg">
+                  <button class="body-grid__info--selected" onclick="GetJob(2)">
+                    Tìm Việc<ion-icon
+                      class="info--icon"
+                      name="chevron-forward-outline"
+                    ></ion-icon>
+                  </button>
+                  <h2 class="body-grid__title">Pizza Boy</h2>
+
+                  <h3 class="body-grid__info--location">
+                    Vị Trí: Strawbery Ave / Davis Ave
+                  </h3>
+                  <p class="body-grid__info--desc">
+                    Giao bánh Pizza đến nhà những người đặt chúng, một công việc
+                    đơn giản
+                  </p>
+                </div>
+                <div class="body-grid__info--level">Cấp làm việc: 1</div>
+              </div>
+              <div class="body-grid__card">
+                <img src="./assets/images/taxi.png" alt="cau-ca" />
+
+                <div class="body-grid__bg">
+                  <button class="body-grid__info--selected" onclick="GetJob(3)">
+                    Tìm Việc<ion-icon
+                      class="info--icon"
+                      name="chevron-forward-outline"
+                    ></ion-icon>
+                  </button>
+                  <h2 class="body-grid__title">Taxi Tự Do</h2>
+
+                  <h3 class="body-grid__info--location">
+                    Vị Trí: Pill Box Center
+                  </h3>
+                  <p class="body-grid__info--desc">
+                    Tự do đưa đón khách và thu phí
+                  </p>
+                </div>
+                <div class="body-grid__info--level">Cấp làm việc: 1</div>
+              </div>
+              <div class="body-grid__card">
+                <img src="./assets/images/don-rac.png" alt="cau-ca" />
+
+                <div class="body-grid__bg">
+                  <button class="body-grid__info--selected" onclick="GetJob(4)">
+                    Tìm Việc<ion-icon
+                      class="info--icon"
+                      name="chevron-forward-outline"
+                    ></ion-icon>
+                  </button>
+                  <h2 class="body-grid__title">Nhân Viên Lấy Rác</h2>
+
+                  <h3 class="body-grid__info--location">Vị Trí: Strawberry</h3>
+                  <p class="body-grid__info--desc">
+                    Lấy và xử lý rác thải trong thành phố.
+                  </p>
+                </div>
+                <div class="body-grid__info--level">Cấp làm việc: 3</div>
+              </div>
+              <div class="body-grid__card">
+                <img src="./assets/images/khaithac-muoi.png" alt="cau-ca" />
+
+                <div class="body-grid__bg">
+                  <button class="body-grid__info--selected" onclick="GetJob(5)">
+                    Tìm Việc<ion-icon
+                      class="info--icon"
+                      name="chevron-forward-outline"
+                    ></ion-icon>
+                  </button>
+                  <h2 class="body-grid__title">Khai Thác Muối</h2>
+
+                  <h3 class="body-grid__info--location">
+                    Vị Trí: Pill Box Center
+                  </h3>
+                  <p class="body-grid__info--desc">
+                    Khai thác và xử lý muối, bạn có thể bán cho nhà máy để lấy
+                    tiền.
+                  </p>
+                </div>
+                <div class="body-grid__info--level">Cấp làm việc: 1</div>
+              </div>
+              <div class="body-grid__card">
+                <img src="./assets/images/nong-dan.png" alt="cau-ca" />
+
+                <div class="body-grid__bg">
+                  <button class="body-grid__info--selected" onclick="GetJob(6)">
+                    Tìm Việc<ion-icon
+                      class="info--icon"
+                      name="chevron-forward-outline"
+                    ></ion-icon>
+                  </button>
+                  <h2 class="body-grid__title">Nông Dân</h2>
+
+                  <h3 class="body-grid__info--location">
+                    Vị Trí: Pillbox Hill
+                  </h3>
+                  <p class="body-grid__info--desc">
+                    Trồng và chăm sóc cây cho đến khi thu hoạch.
+                  </p>
+                </div>
+                <div class="body-grid__info--level">Cấp làm việc: 3</div>
+              </div>
+              <div class="body-grid__card">
+                <img src="./assets/images/trucker.png" alt="cau-ca" />
+
+                <div class="body-grid__bg">
+                  <button class="body-grid__info--selected" onclick="GetJob(7)">
+                    Tìm Việc<ion-icon
+                      class="info--icon"
+                      name="chevron-forward-outline"
+                    ></ion-icon>
+                  </button>
+                  <h2 class="body-grid__title">Trucker</h2>
+
+                  <h3 class="body-grid__info--location">
+                    Vị Trí: Textile City
+                  </h3>
+                  <p class="body-grid__info--desc">
+                    Giao hàng hóa đến các doanh nghiệp, tùy chọn đường bộ hoặc
+                    đuòng thủy.
+                  </p>
+                </div>
+                <div class="body-grid__info--level">Cấp làm việc: 1</div>
+              </div>
+              <div class="body-grid__card">
+                <img src="./assets/images/trothu-cong.png" alt="cau-ca" />
+
+                <div class="body-grid__bg">
+                  <button class="body-grid__info--selected" onclick="GetJob(8)">
+                    Tìm Việc<ion-icon
+                      class="info--icon"
+                      name="chevron-forward-outline"
+                    ></ion-icon>
+                  </button>
+                  <h2 class="body-grid__title">Thợ Thủ Công</h2>
+
+                  <h3 class="body-grid__info--location">
+                    Vị Trí: Eysian Island
+                  </h3>
+                  <p class="body-grid__info--desc">
+                    Công việc chế tác, chế tạo trang bị.
+                  </p>
+                </div>
+                <div class="body-grid__info--level">Cấp làm việc: 1</div>
+              </div>
+              <div class="body-grid__card">
+                <img
+                  src="./assets/images/thu-hoach-nong-san.png"
+                  alt="cau-ca"
+                />
+
+                <div class="body-grid__bg">
+                  <button class="body-grid__info--selected" onclick="GetJob(9)">
+                    Tìm Việc<ion-icon
+                      class="info--icon"
+                      name="chevron-forward-outline"
+                    ></ion-icon>
+                  </button>
+                  <h2 class="body-grid__title">Thu Hoạch Nông Sản</h2>
+
+                  <h3 class="body-grid__info--location">
+                    Vị Trí: Cordilheira San Chianski
+                  </h3>
+                  <p class="body-grid__info--desc">
+                    Thu hoạch các loại nông sản, đóng gói và vận chuyển.
+                  </p>
+                </div>
+                <div class="body-grid__info--level">Cấp làm việc: 1</div>
+              </div>
+              <div class="body-grid__card">
+                <img src="./assets/images/tho-rung.png" alt="cau-ca" />
+
+                <div class="body-grid__bg">
+                  <button
+                    class="body-grid__info--selected"
+                    onclick="GetJob(10)"
+                  >
+                    Tìm Việc<ion-icon
+                      class="info--icon"
+                      name="chevron-forward-outline"
+                    ></ion-icon>
+                  </button>
+                  <h2 class="body-grid__title">Thợ Rừng</h2>
+
+                  <h3 class="body-grid__info--location">
+                    Vị Trí: Paleto Forest
+                  </h3>
+                  <p class="body-grid__info--desc">
+                    Khai thác gỗ và vận chuyển vào nơi chứa, đây là công việc
+                    kiếm nhiều tiền và hot nhất hiện tại.
+                  </p>
+                </div>
+                <div class="body-grid__info--level">Cấp làm việc: 1</div>
+              </div>
+              <div class="body-grid__card">
+                <img src="./assets/images/tho-mo.png" alt="cau-ca" />
+
+                <div class="body-grid__bg">
+                  <button
+                    class="body-grid__info--selected"
+                    onclick="GetJob(11)"
+                  >
+                    Tìm Việc<ion-icon
+                      class="info--icon"
+                      name="chevron-forward-outline"
+                    ></ion-icon>
+                  </button>
+                  <h2 class="body-grid__title">Thợ Mỏ</h2>
+
+                  <h3 class="body-grid__info--location">
+                    Vị Trí: Cordilheira San Chianski
+                  </h3>
+                  <p class="body-grid__info--desc">
+                    Khai thác khoáng sản tại khu mỏ Davis Quartz.
+                  </p>
+                </div>
+                <div class="body-grid__info--level">Cấp làm việc: 1</div>
+              </div>
+              <div class="body-grid__card">
+                <img src="./assets/images/tho-sua-xe.png" alt="cau-ca" />
+
+                <div class="body-grid__bg">
+                  <button
+                    class="body-grid__info--selected"
+                    onclick="GetJob(12)"
+                  >
+                    Tìm Việc<ion-icon
+                      class="info--icon"
+                      name="chevron-forward-outline"
+                    ></ion-icon>
+                  </button>
+                  <h2 class="body-grid__title">Thợ Sửa Xe</h2>
+
+                  <h3 class="body-grid__info--location">Vị Trí: Carcer Way</h3>
+                  <p class="body-grid__info--desc">
+                    Trở thành một Thợ Sửa Xe lưu động, sẵn sàng có mặt khi mọi
+                    người cần.
+                  </p>
+                </div>
+                <div class="body-grid__info--level">Cấp làm việc: 1</div>
+              </div>
+              <div class="body-grid__card">
+                <img src="./assets/images/tho-lan.png" alt="cau-ca" />
+
+                <div class="body-grid__bg">
+                  <button
+                    class="body-grid__info--selected"
+                    onclick="GetJob(13)"
+                  >
+                    Tìm Việc<ion-icon
+                      class="info--icon"
+                      name="chevron-forward-outline"
+                    ></ion-icon>
+                  </button>
+                  <h2 class="body-grid__title">Thợ Lặn</h2>
+
+                  <h3 class="body-grid__info--location">Vị Trí: Paleto Blvd</h3>
+                  <p class="body-grid__info--desc">
+                    Khám phá đại dương, thu thập ngọc trai và tìm kho báu ngẫu
+                    nhiên.
+                  </p>
+                </div>
+                <div class="body-grid__info--level">Cấp làm việc: 1</div>
+              </div>
+              <div class="body-grid__card">
+                <img src="./assets/images/chan-nuoi.png" alt="cau-ca" />
+
+                <div class="body-grid__bg">
+                  <button
+                    class="body-grid__info--selected"
+                    onclick="GetJob(14)"
+                  >
+                    Tìm Việc<ion-icon
+                      class="info--icon"
+                      name="chevron-forward-outline"
+                    ></ion-icon>
+                  </button>
+                  <h2 class="body-grid__title">Chăn Nuôi</h2>
+
+                  <h3 class="body-grid__info--location">Vị Trí: Grapeseed</h3>
+                  <p class="body-grid__info--desc">
+                    Chăm sóc bò và lấy sữa của chúng, công việc nhàn rỗi và hậu
+                    hĩnh cao.
+                  </p>
+                </div>
+                <div class="body-grid__info--level">Cấp làm việc: 1</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Start SideBar -->
+        <aside class="sidebar">
+          <div class="sidebar-bg">
+            <div class="sidebar-bg--logo">
+              <img src="../assets/images/ls-rp.png" alt="" />
+              GTA 5 Việt Nam - LS-RP Community
+            </div>
+            <div class="sidebar-bg--img">
+              <img src="./assets/images/Art-sideBar.png" alt="" />
+            </div>
+          </div>
+        </aside>
+      </div>
+
+      <!-- Start Footer -->
+      <footer class="btn">
+        <button id="help_close" class="btn-close">ĐÓNG</button>
+      </footer>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./assets/scripts/job.js" type="text/javascript"></script>
+  </body>
+</html>

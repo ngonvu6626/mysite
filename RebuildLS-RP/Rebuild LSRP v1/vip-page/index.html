@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIP PAGE</title>
+    <!-- ResetCSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Fonts + Icon -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="../assets/css/base.css"> <!-- BaseCSS -->
+    <link rel="stylesheet" href="./assets/css/main.css"> <!-- MainCSS -->
+
+</head>
+
+<body>
+    <div id="container">
+        <!-- Start Header -->
+        <header class="header">
+            <div class="header-logo">
+                <img src="../assets/images/logo.png" alt="Logo" class="header-logo__img">
+            </div>
+            <nav class="header-nav">
+                <ul class="header-nav__list ">
+                    <li class="header-nav__item header-nav__item--click iHover">Thông Tin</li>
+                    <li class="header-nav__item header-nav__item--click">Quyền lợi V.I.P</li>
+                    <li class="header-nav__item header-nav__item--click">Cửa Hàng Tiện Ích</li>
+                    <li class="header-nav__item header-nav__item--click">Cửa Hàng Phương Tiện</li>
+                </ul>
+            </nav>
+        </header>
+        <!-- End Header -->
+
+        <div class="contents">
+            <!-- Start Aside -->
+            <aside class="user">
+                <div class="user-avt">
+                    <img src="./assets/images/avt-primary.png" alt="Avatar" class="user-avt__img-primary">
+                    <img src="./assets/images/avt-sub.png" alt="Avatar" class="user-avt__img-sub">
+                </div>
+                <div class="user-name">
+                    <span id="account_name" class="user-name__text"></span>
+                </div>
+                <div class="contact">
+                    <div class="contact-info">
+                        <!-- CREDIT -->
+                        <h2 class="contact-info__title bb pleft">
+                            <ion-icon class="icon" name="cash-outline"></ion-icon>CREDIT: <span
+                                id="account_credits"></span>
+                        </h2>
+
+                        <!-- Vip Status -->
+                        <div class="status" data-tab="my_stats">
+
+                            <div id="no_vip_status">
+                                <div class="contact-info__status">
+
+                                    <h2 class="contact-info__title" style="color: darkred;">
+                                        Xin lỗi, bạn không có trạng thái VIP!
+                                    </h2>
+                                    <p>Mua trạng thái VIP và giúp chúng tôi giữ máy chủ trực tuyến và bạn nhận được
+                                        những lợi ích đáng kinh ngạc!
+                                    </p>
+                                </div>
+
+                            </div>
+
+                            <div id="vip_status" class="contact-info__status">
+                                <h2 class="contact-info__title bb">Trạng thái VIP:</h2>
+                                <p>Mua ngày: <span id="vip_status_data"></span></p>
+                                <p>Hết hạn: <span id="vip_status_expire"></span></p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </aside>
+            <!-- End Aside -->
+
+            <!-- Start Contents -->
+            <section class="content">
+                <div class="showDisplay content-general active">
+                    <div class="content-item">
+                        <span class="content-item__title">
+                            CREDIT là gì?
+                        </span>
+                        <div class="content-item__desc">
+                            <p>CREDIT là một loại tiền tệ ngoài game (O), có thể được mua trên trang web của
+                                chúng tôi www.PlayLSRP.com/LS-RP-Community/ !!!</p>
+                        </div>
+                    </div>
+                    <div class="content-item">
+                        <span class="content-item__title">
+                            Tôi có thể làm gì với các khoản CREDIT?
+                        </span>
+                        <div class="content-item__desc">
+                            CREDIT có thể được sử dụng để mua tư cách thành viên VIP trong các khoảng thời
+                            gian khác nhau, điều này mang lại cho người mua một số lợi thế giúp tiết kiệm
+                            thời gian và tiền bạc hoặc cho họ quyền truy cập vào các lệnh chỉ dành riêng cho
+                            thành viên VIP. Danh sách quyền lợi xem thêm ở phần <i><b>Quyền lợi VIP</b></i>.
+                            Chúng cũng có thể được sử dụng để mở khóa các tính năng đặc biệt như thay đổi
+                            tên nhân vật của bạn hoặc áp dụng biển số tùy chỉnh cho xe của bạn. CREDIT không
+                            thể được sử dụng để đạt được những lợi thế không công bằng hoặc mua bất kỳ tài
+                            sản nào bị giới hạn bởi GTA V (hay một ngôi nhà sang trọng) hoặc là một phần của
+                            lĩnh vực cạnh tranh (chiến đấu, kinh doanh, tranh giành địa bàn).
+                        </div>
+                    </div>
+                    <div class="content-item">
+                        <span class="content-item__title">
+                            Mua CREDIT ở đâu?
+                        </span>
+                        <div class="content-item__desc">
+                            <p><b>Rất đơn giản</b>, bạn chỉ cần truy cập trang chủ
+                                <b>www.PlayLSRP.com/LS-RP-Community/</b> sau đó nhấn vào mục <b>Nạp Thẻ</b> và
+                                bạn có thể mua được CREDIT theo hình thức tiện lợi này. Ngoài ra bạn có thể sử
+                                dụng <b>MoMo</b> để mua CREDIT với nhiều ưu đãi hơn, để mua CREDIT bằng
+                                <b>MoMo</b>, bạn hãy liên hệ với Admin tại đây
+                                <b>https://www.fb.com/lsrpvietnam</b>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="content-item">
+                        <span class="content-item__title">
+                            CREDIT được lưu trữ ở đâu?
+                        </span>
+                        <div class="content-item__desc">
+                            <p>CREDIT được <b>lưu trữ trong tài khoản của bạn</b>, điều đó có nghĩa là bạn có
+                                thể sử dụng chúng với <u><i>bất kỳ nhân vật</i></u> nào của bạn. Quy tắc tương
+                                tự áp dụng cho trạng thái VIP, nếu bạn mua nó cho một ký tự, bạn có thể tận
+                                hưởng các lợi ích bằng cách sử dụng một trạng thái khác.</p>
+                        </div>
+                    </div>
+                    <div class="content-item">
+                        <span class="content-item__title">
+                            Tôi có thể mất CREDIT không?
+                        </span>
+                        <div class="content-item__desc">
+                            <p><b>Không</b>, CREDIT là loại tiền không có ký tự (OOC), được gắn với chủ sở hữu
+                                CREDIT. Bạn sẽ không bao giờ mất CREDIT khi chết và không thể đánh cắp chúng.
+                                Người chơi không thể cướp CREDIT trong trò chơi, ví dụ như trong các vụ trộm.
+                        </div>
+                    </div>
+                    <div class="content-item">
+                        <span class="content-item__title">
+                            Điều gì xảy ra với số tiền tôi gửi?
+                        </span>
+                        <div class="content-item__desc">
+                            <p>Hiện tại, tất cả số tiền nhận được từ người chơi được "trả lại" cho cộng đồng của
+                                chúng tôi bằng cách chúng được <b>đầu tư vào phần cứng mạnh hơn</b> để duy trì
+                                sự ổn định và hiệu suất cao hơn, cho phép người chơi đạt được trải nghiệm chơi
+                                game mượt mà hơn. Chúng cũng được sử dụng để <b>duy trì trang web, để mua phần
+                                    mềm cần thiết hoặc thanh toán hóa đơn từ máy chủ</b>. Khi chúng tôi có đủ
+                                thu nhập, chúng tôi dự định sử dụng số tiền đó để <b>tổ chức sự kiện</b> hoặc
+                                <b>tặng quà miễn phí</b> và các cuộc thi đặc biệt cho cộng đồng LS-RP của chúng
+                                tôi!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="content-item">
+                        <span class="content-item__title">
+                            Làm thế nào để trở thành một Donator?
+                        </span>
+                        <div class="content-item__desc">
+                            <p>Donator được trao cho tất cả các thành viên cộng đồng đã hỗ trợ chúng tôi
+                                trong
+                                các giai đoạn trước khi ra mắt và phát triển sớm của dự án! Nếu bạn muốn trở
+                                thành một nhà tài trợ muộn, bạn phải quyên góp ít nhất 500.000 VNĐ, sau đó
+                                liên
+                                hệ với quản trị viên để áp dụng trạng thái. Trạng thái nhà tài trợ là đặc
+                                biệt
+                                vì nó được liên kết vĩnh viễn với tài khoản của bạn!</p>
+                        </div>
+                    </div>
+                    <div class="content-item">
+                        <span class="content-item__title">
+                            Chúng tôi cảm ơn sự hỗ trợ của bạn!
+                        </span>
+                        <div class="content-item__desc">
+                            <p>Chúng tôi đánh giá rất cao sự hỗ trợ của bạn! Mỗi giao dịch cho chúng tôithấy
+                                rằng cộng đồng tin tưởng vào chúng tôi để cung cấp nội dung tuyệt vời
+                                cho mọi
+                                người thưởng thức và đó là động lực nhất cho bất kỳ nhà phát triển nào!
+                                Cảm ơn
+                                bạn đã đóng góp cho sự thịnh vượng của cộng đồng của chúng tôi!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="showDisplay content-perk">
+                    <div class="content-item">
+                        <span class="content-item__title">
+                            Các lệnh
+                        </span>
+                        <div class="content-item__desc">
+                            <b>/vip</b> - Hiển thị trạng thái hết hạn của thành viên VIP.
+                            <br>
+                            <b>/vpm</b> - Gửi tin nhắn cá nhân miễn phí cho người chơi khác
+                        </div>
+                    </div>
+                    <div class="content-item">
+                        <span class="content-item__title">
+                            Quyền lợi
+                        </span>
+                        <div class="content-item__desc">
+                            - <b>Giảm 25%</b> tiền phạt trong trường hợp bị bắt.
+                            <br>
+                            - <b>Giảm 20%</b> tiền phạt.
+                            <br>
+
+                            - <b>Giảm 50%</b> nhiên liệu.
+                            <br>
+                            - <b>+3 Slot</b> xe bổ sung.
+                            <br>
+
+                            - <b>Tăng 50%</b> khi nhận EXP
+                            <br>
+
+                            - <b>FREE</b> thuê phương tiện.
+                            <br>
+
+                            - <b>x1.5 Money</b> khi làm công việc Nông Dân
+                            <br>
+
+                            - <b>x1.5 Money</b> khi làm công việc Giao Pizza và Trucker
+                            <br>
+
+                            - <b>x2</b> số Vật Liệu nhận được.
+                            <br>
+
+                            - <b>x1.5%</b> tiền lương paycheck mỗi giờ trong Faction.
+                            <br>
+
+                            - <b>x1%</b> lãi suất ngân hàng mỗi giờ.
+                            <br>
+
+                            - <b>
+                                Nhận được 2 công việc cùng một lúc
+                            </b>
+                        </div>
+                    </div>
+                    <div class="content-item">
+                        <span class="content-item__title">
+                            Nhà tài trợ
+                        </span>
+                        <div class="content-item__desc">
+                            Danh hiệu Donator tại diễn đàn -Bạn tham gia một nhóm tài trợ độc quyền trong diễn đàn của
+                            chúng tôi.
+
+                            Nhóm tài trợ trong Discord của chúng tôi - Bạn tham gia một nhóm tài trợ độc quyền trong
+                            Discord của chúng tôi.
+                        </div>
+                    </div>
+                </div>
+                <!-- Item Shop -->
+                <div class="showDisplay vip-shop" data-tab="store_page">
+                    <div class=" content-shop">
+                        <div class="content-shop__items" id="chat">
+                            <div id="credit_store_table">
+                                <!-- <div class="content-shop__items--img">
+                                    <img src="'+store_item[i].img+'" alt="Hình Ảnh">
+                                </div>
+                                <div class="content-shop__items--desc">
+                                    <span class="content-shop__items--title bb">
+                                        '+store_item[i].name+'
+                                    </span>
+                                    <span class="content-shop__items--info bb">
+                                        '+store_item[i].description+'
+                                    </span>
+                                    <div class="content-shop__credit">
+                                        <span class="content-shop__credit--title">
+                                            CREDIT:
+                                        </span>
+                                        <span class="content-shop__credit--price">
+                                            '+store_item[i].credits+'
+                                        </span>
+                                    </div>
+                                    <div id="credit_store_buy_'+store_item[i].type+'"
+                                        class="content-shop__items--btn js-btn ">
+                                        <span>
+                                            CHỌN
+                                        </span>
+                                    </div>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Car Shop -->
+                <div class="showDisplay vip-car" data-tab="store_page_vehicle">
+                    <div id="chat" class="content-car">
+                        <div id="credit_store_vehicle_table">
+                            <!-- <div class="content-shop__cars">
+                                <div class="content-shop__items--img">
+                                    <img src="./assets/images/testsp1.png" alt="Hình Ảnh">
+                                </div>
+                                <div class="content-shop__items--desc">
+                                    <span class="content-shop__items--title bb">
+                                        Balo Xám Lớn
+                                    </span>
+                                    <span class="content-shop__items--info bb">
+                                        Bạn có thể mang đến 60kg trong balo
+                                    </span>
+                                    <div class="content-shop__credit">
+                                        <span class="content-shop__credit--title">
+                                            CREDIT:
+                                        </span>
+                                        <span class="content-shop__credit--price">
+                                            10.000
+                                        </span>
+                                    </div>
+                                    <div class="content-shop__items--btn js-btn">
+                                        <span>
+                                            CHỌN
+                                        </span>
+                                    </div>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+        </div>
+        </section>
+        <!-- End Contents -->
+        <!-- Start Footer -->
+        <footer class="footer">
+            <span id="help_close" class="footer-close">ĐÓNG</span>
+        </footer>
+        <!-- End Footer -->
+    </div>
+    </div>
+
+
+
+    <div class="modal js-modal">
+        <div class="modal__container js-modal__container">
+            <div class="modal__header">
+                Bạn có chắc chắn muốn mua mặt hàng này?
+            </div>
+            <div class="modal__content">
+                <p>Tên mặt hàng: <span id="ask_item_name">Bạc VIP</span></p>
+                <p>Giá vật phẩm: <span id="ask_item_price"></span> CREDIT</p>
+            </div>
+            <div class="modal__footer btn actions">
+                <div class="btn-cancel js-btn-cancel">
+                    <i class="remove icon"></i>
+                    Không, cảm ơn.
+                </div>
+                <div id="ask_buy_confirm" class="btn-ok">
+                    <i class="checkmark icon"></i>
+                    Vâng, tôi muốn mua nó!
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        // js - btn
+        const buyBtns = document.querySelectorAll('.js-btn')
+        const modal = document.querySelector('.js-modal')
+        const modalContainer = document.querySelector('.js-modal__container')
+        const modalCancel = document.querySelector('.js-btn-cancel')
+
+        function showBuy() {
+            modal.classList.add('open')
+        }
+        function hideBuy() {
+            modal.classList.remove('open')
+        }
+
+
+        for (const buyBtn of buyBtns) {
+            buyBtn.addEventListener('click', showBuy)
+        }
+
+        modalCancel.addEventListener('click', hideBuy)
+        modal.addEventListener('click', hideBuy)
+        modalContainer.addEventListener('click', function (event) {
+            event.stopPropagation()
+        })
+
+    </script>
+
+    <script>
+        const $ = document.querySelector.bind(document)
+        const $$ = document.querySelectorAll.bind(document)
+
+        const tabs = $$('.header-nav__item')
+        const panes = $$('.showDisplay')
+
+        tabs.forEach((tab, index) => {
+            const pane = panes[index]
+
+            tab.onclick = function () {
+                $('.header-nav__item.iHover').classList.remove('iHover')
+                $('.showDisplay.active').classList.remove('active')
+
+                this.classList.add('iHover')
+                pane.classList.add('active')
+            }
+        });
+    </script>
+    <script src="./assets/scripts/index.js" type="text/javascript"></script>
+    <script src="./assets/scripts/vip.js" type="text/javascript"></script>
+</body>
+
+</html>

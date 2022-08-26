@@ -1,0 +1,209 @@
+/* Fonts */
+
+/* 
+font-family: 'Big Shoulders Stencil Text', cursive;
+font-family: 'Dancing Script', cursive;
+font-family: 'Nunito', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif;
+*/
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text:wght@100;200;300;400;500;600;700;800;900&family=Dancing+Script:wght@400;500;600;700&family=Nunito:wght@200;300;400;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+:root {
+  --red: #fb5544;
+  --white: #dadee1;
+  --black: #252525;
+  --gray: rgba(68, 68, 68, 0.85);
+  --blue: #0c86ef;
+  --lightBlue: #87cefa;
+  --lightGreen: #90ee90;
+  --textShadow1: 1px 1px 3px #fb5544;
+  --textShadow2: 1px 1px 3px #252525;
+  --textShadow3: 1px 1px 3px #dadee1;
+  --textShadow4: 1px 1px 3px #87cefa;
+  --gradient1: linear-gradient(135deg, #d41e31, #491f8f);
+  --gradient2: radial-gradient(
+    circle,
+    rgba(37, 37, 37, 1) 0%,
+    rgba(218, 222, 225, 1) 90%
+  );
+  --gradient3: linear-gradient(90deg, #9400d3, #00ff00, #ffff00, #ff0000);
+}
+
+/* Test Background */
+html {
+  background: url(../images/bg-demo.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* Reset CSS */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*::selection {
+  background-color: transparent;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+body {
+  -webkit-user-select: none;
+  -moz-user-select: -moz-none;
+  -ms-user-select: none;
+  user-select: none;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  display: block;
+  -webkit-user-drag: none;
+  user-drag: none;
+  -webkit-touch-callout: none;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* General Class */
+.openBlock {
+  display: block !important;
+}
+.hideBlock {
+  display: none;
+}
+.openFlex {
+  display: flex !important;
+}
+.openGrid {
+  display: grid !important;
+}
+
+/* Nút Close */
+.btn--close {
+  height: 40px;
+  width: 72px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  background-color: var(--white);
+  color: var(--black);
+}
+.btn--close:hover {
+  background-color: var(--primary);
+  color: var(--white);
+}
+.btn--close:active {
+  transform: translateY(3px);
+  background-color: var(--primary);
+  opacity: 0.9;
+}
+
+/* Con lăn */
+.scroll {
+  overflow: scroll;
+  overflow-y: display;
+  overflow-x: hidden;
+  scrollbar-width: thin;
+}
+.scroll::-webkit-scrollbar {
+  width: 10px;
+}
+.scroll::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+.scroll::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.75) 25%,
+    rgba(204, 204, 204, 0.25) 80%
+  );
+  box-shadow: inset 2px 2px 5px 0 rgba(204, 204, 204, 0.5);
+}
+
+/* Animation  */
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-50%);
+  }
+  80% {
+    transform: translateX(5%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  80% {
+    transform: translateX(-5px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes moveInTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes hoverItem {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

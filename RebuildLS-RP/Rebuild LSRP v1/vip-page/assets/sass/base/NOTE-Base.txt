@@ -1,0 +1,1 @@
+Nới chứa tất cả code CSS boilerplate của bạn. CSS Boilerplate ở đây bạn có thể hiểu là code CSS bạn sẽ viết mỗi lần start một dự án mới. Ví dụ: quy tắc typography, animations, utilities v.v..

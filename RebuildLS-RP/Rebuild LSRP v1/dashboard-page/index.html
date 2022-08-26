@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manage Page</title>
+
+    <!--Icon -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <!-- Script -->
+
+    <!-- Base CSS + Main CSS -->
+    <link rel="stylesheet" href="../assets/css/base.css" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+  </head>
+
+  <body>
+    <div id="container">
+      <header id="top">
+        <div class="top-search">
+          <span>
+            <ion-icon name="search-outline"></ion-icon>
+          </span>
+          <input type="text" class="box" placeholder="Nhập nội dung tìm kiếm" />
+        </div>
+        <div class="top-heading">
+          <span>Thông Tin</span>
+        </div>
+        <div class="top-user">
+          <img id="userAvt" src="./assets/images/avatar.jpg" alt="avatar" />
+          <div>
+            <h3 id="userName">nam nèee</h3>
+            <p>Credit: <span id="userCredit">500.000 $ </span></p>
+            <p>Money: <span id="userMoney">123.000.000 $ </span></p>
+            <p class="showUserstatus">
+              status: <span id="userStatus-none">Member</span>
+              <ion-icon name="alert-circle-outline">
+              </ion-icon>
+            </p>
+            <div id="userStatus">
+              <h2>Xin lỗi, bạn không có trạng thái VIP!</h2>
+              <p>
+                Mua trạng thái VIP và giúp chúng tôi giữ máy chủ trực tuyến và
+                bạn nhận được những lợi ích đáng kinh ngạc!
+              </p>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <nav class="navLeft">
+        <div class="navLeft__logo">
+          <img
+            class="navLeft__logo--img"
+            src="../assets/images/ls-rp.png"
+            alt=""
+          />
+        </div>
+        <div class="navLeft__menu">
+          <!-- Menu Primary -->
+          <ul id="menuPrimary" class="navLeft__list">
+            <li class="navLeft__item navLeft__item--active">
+              <span class="icon"
+                ><ion-icon name="add-circle-outline"></ion-icon
+              ></span>
+              <span class="text">thông tin</span>
+            </li>
+            <li class="navLeft__item">
+              <span class="icon"
+                ><ion-icon name="add-circle-outline"></ion-icon
+              ></span>
+              <span class="text">v.i.p</span>
+            </li>
+            <li class="navLeft__item">
+              <span class="icon"
+                ><ion-icon name="add-circle-outline"></ion-icon
+              ></span>
+              <span class="text">hướng dẫn</span>
+            </li>
+            <li class="navLeft__item">
+              <span class="icon"
+                ><ion-icon name="add-circle-outline"></ion-icon
+              ></span>
+              <span class="text">hỏi đáp / f.a.q</span>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- Thông Tin -->
+      <section id="general" class="hideDisplaySection openFlex">
+        <div class="generalLeft">
+          <div class="generalLeft__top">
+            <div id="online">
+              <h2><ion-icon name="time"></ion-icon> thời gian</h2>
+              <p>48 day</p>
+            </div>
+            <div id="job">
+              <h2><ion-icon name="briefcase"></ion-icon> công việc</h2>
+              <p>câu cá</p>
+            </div>
+            <div id="car">
+              <h2><ion-icon name="car-sport"></ion-icon> phương tiện</h2>
+              <p>7</p>
+            </div>
+            <div id="level">
+              <h2><ion-icon name="accessibility"></ion-icon> cấp độ</h2>
+              <p>3+</p>
+            </div>
+          </div>
+          <div class="generalLeft__body">
+            <h2><ion-icon name="newspaper-outline"></ion-icon> thông báo</h2>
+            <ul class="scroll">
+              <li>
+                <p><ion-icon name="pricetags"></ion-icon> [10/10/2021]Update
+                  Tháng 10 - Năng cấp máy chủ tăng tốc xử lí phần cứng
+                </p>
+              </li>
+              <li>
+                <p><ion-icon name="pricetags"></ion-icon> [8/9/2021] Thêm công
+                  việc mới "CẢNH SÁT"</a
+                >
+              </li>
+              <li>
+                <p><ion-icon name="pricetags"></ion-icon> [8/9/2021] Thêm công
+                  việc mới "CẢNH SÁT"</a
+                >
+              </li>
+              <li>
+                <p><ion-icon name="pricetags"></ion-icon> [8/9/2021] Thêm công
+                  việc mới "CẢNH SÁT"</a
+                >
+              </li>
+              <li>
+                <p><ion-icon name="pricetags"></ion-icon> [8/9/2021] Thêm công
+                  việc mới "CẢNH SÁT"</a
+                >
+              </li>
+              <li>
+                <p><ion-icon name="pricetags"></ion-icon> [8/9/2021] Thêm công
+                  việc mới "CẢNH SÁT"</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="generalRight">
+          <h2 class="top-heading__title">top <span>10</span> player</h2>
+          <div class="generalRight__top">
+            <ul>
+              <li>
+                <p class="js-menuGeneral top-heading top-heading--active">credit</p>
+              </li>
+              <li><p class="js-menuGeneral top-heading">money</p></li>
+              <li><p class="js-menuGeneral top-heading">level</p></li>
+            </ul>
+          </div>
+          <div class="generalRight__body">
+            <div id="credit" class="hideDisplayGeneral openBlock">
+              <ul>
+                <li id="top-1">
+                  <span>#1</span><span>NameTest</span><span>18.000 credit</span>
+                </li>
+                <li id="top-2">
+                  <span>#2</span><span>NameTest</span><span>11.000 credit</span>
+                </li>
+                <li id="top-3">
+                  <span>#3</span><span>NameTest</span><span>9.000 credit</span>
+                </li>
+
+                <li id="top-4">
+                  <span>#4</span><span>NameTest</span><span>4.450 credit</span>
+                </li>
+                <li id="top-5">
+                  <span>#5</span><span>NameTest</span><span>3.000 credit</span>
+                </li>
+                <li id="top-6">
+                  <span>#6</span><span>NameTest</span><span>3.000 credit</span>
+                </li>
+                <li id="top-7">
+                  <span>#7</span><span>NameTest</span><span>3.000 credit</span>
+                </li>
+                <li id="top-8">
+                  <span>#8</span><span>NameTest</span><span>3.000 credit</span>
+                </li>
+                <li id="top-9">
+                  <span>#9</span><span>NameTest</span><span>3.000 credit</span>
+                </li>
+                <li id="top-10">
+                  <span>#10</span><span>NameTest</span><span>3.000 credit</span>
+                </li>
+              </ul>
+            </div>
+             <div id="money" class="hideDisplayGeneral">
+              <ul>
+                <li id="top-1">
+                  <span>#1</span><span>NameTest</span><span>18k $</span>
+                </li>
+                <li id="top-2">
+                  <span>#2</span><span>NameTest</span><span>11k $</span>
+                </li>
+                <li id="top-3">
+                  <span>#3</span><span>NameTest</span><span>9k $</span>
+                </li>
+
+                <li id="top-4">
+                  <span>#4</span><span>NameTest</span><span>4k $</span>
+                </li>
+                <li id="top-5">
+                  <span>#5</span><span>NameTest</span><span>3k $</span>
+                </li>
+                <li id="top-6">
+                  <span>#6</span><span>NameTest</span><span>3k $</span>
+                </li>
+                <li id="top-7">
+                  <span>#7</span><span>NameTest</span><span>3k $</span>
+                </li>
+                <li id="top-8">
+                  <span>#8</span><span>NameTest</span><span>3k $</span>
+                </li>
+                <li id="top-9">
+                  <span>#9</span><span>NameTest</span><span>3k $</span>
+                </li>
+                <li id="top-10">
+                  <span>#10</span><span>NameTest</span><span>3k $</span>
+                </li>
+              </ul>
+            </div>
+            <div id="level" class="hideDisplayGeneral">
+              <ul>
+                <li id="top-1">
+                  <span>#1</span><span>NameTest</span><span>18 lv</span>
+                </li>
+                <li id="top-2">
+                  <span>#2</span><span>NameTest</span><span>11 lv</span>
+                </li>
+                <li id="top-3">
+                  <span>#3</span><span>NameTest</span><span>9 lv</span>
+                </li>
+
+                <li id="top-4">
+                  <span>#4</span><span>NameTest</span><span>4 lv</span>
+                </li>
+                <li id="top-5">
+                  <span>#5</span><span>NameTest</span><span>3 lv</span>
+                </li>
+                <li id="top-6">
+                  <span>#6</span><span>NameTest</span><span>3 lv</span>
+                </li>
+                <li id="top-7">
+                  <span>#7</span><span>NameTest</span><span>3 lv</span>
+                </li>
+                <li id="top-8">
+                  <span>#8</span><span>NameTest</span><span>3 lv</span>
+                </li>
+                <li id="top-9">
+                  <span>#9</span><span>NameTest</span><span>3 lv</span>
+                </li>
+                <li id="top-10">
+                  <span>#10</span><span>NameTest</span><span>3 lv</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- User -->
+      <section id="vip" class="hideDisplaySection">
+        <div class="vipLeft">
+          <div class="vipLeft__top">
+            <span class="js-menuVipleft top-heading top-heading--active">Credit là gì?</span>
+            <span class="js-menuVipleft top-heading">Quyền Lợi V.I.P</span>
+          </div>
+          <div class="vipLeft__body scroll">
+            <div id="vipCredit" class="hideDisplayVipleft openBlock">
+              <i
+                >" CREDIT là một loại tiền tệ ngoài game (O), có thể được mua
+                trên trang web của chúng tôi www.PlayLSRP.com/LS-RP-Community/
+                !!! "</i
+              >
+              <div class="content-item">
+                <h2>Tôi có thể làm gì với các khoản CREDIT?</h2>
+                <p>
+                  CREDIT có thể được sử dụng để mua tư cách thành viên VIP trong
+                  các khoảng thời gian khác nhau, điều này mang lại cho người
+                  mua một số lợi thế giúp tiết kiệm thời gian và tiền bạc hoặc
+                  cho họ quyền truy cập vào các lệnh chỉ dành riêng cho thành
+                  viên VIP. Danh sách quyền lợi xem thêm ở phần Quyền lợi VIP.
+                  Chúng cũng có thể được sử dụng để mở khóa các tính năng đặc
+                  biệt như thay đổi tên nhân vật của bạn hoặc áp dụng biển số
+                  tùy chỉnh cho xe của bạn. CREDIT không thể được sử dụng để đạt
+                  được những lợi thế không công bằng hoặc mua bất kỳ tài sản nào
+                  bị giới hạn bởi GTA V (hay một ngôi nhà sang trọng) hoặc là
+                  một phần của lĩnh vực cạnh tranh (chiến đấu, kinh doanh, tranh
+                  giành địa bàn).
+                </p>
+              </div>
+              <div class="content-item">
+                <h2>Mua CREDIT ở đâu?</h2>
+                <p>
+                  Rất đơn giản, bạn chỉ cần truy cập trang chủ
+                  www.PlayLSRP.com/LS-RP-Community/ sau đó nhấn vào mục Nạp Thẻ
+                  và bạn có thể mua được CREDIT theo hình thức tiện lợi này.
+                  Ngoài ra bạn có thể sử dụng MoMo để mua CREDIT với nhiều ưu
+                  đãi hơn, để mua CREDIT bằng MoMo, bạn hãy liên hệ với Admin
+                  tại đây https://www.fb.com/lsrpvietnam
+                </p>
+              </div>
+              <div class="content-item">
+                <h2>CREDIT được lưu trữ ở đâu?</h2>
+                <p>
+                  CREDIT được lưu trữ trong tài khoản của bạn, điều đó có nghĩa
+                  là bạn có thể sử dụng chúng với bất kỳ nhân vật nào của bạn.
+                  Quy tắc tương tự áp dụng cho trạng thái VIP, nếu bạn mua nó
+                  cho một ký tự, bạn có thể tận hưởng các lợi ích bằng cách sử
+                  dụng một trạng thái khác.
+                </p>
+              </div>
+              <div class="content-item">
+                <h2>Tôi có thể mất CREDIT không?</h2>
+                <p>
+                  Không, CREDIT là loại tiền không có ký tự (OOC), được gắn với
+                  chủ sở hữu CREDIT. Bạn sẽ không bao giờ mất CREDIT khi chết và
+                  không thể đánh cắp chúng. Người chơi không thể cướp CREDIT
+                  trong trò chơi, ví dụ như trong các vụ trộm.
+                </p>
+              </div>
+              <div class="content-item">
+                <h2>Điều gì xảy ra với số tiền tôi gửi?</h2>
+                <p>
+                  Hiện tại, tất cả số tiền nhận được từ người chơi được "trả
+                  lại" cho cộng đồng của chúng tôi bằng cách chúng được đầu tư
+                  vào phần cứng mạnh hơn để duy trì sự ổn định và hiệu suất cao
+                  hơn, cho phép người chơi đạt được trải nghiệm chơi game mượt
+                  mà hơn. Chúng cũng được sử dụng để duy trì trang web, để mua
+                  phần mềm cần thiết hoặc thanh toán hóa đơn từ máy chủ. Khi
+                  chúng tôi có đủ thu nhập, chúng tôi dự định sử dụng số tiền đó
+                  để tổ chức sự kiện hoặc tặng quà miễn phí và các cuộc thi đặc
+                  biệt cho cộng đồng LS-RP của chúng tôi!
+                </p>
+              </div>
+              <div class="content-item">
+                <h2>Làm thế nào để trở thành một Donator?</h2>
+                <p>
+                  Donator được trao cho tất cả các thành viên cộng đồng đã hỗ
+                  trợ chúng tôi trong các giai đoạn trước khi ra mắt và phát
+                  triển sớm của dự án! Nếu bạn muốn trở thành một nhà tài trợ
+                  muộn, bạn phải quyên góp ít nhất 500.000 VNĐ, sau đó liên hệ
+                  với quản trị viên để áp dụng trạng thái. Trạng thái nhà tài
+                  trợ là đặc biệt vì nó được liên kết vĩnh viễn với tài khoản
+                  của bạn!
+                </p>
+              </div>
+              <div class="content-item">
+                <h2>Chúng tôi cảm ơn sự hỗ trợ của bạn!</h2>
+                <p>
+                  Chúng tôi đánh giá rất cao sự hỗ trợ của bạn! Mỗi giao dịch
+                  cho chúng tôithấy rằng cộng đồng tin tưởng vào chúng tôi để
+                  cung cấp nội dung tuyệt vời cho mọi người thưởng thức và đó là
+                  động lực nhất cho bất kỳ nhà phát triển nào! Cảm ơn bạn đã
+                  đóng góp cho sự thịnh vượng của cộng đồng của chúng tôi!
+                </p>
+              </div>
+            </div>
+            <div id="vipPerk" class="hideDisplayVipleft">
+              <i
+                >"Danh hiệu Donator tại diễn đàn -Bạn tham gia một nhóm tài trợ
+                độc quyền trong diễn đàn của chúng tôi. Nhóm tài trợ trong
+                Discord của chúng tôi <br />
+                - Bạn tham gia một nhóm tài trợ độc quyền trong Discord của
+                chúng tôi."</i
+              >
+              <div class="content-item">
+                <h2>Các lệnh</h2>
+                <p>
+                  <span>/vip</span> - Hiển thị trạng thái hết hạn của thành viên
+                  VIP. <br />
+                  <span>/vpm</span> - Gửi tin nhắn cá nhân miễn phí cho người
+                  chơi khác
+                </p>
+              </div>
+              <div class="content-item">
+                <h2>Quyền lợi</h2>
+                <p>
+                  - <span>Giảm 25%</span> tiền phạt trong trường hợp bị bắt.<br />
+                  - <span>Giảm 20%</span> tiền phạt.<br />
+                  - <span>Giảm 50%</span> nhiên liệu.<br />
+                  - <span>+3 Slot</span> xe bổ sung.<br />
+                  - <span>Tăng 50%</span> khi nhận EXP.<br />
+                  - <span>FREE</span> thuê phương tiện.<br />
+                  - <span>x1.5 Money</span> khi làm công việc Nông Dân.<br />
+                  - <span>x1.5 Money</span> khi làm công việc Giao Pizza và
+                  Trucker.<br />
+                  - <span>x2</span> số Vật Liệu nhận được.<br />
+                  - <span>x1.5%</span> tiền lương paycheck mỗi giờ trong
+                  Faction.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="vipRight">
+          <div class="vipRight__top">
+            <h2 class="top-heading__title">cửa hàng</h2>
+            <div class="wrapperTop">
+              <span class="js-menuVipright top-heading__menu top-heading__menu--active"
+                >tiện ích</span
+              >
+              <span class="js-menuVipright top-heading__menu">phương tiện</span>
+            </div>
+          </div>
+          <div id="utilityShop" class="hideDisplayVipright vipRight__body scroll openGrid">
+            <div class="content-shop">
+              <img src="./assets/images/utility1.png" alt="utility" />
+              <p class="content-shop__name">tiện ích #1</p>
+              <p class="content-shop__decs">
+                Sản phẩm có chức năng cường dương, nâng cao thể lực
+              </p>
+              <p class="content-shop__price">Credit: <span>2.000</span></p>
+              <button class="js-buy-btn content-shop__buy">mua</button>
+            </div>
+            <div class="content-shop">
+              <img src="./assets/images/utility2.png" alt="utility" />
+              <p class="content-shop__name">tiện ích #2</p>
+              <p class="content-shop__decs">
+                Sản phẩm có chức năng cường dương, nâng cao thể lực
+              </p>
+              <p class="content-shop__price">Credit: <span>2.000</span></p>
+              <button class="js-buy-btn content-shop__buy">mua</button>
+            </div>
+            <div class="content-shop">
+              <img src="./assets/images/utility3.png" alt="utility" />
+              <p class="content-shop__name">tiện ích #3</p>
+              <p class="content-shop__decs">
+                Sản phẩm có chức năng cường dương, nâng cao thể lực
+              </p>
+              <p class="content-shop__price">Credit: <span>2.000</span></p>
+              <button class="js-buy-btn content-shop__buy">mua</button>
+            </div>
+            <div class="content-shop">
+              <img src="./assets/images/utility4.png" alt="utility" />
+              <p class="content-shop__name">tiện ích #4</p>
+              <p class="content-shop__decs">
+                Sản phẩm có chức năng cường dương, nâng cao thể lực
+              </p>
+              <p class="content-shop__price">Credit: <span>2.000</span></p>
+              <button class="js-buy-btn content-shop__buy">mua</button>
+            </div>
+            <div class="content-shop">
+              <img src="./assets/images/utility5.png" alt="utility" />
+              <p class="content-shop__name">tiện ích #5</p>
+              <p class="content-shop__decs">
+                Sản phẩm có chức năng cường dương, nâng cao thể lực
+              </p>
+              <p class="content-shop__price">Credit: <span>2.000</span></p>
+              <button class="js-buy-btn content-shop__buy">mua</button>
+            </div>
+          </div>
+          <div id="vehicleShop" class="hideDisplayVipright vipRight__body scroll">
+            <div class="content-shop">
+              <img src="./assets/images/utility1.png" alt="utility" />
+              <p class="content-shop__name">phương tiện #1</p>
+              <p class="content-shop__decs">
+                Sản phẩm có chức năng cường dương, nâng cao thể lực
+              </p>
+              <p class="content-shop__price">Credit: <span>2.000</span></p>
+              <button class="js-buy-btn content-shop__buy">mua</button>
+            </div>
+            <div class="content-shop">
+              <img src="./assets/images/utility2.png" alt="utility" />
+              <p class="content-shop__name">phương tiện #2</p>
+              <p class="content-shop__decs">
+                Sản phẩm có chức năng cường dương, nâng cao thể lực
+              </p>
+              <p class="content-shop__price">Credit: <span>2.000</span></p>
+              <button class="js-buy-btn content-shop__buy">mua</button>
+            </div>
+            <div class="content-shop">
+              <img src="./assets/images/utility3.png" alt="utility" />
+              <p class="content-shop__name">phương tiện #3</p>
+              <p class="content-shop__decs">
+                Sản phẩm có chức năng cường dương, nâng cao thể lực
+              </p>
+              <p class="content-shop__price">Credit: <span>2.000</span></p>
+              <button class="js-buy-btn content-shop__buy">mua</button>
+            </div>
+            <div class="content-shop">
+              <img src="./assets/images/utility4.png" alt="utility" />
+              <p class="content-shop__name">phương tiện #4</p>
+              <p class="content-shop__decs">
+                Sản phẩm có chức năng cường dương, nâng cao thể lực
+              </p>
+              <p class="content-shop__price">Credit: <span>2.000</span></p>
+              <button class="js-buy-btn content-shop__buy">mua</button>
+            </div>
+            <div class="content-shop">
+              <img src="./assets/images/utility5.png" alt="utility" />
+              <p class="content-shop__name">phương tiện #5</p>
+              <p class="content-shop__decs">
+                Sản phẩm có chức năng cường dương, nâng cao thể lực
+              </p>
+              <p class="content-shop__price">Credit: <span>2.000</span></p>
+              <button class="js-buy-btn content-shop__buy">mua</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Hướng dẫn -->
+      <section id="help" class="hideDisplaySection">
+        <div class="wrapper">
+          <div class="wrapper__top">
+            <span class="js-menuHelp top-heading top-heading--active">Chung</span>
+            <span class="js-menuHelp top-heading">Chat</span>
+            <span class="js-menuHelp top-heading">Phương tiện</span>
+            <span class="js-menuHelp top-heading">Faction</span>
+            <span class="js-menuHelp top-heading">Nhà cửa</span>
+            <span class="js-menuHelp top-heading">Vũ khí</span>
+          </div>
+          <div class="wrapper__body scroll">
+            <div class="wrapper__body-heading">
+              <h3>KEYWORD</h3>
+              <span>MÔ TẢ</span>
+            </div>
+            <!-- chung -->
+            <div id="wrapperGeneral" class="hideDisplayHelp openBlock">
+              <div class="content-item">
+                <ul class="content-item__menu">
+                  <li class="content-item__item">
+                    <h2>H</h2>
+                    <span>Giơ tay lên.</span>
+                  </li>
+                  <li class="content-item__item">
+                    <h2>I</h2>
+                    <span>Mở kho của bạn.</span>
+                  </li>
+                  <li class="content-item__item">
+                    <h2>O</h2>
+                    <span>Mở giao diện tương tác của bạn.</span>
+                  </li>
+                  <li class="content-item__item">
+                    <h2>M</h2>
+                    <span
+                      >Được sử dụng khi ở gần người chơi hoặc xe để tương tác
+                      với người chơi.</span
+                    >
+                  </li>
+                  <li class="content-item__item">
+                    <h2>U</h2>
+                    <span>Danh sách tất cả các animation có sẵn.</span>
+                  </li>
+                  <li class="content-item__item">
+                    <h2>ĐIỆN THOẠI</h2>
+                    <span
+                      >Được sử dụng để yêu cầu một số dịch vụ, chẳng hạn như:
+                      đơn vị cảnh sát (911), đơn vị y tế(912), taxi(914), thợ
+                      sửa xe(913),nhà báo(915).</span
+                    >
+                  </li>
+                  <li class="content-item__item">
+                    <h2>F2</h2>
+                    <span>Chuyển đổi giữa Enter hoặc con trỏ.</span>
+                  </li>
+                  <li class="content-item__item">
+                    <h2>F3</h2>
+                    <span>Mở bảng trợ giúp.</span>
+                  </li>
+                  <li class="content-item__item">
+                    <h2>F4</h2>
+                    <span>Mở cửa hàng OOC.</span>
+                  </li>
+                  <li class="content-item__item">
+                    <h2>F5</h2>
+                    <span>Mở bảng điều khiển kho xe của bạn</span>
+                  </li>
+                  <li class="content-item__item">
+                    <h2>F10</h2>
+                    <span>Bật tắt giao diện trên màn hình</span>
+                  </li>
+                  <li class="content-item__item">
+                    <h2>/thongtin</h2>
+                    <span>Xem số liệu thống kê của bạn</span>
+                  </li>
+                  <li class="content-item__item">
+                    <h2>/sellitem</h2>
+                    <span
+                      >Đưa một vật phẩm từ túi của bạn cho người chơi
+                      khác.</span
+                    >
+                  </li>
+                  <li class="content-item__item">
+                    <h2>/id</h2>
+                    <span>Xem ID người chơi theo tên.</span>
+                  </li>
+                  <li class="content-item__item">
+                    <h2>/mask</h2>
+                    <span>Được sử dụng để lắp mặt nạ.</span>
+                  </li>
+                  <li class="content-item__item">
+                    <h2>/anim</h2>
+                    <span>Các animation hiện tại.</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- chat -->
+            <div id="wrapperChat" class="hideDisplayHelp">
+              <div class="content-item">
+                <ul class="content-item__menu">
+                  <li class="content-item__item">
+                    <h2>/ME</h2>
+                    <span
+                      >Được sử dụng để diễn tả hành động nhân vật đang
+                      làm.</span
+                    >
+                  </li>
+                  <li class="content-item__item">
+                    <h2>/DO</h2>
+                    <span
+                      >Dùng để bổ trợ cho /me, miêu tả một (vật thể, trạng thái,
+                      màu sắc), tương tác với người choi khác trước khi nhân vật
+                      đó diễn tả một hành động nào đó.</span
+                    >
+                  </li>
+                  <li class="content-item__item">
+                    <h2>/T</h2>
+                    <span>Chat thường thể hiện cho lời nói của bản thân.</span>
+                  </li>
+                  <li class="content-item__item">
+                    <h2>/S</h2>
+                    <span
+                      >La hét! được hiển thị xa hơn so với chat thường.</span
+                    >
+                  </li>
+                  <li class="content-item__item">
+                    <h2>/B</h2>
+                    <span
+                      >Được sử dụng để gửi tin nhắn bên ngoài game (OOC).</span
+                    >
+                  </li>
+                  <li class="content-item__item">
+                    <h2>/O</h2>
+                    <span>Được sử dụng để nói chuyện trên kênh OOC.</span>
+                  </li>
+                  <li class="content-item__item">
+                    <h2 style="font-size: 1.5rem">/MP + [ID] + [MESSAGE]</h2>
+                    <span
+                      >Được sử dụng để nói chuyện riêng giữa hai người.</span
+                    >
+                  </li>
+                  <li class="content-item__item">
+                    <h2>/N</h2>
+                    <span
+                      >Được sử dụng để yêu cầu trợ giúp trên kênh newbie.</span
+                    >
+                  </li>
+                  <li class="content-item__item">
+                    <h2>/SOS</h2>
+                    <span> Được sử dụng để yêu cầu trợ giúp từ ADMIN.</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- Phương tiện -->
+            <div id="wrapperVehicle" class="hideDisplayHelp">
+              <div class="content-item">
+                <ul class="content-item__menu">
+                  <li class="content-item__item">
+                    <h2>Y</h2>
+                    <span
+                      >Được sử dụng bên trong xe để khởi động / dừng động
+                      cơ.</span
+                    >
+                  </li>
+                  <li class="content-item__item">
+                    <h2>L</h2>
+                    <span
+                      >Được sử dụng bên trong xe để chuyển giữa chế độ hành
+                      trình.</span
+                    >
+                  </li>
+                  <li class="content-item__item">
+                    <h2>K</h2>
+                    <span>Được sử dụng để khóa / mở khóa xe của bạn.</span>
+                  </li>
+                  <li class="content-item__item">
+                    <h2>M</h2>
+                    <span
+                      >Sử dụng khi đứng gần và trỏ chuột vào phương tiện.</span
+                    >
+                  </li>
+                  <li class="content-item__item">
+                    <h2>F5</h2>
+                    <span
+                      >Được sử dụng để quản lý phương tiện của bạn và xác định
+                      vị trí của chúng.</span
+                    >
+                  </li>
+                  <li class="content-item__item">
+                    <h2>/DAUXE</h2>
+                    <span
+                      >Được sử dụng để đỗ và lưu trữ vị trí xe của bạn, nơi nó
+                      sẽ được xuất hiện.</span
+                    >
+                  </li>
+                  <li class="content-item__item">
+                    <h2>/BANXE</h2>
+                    <span>Được sử dụng để bán xe của bạn cho người khác.</span>
+                  </li>
+                  <li class="content-item__item">
+                    <h2>*</h2>
+                    <span
+                      >Nếu chiếc xe của bạn được đưa vào bảo hiểm, bạn cần phải
+                      đến đó và trả tiền để lấy nó.</span
+                    >
+                  </li>
+                  <li class="content-item__item">
+                    <h2>*</h2>
+                    <span
+                      >Bạn có thể trả tiền phạt xe của bạn tại Sở Cảnh
+                      sát.</span
+                    >
+                  </li>
+                  <li class="content-item__item">
+                    <h2>*</h2>
+                    <span
+                      >Nếu bạn rơi khỏi máy chủ và chiếc xe của bạn sẽ biến mất,
+                      khi bạn vào máy chủ và lấy phương tiện ra thì xe của bạn
+                      sẽ được đặt tại vị trí mà bạn đã đậu phương tiện.</span
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- faction -->
+            <div id="wrapperFaction" class="hideDisplayHelp">
+              <div class="content-item">
+                <ul class="content-item__menu">
+                  <li class="content-item__item">
+                    <h2>/invite</h2>
+                    <span>
+                      Được sử dụng bởi người lãnh đạo để mời ai đó vào
+                      phe.</span
+                    >
+                  </li>
+                  <li class="content-item__item">
+                    <h2>/f</h2>
+                    <span>
+                      Được sử dụng để nói chuyện trong trò chuyện phe
+                      phái(OOC).</span
+                    >
+                  </li>
+                  <li class="content-item__item">
+                    <h2>/r</h2>
+                    <span>
+                      Được sử dụng để nói trên đài phát thanh phe phái
+                      (IC).</span
+                    >
+                  </li>
+                  <li class="content-item__item">
+                    <h2>/cuop</h2>
+                    <span>
+                      Được sử dụng để đánh cắp một người chơi đầu hàng.</span
+                    >
+                  </li>
+                  <li class="content-item__item">
+                    <h2>/robbank</h2>
+                    <span>
+                      Được sử dụng để cướp ngân hàng với băng nhóm của
+                      bạn.</span
+                    >
+                  </li>
+                  <li class="content-item__item">
+                    <h2>/turfinfo</h2>
+                    <span>
+                      Được sử dụng để xem thông tin lãnh thổ hiện tại.</span
+                    >
+                  </li>
+                  <li class="content-item__item">
+                    <h2>/nbu</h2>
+                    <span> Được sử dụng để gửi vị trí backup.</span>
+                  </li>
+                  <li class="content-item__item">
+                    <h2>...</h2>
+                    <span>
+                      Được sử dụng để xem các thành viên trực tuyến của
+                      phebạn.</span
+                    >
+                  </li>
+                  <li class="content-item__item">
+                    <h2>...</h2>
+                    <span> Được sử dụng để mua kho cho băng đảng của bạn.</span>
+                  </li>
+                  <li class="content-item__item">
+                    <h2>*</h2>
+                    <span>
+                      Nhớ cướp ngân hàng bạn cần 1x Khoan và 4x C4, chúng có
+                      thểđược mua tại Chợ Đen.</span
+                    >
+                  </li>
+                  <li class="content-item__item">
+                    <h2>*</h2>
+                    <span>
+                      Bạn có thể truy cập máy tính xách tay từ kho bằng cách
+                      nhấn Yđể mua vũ khí cho băng nhóm của bạn.</span
+                    >
+                  </li>
+                  <li class="content-item__item">
+                    <h2>*</h2>
+                    <span>
+                      Để bắt đầu một cuộc chiến lãnh thổ bạn cần ở lại trên
+                      cùngcủa lãnh thổ với 2 thành viên trong băng nhóm của
+                      bạn.</span
+                    >
+                  </li>
+                  <li class="content-item__item">
+                    <h2>*</h2>
+                    <span>
+                      Khi bạn chinh phục lãnh thổ, bạn nhận được tiền từ nó cứ
+                      sau 15 phút.</span
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- home -->
+            <div id="wrapperHome" class="hideDisplayHelp">
+              <div class="content-item">
+                <ul class="content-item__menu">
+                  <li class="content-item__item">
+                    <h2>O</h2>
+                    <span>
+                      Được sử dụng trong nhà của bạn để mở menu quản lí
+                      nhà.</span
+                    >
+                  </li>
+                  <li class="content-item__item">
+                    <h2>K</h2>
+                    <span>Sử dụng để khóa / mở khóa nhà của bạn</span>
+                  </li>
+                  <li class="content-item__item">
+                    <h2>/MUANHA</h2>
+                    <span>Sử dụng để mau một ngôi nhà.</span>
+                  </li>
+                  <li class="content-item__item">
+                    <h2>/BANNHA</h2>
+                    <span>Sử dụng để bán một ngôi nhà.</span>
+                  </li>
+                  <li class="content-item__item">
+                    <h2>/BAMCHUONG</h2>
+                    <span>Được sử dụng để bấm chuông nhà.</span>
+                  </li>
+                  <li class="content-item__item">
+                    <h2>/DUACHIAKHOA</h2>
+                    <span
+                      >Được sử dụng để cung cấp cho ai đó chìa khóa nhà của
+                      bạn.</span
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- Vũ khí -->
+            <div id="wrapperWeapon" class="hideDisplayHelp">
+              <div class="content-item">
+                <ul class="content-item__menu">
+                  <li class="content-item__item">
+                    <h2>CẬN CHIẾN</h2>
+                    <span
+                      >Bao gồm các vũ khí cận chiến, khi bạn đã sở hữu 1 món vũ
+                      khí cận chiến bạn không thể sở hữu món thứ 2, vẫn có thể
+                      sở hữu được nhưng món thứ 1 của bạn sẽ mất</span
+                    >
+                  </li>
+                  <li class="content-item__item">
+                    <h2>VŨ KHÍ CHÍNH</h2>
+                    <span
+                      >Bao gồm các vũ khí như các loại súng smg, shotgun, súng
+                      trường và bạn cũng chỉ sở hữu được một món vũ khí
+                      chính</span
+                    >
+                  </li>
+                  <li class="content-item__item">
+                    <h2>VŨ KHÍ PHỤ</h2>
+                    <span>Bao gồm tất cả các dòng súng lục</span>
+                  </li>
+                  <li class="content-item__item">
+                    <h2>*</h2>
+                    <span
+                      >Vì để cao tính RolePlay nên mỗi người chơi chỉ sở hữu
+                      được 3 loại vũ khí trong người</span
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- F.A.Q -->
+      <section id="faq" class="hideDisplaySection">
+        <img src="./assets/images/faq.jpg" alt="update" />
+      </section>
+
+    <div class="js-modal modal">
+  
+      <div class="js-modal-content modal-content">
+        <h2>xác nhận</h2>
+
+        <div class="modal-desc"><ion-icon name="checkmark-done-circle-outline"></ion-icon>
+        <p>
+          Bạn có chắc chắn muốn sở hữu mặt hàng này?
+        </p>
+      </div>
+
+        <div class="modal-btn">
+          <button id="modalClose" class="modal-btn--close">
+            <p>
+              từ chối
+            </p>
+            </button>
+          <button id="modalBuy" class="modal-btn--buy"><p>
+              đồng ý
+            </p></button>
+        </div>
+      </div>
+    </div>
+  
+
+      <!-- Close BTN -->
+      <footer id="help_close">
+        <button class="btn--close">ĐÓNG</button>
+      </footer>
+    </div>
+
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- back end -->
+    <script src="./assets/scripts/general.js"></script>
+    <!-- front end -->
+    <script src="./assets/scripts/index.js"></script>
+    <script src="../assets/scripts/index.js"></script>  <!-- js-assets -->
+  </body>
+</html>
+
+<!-- <div id="wrapperChat">
+              <div class="content-item">
+                <ul class="content-item__menu">
+                  <li class="content-item__item">
+                    <h2>/ME</h2>
+                    <span
+                      >Được sử dụng để diễn tả hành động nhân vật đang
+                      làm.</span
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div> -->
