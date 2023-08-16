@@ -1,3 +1,12 @@
+// document.getElementById("next").onclick = function () {
+//   let lists = document.querySelectorAll(".item");
+//   document.getElementById("slide").appendChild(lists[0]);
+// };
+document.getElementById("next").onclick = function () {
+  let lists = document.querySelectorAll(".item");
+  document.getElementById("slide").prepend(lists[lists.length - 1]);
+};
+
 // Card myprofile
 
 const card = document.querySelector(".card");
@@ -21,24 +30,22 @@ function resetStyles(e) {
 card.addEventListener("mousemove", handleHover);
 card.addEventListener("mouseleave", resetStyles);
 
-
 // TAB UI CONTENT
 
-const $ = document.querySelector.bind(document)
-const $$ = document.querySelectorAll.bind(document)
+const $ = document.querySelector.bind(document);
+const $$ = document.querySelectorAll.bind(document);
 
-  const tabs = $$('.tab-item')
-  const contents = $$('.tab-content')
-  
+const tabs = $$(".tab-item");
+const contents = $$(".tab-content");
+
 tabs.forEach((tab, index) => {
-
-  const content = contents[index]
+  const content = contents[index];
 
   tab.onclick = function () {
-    $('.tab-item.active').classList.remove('active');
-      $(".tab-content.active").classList.remove("active");
+    $(".tab-item.active").classList.remove("active");
+    $(".tab-content.active").classList.remove("active");
 
-    this.classList.add('active');
-      content.classList.add("active");
-    }
-  })
+    this.classList.add("active");
+    content.classList.add("active");
+  };
+});
