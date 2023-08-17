@@ -1,158 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Project</title>
-    <link rel="stylesheet" href="./assets/css/mylib.css" />
-    <link rel="stylesheet" href="./assets/css/main.css" />
-    <!-- ICON -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  </head>
-  <body>
-    
+    <link rel="stylesheet" href="./assets/css/mylib.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+
+<body>
+
     <div class="container grid wide">
-      <!-- Header -->
-      <header class="row header-nav">
-        <!-- Profile -->
-        <div class="col c-6 nav-right">
-          <div class="profile">
-            <button class="profile-btn" role="button">
-              <i class="fa-solid fa-address-card"></i>
-              <span>My Profile</span>
-            </button>
-            <div class="profile-card">
-              <article class="card">
-                <div class="content">
-                  <img src="./assets/img/selfie.PNG" alt="selfie" class="content-selfie">
-                  <div class="content-info">
-                    <p> - Tớ là <span>Nam</span> (unk)</p>
-                    <p> - Tớ sinh năm <span>97</span></p>
-                    <p><span>></span> Hiện tại công việc của tớ là quản lý nhân viên trong 1 khâu của cty thời trang ( giống như trưởng bộ phận ý :D ).</p>
-                    <p><span>></span> Tớ có đam mê với lập trình, thiết kế website và vài thứ linh tinh khác nữa. Mình vừa làm vừa học trái ngành nên cũng chưa đâu ra đâu cả.</p>
-                    <p><span>></span> Và đây là trang đầu tiên mình tạo ra mục đích lưu trữ lại các bài học và dự án nhỏ mình tự làm.</p>
-                  </div>
-                  <h2>Hé luuu!</h2>
-              </div>
-            </article>    
-            </div>
-          </div>
-        </div>
-        <div class="row col c-6 nav-left">
-        <!-- Social -->
-          <div class="col c-3 nav-left--item"><a target="_blank" href="https://www.facebook.com/profile.php?id=100066544551733">facebook</a></div>
-          <div class="col c-3 nav-left--item"><a target="_blank" href="https://www.instagram.com/namne.97er/">instargram</a></div>
-          <div class="col c-3 nav-left--item"><a href="#">messenger</a></div>
-        </div>
-      </header>
-      <!-- MENU -->
-      <section class="content-nav">
-        <ul class="row col c-12 nav-menu">
-          <li class="nav-menu--item"><button class="tab-item menu-btn active" role="button">learn</button></li>
-          <li class="nav-menu--item"><button class="tab-item menu-btn" role="button">my projects</button></li>
-          <li class="nav-menu--item"><button class="tab-item menu-btn" role="button">sample resource</button></li>
-        </ul>
-      </section>
-      <section id="learn" class="tab-content active">
-        <!-- CONTENT -->
-        <div class="swiper-container">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="container-general">
-                <div class="gallery-wrap wrap-effect-1">
-                  <div class="item"></div>
-                  <div class="item"></div>
-                  <div class="item"></div>
-                  <div class="item"></div>
-                  <div class="item"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section id="projects" class="tab-content">
-        <div class="wrapper">
-          <div id="slide">
-            <div class="item" style="background-image: url(./assets/img/ehouse.PNG);">
-                <div class="content">
-                    <div class="name">Demo EHouse Design</div>
-                    <div class="des">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur reiciendis nulla eum corrupti placeat dicta assumenda illum est et obcaecati explicabo, cupiditate sit officiis rem facilis. Magnam tenetur nulla eum!</div>
-                    <button>See more</button>
+        <!-- Header -->
+        <header class="row header-nav">
+            <!-- Profile -->
+            <div class="col c-6 nav-right">
+                <div class="profile">
+                    <a class="profile-btn" href="./index.html">
+                        <i class="fa-solid fa-address-card"></i>
+                        <span>My Profile</span>
+                    </a>
+                    <div class="profile-card">
+                        <article class="card">
+                          <div class="content">
+                              <img src="./assets/img/selfie.PNG" alt="selfie" class="content-selfie">
+                              <div class="content-info">
+                                  <p>Chào mọi người! Tớ là <span>Nam</span>, <span>97er</span>.</p>
+                                  <p><span>></span> Hiện tại, tớ đang làm công việc quản lý nhân viên trong một khâu của một công ty thời trang - cũng giống như việc trở thành trưởng bộ phận ý.</p>
+                                  <p><span>></span> Tớ có một đam mê lớn với lập trình, thiết kế website và một vài thứ linh tinh khác. Hiện tại, tớ đang làm việc và học đồng thời, do đó vẫn còn đang tìm hiểu và khám phá nhiều điều mới.</p>
+                                  <p><span>></span> Trang web này là thành quả đầu tiên mà tớ đã tạo ra, và mục đích của nó là lưu trữ lại các bài học và các dự án nhỏ mà tớ tự làm. Hy vọng nó sẽ trở thành một góc nhỏ để chia sẻ và giao lưu với mọi người.</p>
+                              </div>
+                              <h2>6626.97er</h2>
+                          </div>
+                      </article>
+                    </div>
                 </div>
             </div>
-            <div class="item" style="background-image: url(./RebuildLS-RP/lib/images/web1.png);">
-                <div class="content">
-                    <div class="name">DEMO</div>
-                    <div class="des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure dolores vero porro distinctio dolore. Voluptatem, eius dicta? Odit recusandae qui et aliquam, eligendi illo voluptates. Labore fuga quos eaque perspiciatis.</div>
-                    <button>See more</button>
+            <div class="row col c-6 nav-left">
+                <!-- Social -->
+                <div class="col c-3 nav-left--item"><a target="_blank" href="https://www.facebook.com/profile.php?id=100066544551733">facebook</a>
+                </div>
+                <div class="col c-3 nav-left--item"><a target="_blank" href="https://www.instagram.com/namne.97er/">instargram</a>
+                </div>
+                <div class="col c-3 nav-left--item"><a href="#">messenger</a>
                 </div>
             </div>
-            <div class="item" style="background-image: url(./RebuildLS-RP/lib/images/web2.png);">
-                <div class="content">
-                    <div class="name">DEMO</div>
-                    <div class="des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure dolores vero porro distinctio dolore. Voluptatem, eius dicta? Odit recusandae qui et aliquam, eligendi illo voluptates. Labore fuga quos eaque perspiciatis.</div>
-                    <button>See more</button>
+        </header>
+        <!-- MENU -->
+        <section class="content-nav">
+            <ul class="row col c-12 nav-menu">
+                <li class="nav-menu--item">
+                    <button class="tab-item menu-btn" role="button">learn</button>
+                </li>
+                <li class="nav-menu--item">
+                    <button class="tab-item menu-btn active" role="button">my projects</button>
+                </li>
+                <li class="nav-menu--item">
+                    <button class="tab-item menu-btn" role="button">sample resource</button>
+                </li>
+            </ul>
+        </section>
+
+        <!-- LEARN -->
+        <section id="learn" class="tab-content">
+
+        </section>
+        <!-- PROJECTS -->
+        <section id="projects" class="tab-content active">
+            <div class="wrapper">
+                <div id="slide">
+                    <div class="item" style="background-image: url(./assets/img/ehouse.PNG);">
+                        <div class="content">
+                            <div class="name">Demo EHouse Design</div>
+                            <div class="des">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur reiciendis nulla eum corrupti placeat dicta assumenda illum est et obcaecati explicabo, cupiditate sit officiis rem facilis. Magnam tenetur nulla eum!</div>
+                            <button><a href="./ehousedesign.vn/index.html" target="_blank" rel="noopener noreferrer">See more</a></button>
+                        </div>
+                    </div>
+                    <div class="item" style="background-image: url(./RebuildLS-RP/lib/images/web5.png);">
+                        <div class="content">
+                            <div class="name">dashboard v.1</div>
+                            <div class="des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure dolores vero porro distinctio dolore. Voluptatem, eius dicta? Odit recusandae qui et aliquam, eligendi illo voluptates. Labore fuga quos eaque perspiciatiss.</div>
+                            <button><a href="./RebuildLS-RP/Rebuild LSRP v1/vip-page/index.html" target="_blank" rel="noopener noreferrer">See more</a></button>
+                        </div>
+                    </div>
+                    <div class="item" style="background-image: url(./RebuildLS-RP/lib/images/web1.png);">
+                        <div class="content">
+                            <div class="name">dashboard v.2</div>
+                            <div class="des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure dolores vero porro distinctio dolore. Voluptatem, eius dicta? Odit recusandae qui et aliquam, eligendi illo voluptates. Labore fuga quos eaque perspiciatis.</div>
+                            <button><a href="./RebuildLS-RP/Rebuild LSRP v1/dashboard-page/index.html" target="_blank" rel="noopener noreferrer">See more</a></button>
+                        </div>
+                    </div>
+                    <div class="item" style="background-image: url(./RebuildLS-RP/lib/images/web7.png);">
+                        <div class="content">
+                            <div class="name">dashboard v.3</div>
+                            <div class="des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure dolores vero porro distinctio dolore. Voluptatem, eius dicta? Odit recusandae qui et aliquam, eligendi illo voluptates. Labore fuga quos eaque perspiciatis.</div>
+                            <button><a href="./RebuildLS-RP/Rebuild LSRP v2/dashboard-page-v2/index.html" target="_blank" rel="noopener noreferrer">See more</a></button>
+                        </div>
+                    </div>
+                    <div class="item" style="background-image: url(./RebuildLS-RP/lib/images/web2.png);">
+                        <div class="content">
+                            <div class="name">vehicles v.1</div>
+                            <div class="des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure dolores vero porro distinctio dolore. Voluptatem, eius dicta? Odit recusandae qui et aliquam, eligendi illo voluptates. Labore fuga quos eaque perspiciatis.</div>
+                            <button><a href="./RebuildLS-RP/Rebuild LSRP v1/vehicles-page v1/index.html" target="_blank" rel="noopener noreferrer">See more</a></button>
+                        </div>
+                    </div>
+                    <div class="item" style="background-image: url(./RebuildLS-RP/lib/images/web3.png);">
+                        <div class="content">
+                            <div class="name">vehicles v.2</div>
+                            <div class="des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure dolores vero porro distinctio dolore. Voluptatem, eius dicta? Odit recusandae qui et aliquam, eligendi illo voluptates. Labore fuga quos eaque perspiciatis.</div>
+                            <button><a href="./RebuildLS-RP/Rebuild LSRP v1/vehicles-page v2/index.html" target="_blank" rel="noopener noreferrer">See more</a></button>
+                        </div>
+                    </div>
+                    <div class="item" style="background-image: url(./RebuildLS-RP/lib/images/web4.png);">
+                        <div class="content">
+                            <div class="name">vehicles v.3</div>
+                            <div class="des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure dolores vero porro distinctio dolore. Voluptatem, eius dicta? Odit recusandae qui et aliquam, eligendi illo voluptates. Labore fuga quos eaque perspiciatis.</div>
+                            <button><a href="./RebuildLS-RP/Rebuild LSRP v1/vehicles-page v3/index.html" target="_blank" rel="noopener noreferrer">See more</a></button>
+                        </div>
+                    </div>
+                    <div class="item" style="background-image: url(./RebuildLS-RP/lib/images/web6.png);">
+                        <div class="content">
+                            <div class="name">City Hall - Jobs</div>
+                            <div class="des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure dolores vero porro distinctio dolore. Voluptatem, eius dicta? Odit recusandae qui et aliquam, eligendi illo voluptates. Labore fuga quos eaque perspiciatis.</div>
+                            <button><a href="./RebuildLS-RP/Rebuild LSRP v1/job-page/index.html" target="_blank" rel="noopener noreferrer">See more</a></button>
+                        </div>
+                    </div>
+                    <div class="item" style="background-image: url(./RebuildLS-RP/lib/images/web8.png);">
+                        <div class="content">
+                            <div class="name">DEMO "mysite"</div>
+                            <div class="des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure dolores vero porro distinctio dolore. Voluptatem, eius dicta? Odit recusandae qui et aliquam, eligendi illo voluptates. Labore fuga quos eaque perspiciatis.</div>
+                            <button><a href="./RebuildLS-RP/index.html" target="_blank" rel="noopener noreferrer">See more</a></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button id="prev"><i class="fa-solid fa-angles-left"></i>
+                    </button>
+                    <button id="next"><i class="fa-solid fa-angles-right"></i>
+                    </button>
                 </div>
             </div>
-            <div class="item" style="background-image: url(./RebuildLS-RP/lib/images/web3.png);">
-                <div class="content">
-                    <div class="name">DEMO</div>
-                    <div class="des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure dolores vero porro distinctio dolore. Voluptatem, eius dicta? Odit recusandae qui et aliquam, eligendi illo voluptates. Labore fuga quos eaque perspiciatis.</div>
-                    <button>See more</button>
-                </div>
-            </div>
-            <div class="item" style="background-image: url(./RebuildLS-RP/lib/images/web4.png);">
-                <div class="content">
-                    <div class="name">DEMO</div>
-                    <div class="des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure dolores vero porro distinctio dolore. Voluptatem, eius dicta? Odit recusandae qui et aliquam, eligendi illo voluptates. Labore fuga quos eaque perspiciatis.</div>
-                    <button>See more</button>
-                </div>
-            </div>
-            <div class="item" style="background-image: url(./RebuildLS-RP/lib/images/web5.png);">
-                <div class="content">
-                    <div class="name">DEMO</div>
-                    <div class="des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure dolores vero porro distinctio dolore. Voluptatem, eius dicta? Odit recusandae qui et aliquam, eligendi illo voluptates. Labore fuga quos eaque perspiciatiss.</div>
-                    <button>See more</button>
-                </div>
-            </div>
-            <div class="item" style="background-image: url(./RebuildLS-RP/lib/images/web6.png);">
-                <div class="content">
-                    <div class="name">DEMO</div>
-                    <div class="des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure dolores vero porro distinctio dolore. Voluptatem, eius dicta? Odit recusandae qui et aliquam, eligendi illo voluptates. Labore fuga quos eaque perspiciatis.</div>
-                    <button>See more</button>
-                </div>
-            </div>
-            <div class="item" style="background-image: url(./RebuildLS-RP/lib/images/web7.png);">
-                <div class="content">
-                    <div class="name">DEMO</div>
-                    <div class="des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure dolores vero porro distinctio dolore. Voluptatem, eius dicta? Odit recusandae qui et aliquam, eligendi illo voluptates. Labore fuga quos eaque perspiciatis.</div>
-                    <button>See more</button>
-                </div>
-            </div>
-            <div class="item" style="background-image: url(./RebuildLS-RP/lib/images/web8.png);">
-                <div class="content">
-                    <div class="name">DEMO</div>
-                    <div class="des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure dolores vero porro distinctio dolore. Voluptatem, eius dicta? Odit recusandae qui et aliquam, eligendi illo voluptates. Labore fuga quos eaque perspiciatis.</div>
-                    <button>See more</button>
-                </div>
-            </div>
-        </div>
-        <div class="buttons">
-            <button id="next"><i class="fa-solid fa-angles-right"></i></button>
-            <!-- <button id="next"><i class="fa-solid fa-angle-right"></i></button> -->
-        </div>
-        </div>
-      </section>
-      <section id="resource" class="tab-content">
-        
-      </section>
+        </section>
+        <!-- RESIYRCE -->
+        <section id="resource" class="tab-content">
+
+        </section>
+
+        <section class="footer">
+          <span>
+            Copyright © 2024 <a href="#">6626.97er</a> All Rights Reserved                
+          </span>
+        </section>
     </div>
+    <script src="./assets/js/index.js" defer></script>
+</body>
 
-    <script src="./assets/js/index.js"></script>
-  </body>
 </html>
-
-
-
