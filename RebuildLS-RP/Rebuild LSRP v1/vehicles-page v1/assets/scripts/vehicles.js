@@ -1,27 +1,37 @@
 let item_index = -1;
+
+// Wait for the document to be ready
 $(document).ready(function () {
+  // Handle click event for help_close button
   $("#help_close").click(function () {
+    // Trigger Destroy_Character_Menu event
     mp.trigger("Destroy_Character_Menu");
   });
 
-  //Thay doi hieu ung select khi click vào tung the Card
+  // Handle click event for vehicleCard elements
   $(".vehicleCard").click(function (e) {
+    // Add activeCard class to the clicked element and remove it from siblings
     $(this).addClass("activeCard").siblings().removeClass("activeCard");
   });
-  //Thay doi hieu ung select khi click vào tung the Color
+
+  // Handle click event for colorItem elements
   $(".colorItem").click(function (e) {
+    // Add activeColor class to the clicked element and remove it from siblings
     $(this).addClass("activeColor").siblings().removeClass("activeColor");
   });
-  //Thay doi hieu ung select khi click vào tung the nav item
+
+  // Handle click event for group__item elements
   $(".group__item").click(function (e) {
+    // Add group__item--active class to the clicked element and remove it from siblings
     $(this)
       .addClass("group__item--active")
       .siblings()
       .removeClass("group__item--active");
   });
 
-  // Thay doi giao dien RightContent thanh full
+  // Handle click event for rightContent__footer--btn button
   $(".rightContent__footer--btn").click(function (e) {
+    // Toggle rightContent--full class on rightContent element
     $(".rightContent").toggleClass("rightContent--full");
   });
 });

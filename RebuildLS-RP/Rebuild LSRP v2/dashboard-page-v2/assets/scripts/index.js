@@ -1,7 +1,7 @@
 const $ = document.querySelector.bind(document);
 const $$ = document.querySelectorAll.bind(document);
 
-// Get
+// Lấy các phần tử
 const picksColor = $$(".js-Color");
 const tabsNav = $$(".js-menuPrimary");
 const blockContents = $$(".js-content");
@@ -11,48 +11,56 @@ const btnCancel = $("#js-cancel");
 const helpMenus = $$(".js-menu-help");
 const helpContents = $$(".js-content-help");
 
+// Xử lý khi click vào menu help
 helpMenus.forEach((helpMenu, index) => {
   const helpContent = helpContents[index];
 
   helpMenu.onclick = function () {
-    $(".js-menu-help.active").classList.remove("active");
-    $(".js-content-help.openBlock").classList.remove("openBlock");
+    const activeMenu = $(".js-menu-help.active");
+    const activeContent = $(".js-content-help.openBlock");
+
+    activeMenu?.classList.remove("active");
+    activeContent?.classList.remove("openBlock");
 
     this.classList.add("active");
     helpContent.classList.add("openBlock");
   };
 });
 
-//Thay doi hieu ung select khi click vào tung the Color
-picksColor.forEach((pickColor, index) => {
+// Thay đổi hiệu ứng khi click vào từng mục Color
+picksColor.forEach((pickColor) => {
   pickColor.onclick = function () {
-    $(".js-Color.active").classList.remove("active");
+    const activeColor = $(".js-Color.active");
 
+    activeColor?.classList.remove("active");
     this.classList.add("active");
   };
 });
 
-// menu primary
+// Xử lý khi click vào menu primary
 tabsNav.forEach((tabNav, index) => {
   const blockContent = blockContents[index];
 
   tabNav.onclick = function () {
-    $(".js-menuPrimary.active").classList.remove("active");
-    $(".js-content.openFlex").classList.remove("openFlex");
+    const activeTab = $(".js-menuPrimary.active");
+    const activeContent = $(".js-content.openFlex");
+
+    activeTab?.classList.remove("active");
+    activeContent?.classList.remove("openFlex");
 
     this.classList.add("active");
     blockContent.classList.add("openFlex");
-    // modal.classList.remove("openBlock");
   };
 });
 
-// click button buy
-btnBuys.forEach((btnBuy, index) => {
+// Xử lý khi click vào nút mua
+btnBuys.forEach((btnBuy) => {
   btnBuy.onclick = function () {
     modal.classList.add("openFlex");
   };
 });
-// click button cancel
+
+// Xử lý khi click vào nút hủy
 btnCancel.onclick = function () {
   modal.classList.remove("openFlex");
 };
