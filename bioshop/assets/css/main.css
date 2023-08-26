@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+:root {
+  --bla: #040D12;
+  --yel: #EBE76C;
+  --lora: #F0B86E;
+  --pin: #ED7B7B;
+  --pur: #836096;
+  --whi: #FAF0E4;
+  --blu: #9BCDD2;
+  --ora: #FF8551;
+  --lpur: #FFDEDE;
+}
+
+html, body {
+  background-color: #a9a9a9;
+  height: 100vh;
+}
+
+.main {
+  display: none;
+  background-color: beige;
+  max-height: 100vh;
+  width: 100%;
+}
+.main .warning {
+  height: 100vh;
+  width: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+.main .warning span {
+  display: none;
+  color: red;
+  font-size: 2.4rem;
+  font-weight: bold;
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
+}
+
+@media only screen and (max-width: 739px) {
+  .main {
+    display: block;
+    position: relative;
+    height: 100%;
+    width: 100%;
+  }
+  .main #app {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--lora);
+    background-image: linear-gradient(to bottom, var(--lora), var(--ora), var(--lpur));
+  }
+  .main #app .header {
+    height: 52px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  .main #app .header::before {
+    position: absolute;
+    content: "";
+    width: 85%;
+    height: 1px;
+    bottom: 1px;
+    background-color: var(--bla);
+    opacity: 0.1;
+    box-shadow: var(--bla) 0px 2px 8px 0px;
+  }
+  .main #app .header .first, .main #app .header .last {
+    display: inline-block;
+    padding-top: 12px;
+    font-size: 1.5rem;
+  }
+  .main #app .header .first {
+    font-weight: bold;
+    color: var(--ora);
+    text-shadow: 3px -3px rgba(240, 184, 110, 0.5);
+  }
+  .main #app .header .last {
+    color: var(--bla);
+    font-weight: lighter;
+    font-size: 1.8rem;
+    text-shadow: 0 0 10px #F0B86E, 0 0 20px #F0B86E, 0 0 50px #0ebeff, 0 0 100px #0ebeff, 0 0 200px #F0B86E;
+  }
+  .main #app .story {
+    background-color: rgba(169, 169, 169, 0.1882352941);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+  }
+  .main #app .story .title {
+    width: 100%;
+    margin: 0;
+  }
+  .main #app .story .swipe {
+    overflow-x: hidden;
+  }
+  .main #app .story .swipe .wrapper {
+    display: flex;
+    justify-content: flex-start;
+    height: 100%;
+    max-width: max-content;
+    transition: transform 0.3s ease-out;
+  }
+  .main #app .story .swipe .wrapper .slide {
+    padding-right: 10px;
+    padding-block: 5px;
+  }
+  .main #app .story .swipe .wrapper .slide a {
+    text-decoration: none;
+    color: var(--bla);
+  }
+  .main #app .story .swipe .wrapper .slide:hover img {
+    padding: 3px;
+    border: 2.5px dotted var(--ora);
+    transform: scale(0.95);
+    cursor: pointer;
+  }
+  .main #app .story .swipe .wrapper .slide:active img {
+    transform: none;
+  }
+  .main #app .story .swipe .wrapper .slide:hover p {
+    transform: scale(1.04);
+    font-weight: bold;
+  }
+  .main #app .story .swipe .wrapper .slide img {
+    transition: all 0.1s;
+    padding: 1px;
+    border-radius: 50%;
+    border: 1.5px dotted var(--pin);
+    height: 70px;
+    width: 70px;
+  }
+  .main #app .story .swipe .wrapper .slide p {
+    width: 70px;
+    font-size: 0.7rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding-inline: 2px;
+  }
+}
+@media only screen and (min-width: 740px) and (max-width: 1023px) {
+  .main {
+    display: block;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .main {
+    display: block;
+  }
+  .main .warning {
+    display: flex;
+  }
+  .main .warning span {
+    display: block;
+    color: rgba(255, 0, 0, 0.7);
+  }
+  .main .app {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
