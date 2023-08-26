@@ -100,6 +100,7 @@ html, body {
   }
   .main #app .story .swipe {
     overflow-x: hidden;
+    transition: all 0.1s;
   }
   .main #app .story .swipe .wrapper {
     display: flex;
@@ -116,13 +117,11 @@ html, body {
     text-decoration: none;
     color: var(--bla);
   }
-  .main #app .story .swipe .wrapper .slide:hover img {
+  .main #app .story .swipe .wrapper .slide:active img {
     padding: 3px;
     border: 2.5px dotted var(--ora);
     transform: scale(0.95);
     cursor: pointer;
-  }
-  .main #app .story .swipe .wrapper .slide:active img {
     transform: none;
   }
   .main #app .story .swipe .wrapper .slide:hover p {

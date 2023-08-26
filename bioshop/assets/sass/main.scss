@@ -300,6 +300,7 @@ html,body{
                 }
                 .swipe{
                     overflow-x: hidden;
+                    transition: all .1s;
                     .wrapper{
                         display: flex;
                         justify-content: flex-start;
@@ -313,13 +314,11 @@ html,body{
                                 text-decoration: none;
                                 color: var(--bla);
                             }
-                            &:hover img{
+                            &:active img{
                                 padding: 3px;
                                 border: 2.5px dotted var(--ora);
                                 transform: scale(.95);
                                 cursor: pointer;
-                            }
-                            &:active img{
                                 transform: none;
                             }
                             &:hover p{
